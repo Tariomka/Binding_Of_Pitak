@@ -8,12 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.AspNetCore.SignalR.Client;
+using SignalRClient.Map;
 
 namespace SignalRClient
 {
     public partial class Form1 : Form
     {
         HubConnection connection;
+        TileFactory grass = new GrassFactory(1);
+        TileFactory lava = new LavaFactory(1);
 
         public Form1()
         {
@@ -50,6 +53,8 @@ namespace SignalRClient
             {
                 await connection.StartAsync();
                 messagesList.Items.Add("Connection started");
+                createMap();
+
                 //connectButton.IsEnabled = false;
                 //sendButton.IsEnabled = true;
             }
@@ -124,10 +129,10 @@ namespace SignalRClient
             int x = pictureBox1.Location.X;
             int y = pictureBox1.Location.Y;
 
-            if (direction == "RIGHT") x += 10;
-            else if (direction == "LEFT") x -= 10;
-            else if (direction == "UP") y -= 10;
-            else if (direction == "DOWN") y += 10;
+            if (direction == "RIGHT") x += 40;
+            else if (direction == "LEFT") x -= 40;
+            else if (direction == "UP") y -= 40;
+            else if (direction == "DOWN") y += 40;
             pictureBox1.Location = new Point(x, y);
             _ = SendGetCoordinatesAsync(x, y);
         }
@@ -136,6 +141,41 @@ namespace SignalRClient
         {
             await connection.InvokeAsync("SendCoordinates",
                     x.ToString(), y.ToString());
+        }
+
+        private void createMap()
+        {
+            int width = picCanvas.Size.Width;
+            int height = picCanvas.Size.Height;
+            int a = 5;
+            Random rnd = new Random();
+            for (int i = 0; i < width; i += 40)
+            {
+                for (int j = 0; j < height; j += 40)
+                {
+                    a++;
+                    Tile til = GetTile(rnd.Next(30));
+                    string pictureName = String.Concat("pictureBox", a);
+                    var picture = new PictureBox
+                    {
+                        Name = pictureName,
+                        Size = new Size(40, 40),
+                        Location = new Point(i, j),
+                        Image = Image.FromFile(til.image),
+
+                    };
+                    this.Controls.Add(picture);
+                }
+            }
+            this.picCanvas.SendToBack();
+        }
+
+        private Tile GetTile(int rnd)
+        {
+            if (rnd < 26)
+                return grass.GetTile();
+            else
+                return lava.GetTile();
         }
 
     }

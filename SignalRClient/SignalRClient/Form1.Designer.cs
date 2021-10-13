@@ -45,7 +45,7 @@ namespace SignalRClient
             // UP
             // 
             this.UP.DialogResult = System.Windows.Forms.DialogResult.Ignore;
-            this.UP.Location = new System.Drawing.Point(607, 405);
+            this.UP.Location = new System.Drawing.Point(1034, 502);
             this.UP.Name = "UP";
             this.UP.Size = new System.Drawing.Size(128, 44);
             this.UP.TabIndex = 9;
@@ -55,7 +55,7 @@ namespace SignalRClient
             // 
             // DOWN
             // 
-            this.DOWN.Location = new System.Drawing.Point(741, 405);
+            this.DOWN.Location = new System.Drawing.Point(1179, 502);
             this.DOWN.Name = "DOWN";
             this.DOWN.Size = new System.Drawing.Size(128, 44);
             this.DOWN.TabIndex = 10;
@@ -65,7 +65,7 @@ namespace SignalRClient
             // 
             // LEFT
             // 
-            this.LEFT.Location = new System.Drawing.Point(607, 455);
+            this.LEFT.Location = new System.Drawing.Point(1034, 552);
             this.LEFT.Name = "LEFT";
             this.LEFT.Size = new System.Drawing.Size(128, 44);
             this.LEFT.TabIndex = 11;
@@ -75,7 +75,7 @@ namespace SignalRClient
             // 
             // RIGHT
             // 
-            this.RIGHT.Location = new System.Drawing.Point(741, 455);
+            this.RIGHT.Location = new System.Drawing.Point(1179, 552);
             this.RIGHT.Name = "RIGHT";
             this.RIGHT.Size = new System.Drawing.Size(128, 44);
             this.RIGHT.TabIndex = 12;
@@ -86,18 +86,18 @@ namespace SignalRClient
             // messagesList
             // 
             this.messagesList.FormattingEnabled = true;
-            this.messagesList.Location = new System.Drawing.Point(607, 12);
+            this.messagesList.Location = new System.Drawing.Point(1034, 12);
             this.messagesList.Name = "messagesList";
-            this.messagesList.Size = new System.Drawing.Size(262, 381);
+            this.messagesList.Size = new System.Drawing.Size(270, 472);
             this.messagesList.TabIndex = 15;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.pictureBox2.Image = global::SignalRClient.Properties.Resources.enemy;
-            this.pictureBox2.Location = new System.Drawing.Point(225, 216);
+            this.pictureBox2.Location = new System.Drawing.Point(480, 320);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
             this.pictureBox2.TabIndex = 17;
             this.pictureBox2.TabStop = false;
             // 
@@ -105,9 +105,9 @@ namespace SignalRClient
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.pictureBox1.Image = global::SignalRClient.Properties.Resources.player;
-            this.pictureBox1.Location = new System.Drawing.Point(225, 216);
+            this.pictureBox1.Location = new System.Drawing.Point(480, 320);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(80, 80);
+            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
@@ -116,7 +116,7 @@ namespace SignalRClient
             this.picCanvas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.picCanvas.Location = new System.Drawing.Point(12, 12);
             this.picCanvas.Name = "picCanvas";
-            this.picCanvas.Size = new System.Drawing.Size(573, 487);
+            this.picCanvas.Size = new System.Drawing.Size(1000, 640);
             this.picCanvas.TabIndex = 14;
             this.picCanvas.TabStop = false;
             // 
@@ -124,7 +124,7 @@ namespace SignalRClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(892, 522);
+            this.ClientSize = new System.Drawing.Size(1316, 669);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.messagesList);

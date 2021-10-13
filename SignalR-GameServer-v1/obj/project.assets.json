@@ -1885,11 +1885,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Domas\\Desktop\\Objektinis programų projektav\\opp\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
+      "projectUniqueName": "C:\\Users\\Domas\\Desktop\\Objektinis programų projektav\\2021-10-12 is github\\Binding_Of_Pitak-main\\Binding_Of_Pitak-main\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
       "projectName": "SignalR-GameServer-v1",
-      "projectPath": "C:\\Users\\Domas\\Desktop\\Objektinis programų projektav\\opp\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
+      "projectPath": "C:\\Users\\Domas\\Desktop\\Objektinis programų projektav\\2021-10-12 is github\\Binding_Of_Pitak-main\\Binding_Of_Pitak-main\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
       "packagesPath": "C:\\Users\\Domas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Domas\\Desktop\\Objektinis programų projektav\\opp\\SignalR-GameServer-v1\\obj\\",
+      "outputPath": "C:\\Users\\Domas\\Desktop\\Objektinis programų projektav\\2021-10-12 is github\\Binding_Of_Pitak-main\\Binding_Of_Pitak-main\\SignalR-GameServer-v1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
