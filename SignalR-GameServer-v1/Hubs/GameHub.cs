@@ -6,9 +6,8 @@ namespace SignalR_GameServer_v1.Hubs
 {
     public class GameHub : Hub
     {
-        public static Settings settings = Settings.getInstance();
+        public static MapSettings settings = MapSettings.getInstance();
 
-        public int playerCount = settings.PlayerCount;
         public int MapWidth = settings.MapWidth;
         public int MapHight = settings.MapHight;
         public GameHub()

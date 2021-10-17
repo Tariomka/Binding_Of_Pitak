@@ -6,26 +6,24 @@ using System.Runtime.CompilerServices;
 
 namespace SignalR_GameServer_v1
 {
-    public class Settings
+    public class MapSettings
     {
-        private static Settings instance = null;
+        private static MapSettings instance = null;
 
-        public int PlayerCount;
         public int MapWidth;
         public int MapHight;
 
-        private Settings()
+        private MapSettings()
         {
-            PlayerCount = 4;
             MapWidth = 1000;
             MapHight = 640;
         }
 
-        public static Settings getInstance()
+        public static MapSettings getInstance()
         {
             if (instance == null)
             {
-                instance = new Settings();
+                instance = new MapSettings();
             }
             return instance;
         }
