@@ -8,8 +8,8 @@ namespace SignalR_GameServer_v1.Hubs
     {
         public static MapSettings settings = MapSettings.getInstance();
 
-        public int MapWidth = settings.MapWidth;
-        public int MapHight = settings.MapHight;
+        public int mapWidth = settings.mapWidth;
+        public int mapHight = settings.mapHight;
         public GameHub()
         {
         }
@@ -38,7 +38,7 @@ namespace SignalR_GameServer_v1.Hubs
 
         public async Task GetMapSize()
         {
-            await Clients.All.SendAsync("ReceiveMapCoordinates", MapWidth, MapHight);
+            await Clients.All.SendAsync("ReceiveMapCoordinates", mapWidth, mapHight);
         }
     }
 }
