@@ -11,12 +11,12 @@ namespace SignalR_GameServer_v1
         private static MapSettings instance = null;
 
         public int mapWidth;
-        public int mapHight;
+        public int mapHeight;
 
         private MapSettings()
         {
             mapWidth = 1000;
-            mapHight = 640;
+            mapHeight = 640;
         }
 
         public static MapSettings getInstance()
