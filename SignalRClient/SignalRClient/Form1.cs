@@ -17,7 +17,8 @@ namespace SignalRClient
         HubConnection connection;
         TileFactory grass = new GrassFactory(1);
         TileFactory lava = new LavaFactory(1);
-
+        public int mapHeight;
+        public int mapWidth;
         public Form1()
         {
             InitializeComponent();
@@ -49,11 +50,22 @@ namespace SignalRClient
                 pictureBox2.Location = new Point(int.Parse(x), int.Parse(y));
             });
 
+            connection.On<int, int>("ReceiveMapCoordinates", (x, y) =>
+            {
+                mapWidth = x;
+                mapHeight = y;
+            });
+
             try
             {
                 await connection.StartAsync();
                 messagesList.Items.Add("Connection started");
-                createMap();
+
+                await connection.InvokeAsync("GetMapSize");
+                messagesList.Items.Add("Map size:" + mapWidth + " " + mapHeight);
+
+
+                createMap(mapWidth, mapHeight);
 
                 //connectButton.IsEnabled = false;
                 //sendButton.IsEnabled = true;
@@ -143,10 +155,8 @@ namespace SignalRClient
                     x.ToString(), y.ToString());
         }
 
-        private void createMap()
+        private void createMap(int width, int height)
         {
-            int width = picCanvas.Size.Width;
-            int height = picCanvas.Size.Height;
             int a = 5;
             Random rnd = new Random();
             for (int i = 0; i < width; i += 40)

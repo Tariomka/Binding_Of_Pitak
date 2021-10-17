@@ -6,6 +6,11 @@ namespace SignalR_GameServer_v1.Hubs
 {
     public class GameHub : Hub
     {
+        public static Settings settings = Settings.getInstance();
+
+        public int playerCount = settings.PlayerCount;
+        public int MapWidth = settings.MapWidth;
+        public int MapHight = settings.MapHight;
         public GameHub()
         {
         }
@@ -30,6 +35,11 @@ namespace SignalR_GameServer_v1.Hubs
         public Task SendMessageTogroup(string message)
         {
             return Clients.Group("SignalR Users").SendAsync("ReceiveMessage", message);
+        }
+
+        public async Task GetMapSize()
+        {
+            await Clients.All.SendAsync("ReceiveMapCoordinates", MapWidth, MapHight);
         }
     }
 }

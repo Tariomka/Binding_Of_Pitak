@@ -1879,23 +1879,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Domas\\.nuget\\packages\\": {},
+    "C:\\Users\\edgar\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Domas\\Desktop\\Objektinis programų projektav\\2021-10-12 is github\\Binding_Of_Pitak-main\\Binding_Of_Pitak-main\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
+      "projectUniqueName": "C:\\Users\\edgar\\Desktop\\opp3\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
       "projectName": "SignalR-GameServer-v1",
-      "projectPath": "C:\\Users\\Domas\\Desktop\\Objektinis programų projektav\\2021-10-12 is github\\Binding_Of_Pitak-main\\Binding_Of_Pitak-main\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
-      "packagesPath": "C:\\Users\\Domas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Domas\\Desktop\\Objektinis programų projektav\\2021-10-12 is github\\Binding_Of_Pitak-main\\Binding_Of_Pitak-main\\SignalR-GameServer-v1\\obj\\",
+      "projectPath": "C:\\Users\\edgar\\Desktop\\opp3\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
+      "packagesPath": "C:\\Users\\edgar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\edgar\\Desktop\\opp3\\Binding_Of_Pitak\\SignalR-GameServer-v1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Domas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1936,12 +1936,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.1.13, 3.1.13]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -1950,7 +1944,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
