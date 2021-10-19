@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.AspNetCore.SignalR.Client;
 using SignalRClient.Map;
+using SignalRClient.Observer;
 
 namespace SignalRClient
 {
@@ -19,6 +20,10 @@ namespace SignalRClient
         TileFactory lava = new LavaFactory(1);
         public int mapHeight;
         public int mapWidth;
+
+        // List<Creature> creatures = new List<Creature>();
+        // Subject subject = new Server();
+
         public Form1()
         {
             InitializeComponent();

@@ -243,6 +243,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Command\AttackCommand.cs" />
+    <Compile Include="Command\CreatureController.cs" />
+    <Compile Include="Command\EndTurnCommand.cs" />
+    <Compile Include="Command\ICommand.cs" />
+    <Compile Include="Command\MoveDownCommand.cs" />
+    <Compile Include="Command\MoveLeftCommand.cs" />
+    <Compile Include="Command\MoveRightCommand.cs" />
+    <Compile Include="Command\MoveUpCommand.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -256,6 +264,9 @@
     <Compile Include="Map\Map.cs" />
     <Compile Include="Map\Tile.cs" />
     <Compile Include="Map\TileFactory.cs" />
+    <Compile Include="Observer\Server.cs" />
+    <Compile Include="Observer\IObserver.cs" />
+    <Compile Include="Observer\Subject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -300,5 +311,6 @@
   <ItemGroup>
     <None Include="Resources\lava.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
