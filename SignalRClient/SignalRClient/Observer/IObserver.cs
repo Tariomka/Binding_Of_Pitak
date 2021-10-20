@@ -10,7 +10,7 @@ namespace SignalRClient.Observer
     {
         void update(string msg);
 
-        void notifyServer();
+        void notifyServer(string result);
 
         void setServer(Subject server);
     }

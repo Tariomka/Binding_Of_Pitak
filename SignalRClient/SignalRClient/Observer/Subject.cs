@@ -10,26 +10,27 @@ namespace SignalRClient.Observer
     {
         private List<IObserver> list = new List<IObserver>();
 
-        public void attach ( IObserver unit )
+        public void attach ( IObserver creature )
+        {
+            list.Add(creature);
+            creature.setServer(this);
+        }
+
+        public void deattach(IObserver creature)
         {
 
         }
 
-        public void deattach( IObserver unit )
+        public void notifyAll(string msg)
         {
-
-        }
-
-        public void notifyAll( string msg)
-        {
-            foreach (IObserver unit in list)
+            foreach (IObserver creature in list)
             {
-                unit.update(msg);
+                creature.update(msg);
             }
         }
 
 
-        public void receiveFromClient( string msg )
+        public void receiveFromClient(string msg)
         {
             this.notifyAll(msg);
         }

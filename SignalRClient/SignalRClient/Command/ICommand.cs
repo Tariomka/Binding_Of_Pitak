@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace SignalRClient.Command
 {
-    class ICommand
+    public abstract class ICommand
     {
+        protected Creature target;
+
+        public ICommand(Creature target)
+        {
+            this.target = target;
+        }
+
+        public abstract void execute();
+
+        public abstract void undo();
     }
 }

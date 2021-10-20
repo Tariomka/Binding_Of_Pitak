@@ -251,6 +251,7 @@
     <Compile Include="Command\MoveLeftCommand.cs" />
     <Compile Include="Command\MoveRightCommand.cs" />
     <Compile Include="Command\MoveUpCommand.cs" />
+    <Compile Include="Creature.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

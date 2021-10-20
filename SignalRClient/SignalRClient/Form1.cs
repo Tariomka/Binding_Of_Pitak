@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Microsoft.AspNetCore.SignalR.Client;
 using SignalRClient.Map;
 using SignalRClient.Observer;
+using SignalRClient.Command;
 
 namespace SignalRClient
 {
@@ -23,6 +24,13 @@ namespace SignalRClient
 
         // List<Creature> creatures = new List<Creature>();
         // Subject subject = new Server();
+
+        //Creature creature = new Creature();
+        //CreatureController controller = new CreatureController();
+
+        //ICommand attack = new AttackCommand(target: creature);
+        //controller.run(attack);
+
 
         public Form1()
         {

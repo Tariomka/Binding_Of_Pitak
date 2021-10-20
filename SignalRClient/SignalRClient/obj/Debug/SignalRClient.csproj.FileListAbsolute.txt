@@ -537,3 +537,10 @@ C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Deb
 C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.CopyComplete
 C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.exe
 C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.pdb
+D:\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.AssemblyReference.cache
+D:\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.Form1.resources
+D:\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.Properties.Resources.resources
+D:\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.GenerateResource.cache
+D:\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.CoreCompileInputs.cache
+D:\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.exe
+D:\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.pdb
