@@ -109,3 +109,5 @@ D:\GitHub\Binding_Of_Pitak\SignalR_Testing\obj\Debug\netcoreapp3.1\SignalR_Testi
 D:\GitHub\Binding_Of_Pitak\SignalR_Testing\obj\Debug\netcoreapp3.1\SignalR_Testing.dll
 D:\GitHub\Binding_Of_Pitak\SignalR_Testing\obj\Debug\netcoreapp3.1\SignalR_Testing.pdb
 D:\GitHub\Binding_Of_Pitak\SignalR_Testing\obj\Debug\netcoreapp3.1\SignalR_Testing.genruntimeconfig.cache
+D:\GitHub\Binding_Of_Pitak\SignalR_Testing\bin\Debug\netcoreapp3.1\Castle.Core.dll
+D:\GitHub\Binding_Of_Pitak\SignalR_Testing\bin\Debug\netcoreapp3.1\Moq.dll

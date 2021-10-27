@@ -8,24 +8,24 @@ namespace SignalR_GameServer_v1.MapLibrary
 {
     public class MapSettings
     {
-        private static MapSettings _instance = null;
+        private static MapSettings instance = null;
 
-        public int MapWidth;
-        public int MapHeight;
+        public int mapWidth;
+        public int mapHeight;
 
         private MapSettings()
         {
-            MapWidth = 1000;
-            MapHeight = 640;
+            mapWidth = 1000;
+            mapHeight = 640;
         }
 
-        public static MapSettings GetInstance()
+        public static MapSettings getInstance()
         {
-            if (_instance == null)
+            if (instance == null)
             {
-                _instance = new MapSettings();
+                instance = new MapSettings();
             }
-            return _instance;
+            return instance;
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Runtime.CompilerServices;
 
-namespace SignalR_GameServer_v1
+namespace SignalR_GameServer_v1.MapLibrary
 {
     public class MapSettings
     {

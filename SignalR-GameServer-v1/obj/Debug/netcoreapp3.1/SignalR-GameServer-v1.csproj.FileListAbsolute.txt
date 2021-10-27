@@ -357,3 +357,5 @@ D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR
 D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.Views.pdb
 D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.csproj.CopyComplete
 D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.genruntimeconfig.cache
+D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\Castle.Core.dll
+D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\Moq.dll

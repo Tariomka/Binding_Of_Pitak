@@ -1,15 +1,35 @@
 using SignalR_GameServer_v1;
 using System;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+using System.Threading.Tasks;
+using Castle.Core.Configuration;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.SignalR;
+using Microsoft.Extensions.DependencyInjection;
+using Moq;
 using SignalR_GameServer_v1.Characters;
 using SignalR_GameServer_v1.Command;
+using SignalR_GameServer_v1.Hubs;
+using SignalR_GameServer_v1.Observer;
+using SignalR_GameServer_v1.MapLibrary;
 using Xunit;
+using IConfiguration = Microsoft.Extensions.Configuration.IConfiguration;
 
 
 namespace SignalR_Testing
 {
-    public sealed class Setup : IDisposable
+    [ExcludeFromCodeCoverage]
+    public class BackendTests : IDisposable
     {
         private bool disposedValue;
+        private int id;
+        private string name;
+        private int health;
+        private Mock<IConfiguration> config;
+        private Startup start;
+        private Mock<IHubContext<GameHub>> gameHubMock;
 
         private void Dispose(bool disposing)
         {
@@ -17,32 +37,38 @@ namespace SignalR_Testing
             {
                 if (disposing)
                 {
-                    // TODO: dispose managed state (managed objects)
-                }
+                    config = null;
+                    start = null;
+                    gameHubMock = null;
 
-                // TODO: free unmanaged resources (unmanaged objects) and override finalizer
-                // TODO: set large fields to null
+                    id = 0;
+                    name = "";
+                    health = 0;
+                }
                 disposedValue = true;
             }
         }
 
-        // // TODO: override finalizer only if 'Dispose(bool disposing)' has code to free unmanaged resources
-        public Setup()
+        public BackendTests()
         {
-            // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
+            config = new Mock<IConfiguration>();
+            start = new Startup(config.Object);
+            gameHubMock = new Mock<IHubContext<GameHub>>();
+
+            id = 10;
+            name = "Pataisymas";
+            health = 50;
 
             Dispose(disposing: false);
         }
 
         public void Dispose()
         {
-            // Do not change this code. Put cleanup code in 'Dispose(bool disposing)' method
             Dispose(disposing: true);
             GC.SuppressFinalize(this);
         }
-    }
-    public class BackendTests
-    {
+
+
         [Fact]
         public void MapTest()
         {
@@ -55,9 +81,6 @@ namespace SignalR_Testing
         [Fact]
         public void EmptyHeroTest()
         {
-            int id = 10;
-            string name = "Pataisymas";
-            int health = 50;
             string ans = 0 + "  " + 0;
 
             Hero testHero = new Hero();
@@ -73,9 +96,6 @@ namespace SignalR_Testing
         [Fact]
         public void HeroTest()
         {
-            int id = 1;
-            string name = "Naujas";
-            int health = 100;
             string ans = id + " " + name + " " + health;
 
             Hero testHero = new Hero(id, name, health, 10, 2);
@@ -85,7 +105,7 @@ namespace SignalR_Testing
         }
 
         [Fact]
-        void HeroMovementTest()
+        public void HeroMovementTest()
         {
             Hero testHero = new Hero();
 
@@ -109,12 +129,11 @@ namespace SignalR_Testing
         }
 
         [Fact]
-        
         public void PlayerAndItemTest()
         {
             Player player = new Player(1);
             Item item = new Item();
-            Item item2 = new Item(1, "item2", "nullType", "effectiveless", 3, -1, -1);
+            Item item2 = new Item(id, "item2", "nullType", "effectiveless", 3, -1, -1);
 
             player.addItem(item);
             player.addItem(item2);
@@ -131,5 +150,79 @@ namespace SignalR_Testing
 
             Assert.Equal(score - reducedScore, player.getScore());
         }
+
+        [Fact]
+        public void ObserverMockTest()
+        {
+            Hero testHero = new Hero();
+            Server server = new Server();
+
+            var observer = new Mock<IObserver>();
+            
+            server.attach(observer.Object);
+
+            testHero.setServer(server);
+
+            testHero.notifyServer("bandymas");
+
+            server.deattach(observer.Object);
+
+        }
+
+        [Fact]
+        public void HubMapTest()
+        {
+            string message = "Hello";
+
+            Hero hero = new Hero(id, name, health, 10, 2);
+            GameHub hub = new GameHub();
+            var uid = new Guid();
+
+            Map map = new Map(0);
+            var maplayout = map.GetLayout();
+
+            // Tasks
+            //--------------------------------------------
+            hub.JoinGame(uid);
+
+            hub.SendMessage(hero.GetName(), message);
+            hub.SendCoordinates(hero.GetId(), "LEFT");
+
+            hub.GetMapSize();
+            hub.SendMapLayout(maplayout);
+            //--------------------------------------------
+        }
+
+        [Fact]
+        public void StartupTest()
+        {
+            var app = new Mock<IApplicationBuilder>();
+            var env = new Mock<IWebHostEnvironment>();
+            var ser = new Mock<IServiceCollection>();
+
+            //Startup start = new Startup(config.Object);
+
+            Assert.Equal(config.Object, start.Configuration);
+            //start.ConfigureServices(ser.Object);
+            //start.Configure(app.Object, env.Object);
+        }
+
+
+        //[Fact]
+        //public void HubMessageTest()
+        //{
+        //    string message2 = "Hello to Group";
+
+        //    Hero hero = new Hero(id, name, health, 10, 2);
+        //    GameHub hub = new GameHub();
+        //    var uid = new Guid();
+
+        //    var listas = new Dictionary<string, int>();
+
+        //    hub.PlayerJoined(hero.GetId());
+        //    hub.SendNewIdReceived(hero.GetId(), listas);
+        //    hub.SendMessageTogroup(message2);
+
+        //}
     }
 }
