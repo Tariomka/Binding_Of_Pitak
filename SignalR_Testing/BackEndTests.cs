@@ -101,7 +101,7 @@ namespace SignalR_Testing
             Hero testHero = new Hero(id, name, health, 10, 2);
 
             Assert.Equal(ans, testHero.GetDetails());
-            
+
         }
 
         [Fact]
@@ -137,7 +137,7 @@ namespace SignalR_Testing
 
             player.addItem(item);
             player.addItem(item2);
-            
+
             Assert.Equal(2, player.getItemCount());
 
             int score = 200;
@@ -158,7 +158,7 @@ namespace SignalR_Testing
             Server server = new Server();
 
             var observer = new Mock<IObserver>();
-            
+
             server.attach(observer.Object);
 
             testHero.setServer(server);
@@ -200,7 +200,7 @@ namespace SignalR_Testing
             var env = new Mock<IWebHostEnvironment>();
             var ser = new Mock<IServiceCollection>();
 
-            //Startup start = new Startup(config.Object);
+            Startup start = new Startup(config.Object);
 
             Assert.Equal(config.Object, start.Configuration);
             //start.ConfigureServices(ser.Object);
@@ -224,5 +224,6 @@ namespace SignalR_Testing
         //    hub.SendMessageTogroup(message2);
 
         //}
+
     }
 }

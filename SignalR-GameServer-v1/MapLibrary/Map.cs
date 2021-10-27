@@ -9,6 +9,7 @@ namespace SignalR_GameServer_v1.MapLibrary
     public class Map
     {
         private int id { get; set; }
+        private int lavelNum { get; set; }
         private int sizeX { get; set; }
         private int sizeY { get; set; }
 
