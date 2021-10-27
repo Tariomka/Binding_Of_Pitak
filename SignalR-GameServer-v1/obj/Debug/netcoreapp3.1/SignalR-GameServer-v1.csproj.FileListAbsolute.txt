@@ -236,44 +236,83 @@ C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\net
 C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.dll
 C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.pdb
 C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.genruntimeconfig.cache
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\appsettings.Development.json
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\appsettings.json
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\libman.json
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\SignalR-GameServer-v1.exe
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\SignalR-GameServer-v1.deps.json
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\SignalR-GameServer-v1.runtimeconfig.json
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\SignalR-GameServer-v1.runtimeconfig.dev.json
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\SignalR-GameServer-v1.dll
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\SignalR-GameServer-v1.pdb
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\SignalR-GameServer-v1.Views.dll
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\SignalR-GameServer-v1.Views.pdb
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\System.Net.WebSockets.WebSocketProtocol.dll
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.csproj.AssemblyReference.cache
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.GeneratedMSBuildEditorConfig.editorconfig
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.AssemblyInfoInputs.cache
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.AssemblyInfo.cs
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.csproj.CoreCompileInputs.cache
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.MvcApplicationPartsAssemblyInfo.cache
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.RazorAssemblyInfo.cache
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.RazorAssemblyInfo.cs
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\staticwebassets\SignalR-GameServer-v1.StaticWebAssets.Manifest.cache
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\staticwebassets\SignalR-GameServer-v1.StaticWebAssets.xml
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\scopedcss\bundle\SignalR-GameServer-v1.styles.css
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.TagHelpers.input.cache
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.TagHelpers.output.cache
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.RazorCoreGenerate.cache
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.RazorTargetAssemblyInfo.cache
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.RazorTargetAssemblyInfo.cs
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.Views.pdb
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.csproj.CopyComplete
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.dll
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.pdb
-D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.genruntimeconfig.cache
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\libman.json
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\SignalR-GameServer-v1.exe
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\SignalR-GameServer-v1.deps.json
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\SignalR-GameServer-v1.runtimeconfig.json
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\SignalR-GameServer-v1.runtimeconfig.dev.json
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\SignalR-GameServer-v1.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\SignalR-GameServer-v1.pdb
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\SignalR-GameServer-v1.Views.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\SignalR-GameServer-v1.Views.pdb
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.csprojAssemblyReference.cache
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.AssemblyInfoInputs.cache
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.AssemblyInfo.cs
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.csproj.CoreCompileInputs.cache
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.RazorAssemblyInfo.cache
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.RazorAssemblyInfo.cs
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.TagHelpers.input.cache
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.TagHelpers.output.cache
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.RazorCoreGenerate.cache
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.RazorTargetAssemblyInfo.cache
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.RazorTargetAssemblyInfo.cs
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.Views.pdb
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.csproj.CopyComplete
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\staticwebassets\SignalR-GameServer-v1.StaticWebAssets.Manifest.cache
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\staticwebassets\SignalR-GameServer-v1.StaticWebAssets.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.pdb
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.genruntimeconfig.cache
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\appsettings.json
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\libman.json
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\SignalR-GameServer-v1.exe
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\SignalR-GameServer-v1.deps.json
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\SignalR-GameServer-v1.runtimeconfig.json
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\SignalR-GameServer-v1.runtimeconfig.dev.json
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\SignalR-GameServer-v1.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\SignalR-GameServer-v1.pdb
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\SignalR-GameServer-v1.Views.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\SignalR-GameServer-v1.Views.pdb
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\System.Net.WebSockets.WebSocketProtocol.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.AssemblyInfoInputs.cache
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.AssemblyInfo.cs
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.csproj.CoreCompileInputs.cache
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.MvcApplicationPartsAssemblyInfo.cache
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.RazorAssemblyInfo.cache
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.RazorAssemblyInfo.cs
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\staticwebassets\SignalR-GameServer-v1.StaticWebAssets.Manifest.cache
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\staticwebassets\SignalR-GameServer-v1.StaticWebAssets.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.TagHelpers.input.cache
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.TagHelpers.output.cache
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.RazorCoreGenerate.cache
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.RazorTargetAssemblyInfo.cache
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.RazorTargetAssemblyInfo.cs
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.Views.pdb
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.csproj.CopyComplete
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.pdb
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.genruntimeconfig.cache
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.csprojAssemblyReference.cache
