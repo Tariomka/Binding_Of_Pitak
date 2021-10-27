@@ -9,8 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.AspNetCore.SignalR.Client;
 using SignalRClient.Map;
-using SignalRClient.Observer;
-using SignalRClient.Command;
 
 namespace SignalRClient
 {

@@ -12,43 +12,43 @@ namespace SignalR_GameServer_v1.MapLibrary
         private int sizeX { get; set; }
         private int sizeY { get; set; }
 
-        List<Tile> tile;
-        TileFactory grass = new GrassFactory(1);
-        TileFactory lava = new LavaFactory(1);
-        public MapSettings settings;
+        List<Tile> _tile;
+        TileFactory _grass = new GrassFactory(1);
+        TileFactory _lava = new LavaFactory(1);
+        public MapSettings Settings;
 
         
         public Map(int id)
         {
-            settings = MapSettings.getInstance();
+            Settings = MapSettings.GetInstance();
             this.id = id;
-            sizeX = settings.mapWidth;
-            sizeY = settings.mapHeight;
-            tile = new List<Tile>();
+            sizeX = Settings.MapWidth;
+            sizeY = Settings.MapHeight;
+            _tile = new List<Tile>();
             GenerateMap();
         }
 
         private void GenerateMap()
         {
             
-            for (int i = 0; i < settings.mapHeight; i+=40)
+            for (int i = 0; i < Settings.MapHeight; i+=40)
             {
-                for (int j = 0; j < settings.mapWidth; j+=40)
+                for (int j = 0; j < Settings.MapWidth; j+=40)
                 {
-                    tile.Add(GetTile());
+                    _tile.Add(GetTile());
                 }
             }
         }
         public string[,] GetLayout()
         {
-            int h = settings.mapHeight / 40;
-            int w = settings.mapWidth / 40;
+            int h = Settings.MapHeight / 40;
+            int w = Settings.MapWidth / 40;
             string[,] retArray = new string[h,w];
             for (int i = 0; i < h; i ++)
             {
                 for (int j = 0; j < w; j ++)
                 {                    
-                    retArray[i, j] = tile[i * 4 + j].image;
+                    retArray[i, j] = _tile[i * 4 + j].image;
                 }
             }
             return retArray;
@@ -59,9 +59,9 @@ namespace SignalR_GameServer_v1.MapLibrary
             Random rnd = new Random();
             int k = rnd.Next(5);
             if (k < 4)
-                return grass.GetTile();
+                return _grass.GetTile();
             else
-                return lava.GetTile();
+                return _lava.GetTile();
         }
     }
 }

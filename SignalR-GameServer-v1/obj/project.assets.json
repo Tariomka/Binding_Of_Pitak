@@ -1879,19 +1879,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tautvis\\.nuget\\packages\\": {}
+    "C:\\Users\\Abudabi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\All the other good stuff\\OPP\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
+      "projectUniqueName": "D:\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
       "projectName": "SignalR-GameServer-v1",
-      "projectPath": "E:\\All the other good stuff\\OPP\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
-      "packagesPath": "C:\\Users\\Tautvis\\.nuget\\packages\\",
-      "outputPath": "E:\\All the other good stuff\\OPP\\Binding_Of_Pitak\\SignalR-GameServer-v1\\obj\\",
+      "projectPath": "D:\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
+      "packagesPath": "C:\\Users\\Abudabi\\.nuget\\packages\\",
+      "outputPath": "D:\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Tautvis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Abudabi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1903,6 +1903,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -1914,6 +1915,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.AspNetCore.SignalR": {
             "target": "Package",
@@ -1938,7 +1940,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

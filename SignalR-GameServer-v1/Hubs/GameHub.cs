@@ -8,16 +8,16 @@ namespace SignalR_GameServer_v1.Hubs
 {
     public class GameHub : Hub
     {
-        public static MapSettings settings = MapSettings.getInstance();
+        public static MapSettings Settings = MapSettings.getInstance();
 
-        public int mapWidth = settings.mapWidth;
-        public int mapHeight = settings.mapHeight;
-        public static int playerIndex = 0;
-        public static Dictionary<string, int> players = new Dictionary<string, int>();
-        public Map map;
+        public int MapWidth = Settings.mapWidth;
+        public int MapHeight = Settings.mapHeight;
+        public static int PlayerIndex = 0;
+        public static Dictionary<string, int> Players = new Dictionary<string, int>();
+        public Map Map;
         public GameHub()
         {
-            createMap();
+            CreateMap();
         }
 
         public async Task SendMessage(string user, string message)
@@ -36,14 +36,14 @@ namespace SignalR_GameServer_v1.Hubs
         {
             var playerid = uid.ToString();
 
-            if (!players.ContainsKey(playerid))
+            if (!Players.ContainsKey(playerid))
             {
-                playerIndex++;
-                players.Add(playerid, playerIndex);
+                PlayerIndex++;
+                Players.Add(playerid, PlayerIndex);
             }
 
-            await SendNewIdReceived(players[playerid], players);
-            await PlayerJoined(players[playerid]);
+            await SendNewIdReceived(Players[playerid], Players);
+            await PlayerJoined(Players[playerid]);
         }
 
         public Task SendNewIdReceived(int id, Dictionary<string, int> playersInGame)
@@ -59,15 +59,15 @@ namespace SignalR_GameServer_v1.Hubs
 
         //temp bybi dejau nx
         //--------------------------------------------------------------
-        string[,] mapLayout;
+        string[,] _mapLayout;
         public async Task SendMapLayout(string[,] mapLayout)
         {
             await Clients.Others.SendAsync("ReceiveMapLayout", mapLayout);
         }
-        private void createMap()
+        private void CreateMap()
         {
-            map = new Map(0);
-            mapLayout = map.GetLayout();
+            Map = new Map(0);
+            _mapLayout = Map.GetLayout();
             //int a = 5;
             //Random rnd = new Random();
             //for (int i = 0; i < width; i += 40)
@@ -105,7 +105,7 @@ namespace SignalR_GameServer_v1.Hubs
 
         public async Task GetMapSize()
         {
-            await Clients.All.SendAsync("ReceiveMapCoordinates", mapWidth, mapHeight);
+            await Clients.All.SendAsync("ReceiveMapCoordinates", MapWidth, MapHeight);
         }
     }
 }
