@@ -250,7 +250,6 @@ C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Deb
 C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\SignalR-GameServer-v1.Views.pdb
 C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\System.Net.WebSockets.WebSocketProtocol.dll
-C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.csprojAssemblyReference.cache
 C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.AssemblyInfoInputs.cache
 C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.AssemblyInfo.cs
 C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.csproj.CoreCompileInputs.cache
@@ -314,5 +313,7 @@ E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug
 E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.dll
 E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.pdb
 E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.genruntimeconfig.cache
-E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.csprojAssemblyReference.cache
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\scopedcss\bundle\SignalR-GameServer-v1.styles.css
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\BoP.MapLibrary.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\BoP.MapLibrary.pdb

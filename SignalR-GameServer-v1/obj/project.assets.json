@@ -611,6 +611,16 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
+      },
+      "BoP.MapLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/BoP.MapLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BoP.MapLibrary.dll": {}
+        }
       }
     }
   },
@@ -1871,10 +1881,16 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "BoP.MapLibrary/1.0.0": {
+      "type": "project",
+      "path": "../SignalRClient/BoP.Map/BoP.MapLibrary.csproj",
+      "msbuildProject": "../SignalRClient/BoP.Map/BoP.MapLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "BoP.MapLibrary >= 1.0.0",
       "Microsoft.AspNetCore.SignalR >= 1.1.0"
     ]
   },
@@ -1884,11 +1900,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\All the other good stuff\\OPP\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
+      "projectUniqueName": "C:\\Work\\uni\\OPP\\fixed3\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
       "projectName": "SignalR-GameServer-v1",
-      "projectPath": "E:\\All the other good stuff\\OPP\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
+      "projectPath": "C:\\Work\\uni\\OPP\\fixed3\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
       "packagesPath": "C:\\Users\\Tautvis\\.nuget\\packages\\",
-      "outputPath": "E:\\All the other good stuff\\OPP\\Binding_Of_Pitak\\SignalR-GameServer-v1\\obj\\",
+      "outputPath": "C:\\Work\\uni\\OPP\\fixed3\\Binding_Of_Pitak\\SignalR-GameServer-v1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Tautvis\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1903,7 +1919,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Work\\uni\\OPP\\fixed3\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj": {
+              "projectPath": "C:\\Work\\uni\\OPP\\fixed3\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

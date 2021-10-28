@@ -1,0 +1,755 @@
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\SignalRClient.exe.config
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\SignalRClient.exe
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\SignalRClient.pdb
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authentication.Abstractions.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.Policy.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.Core.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Common.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Core.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebSockets.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.ObjectPool.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.Net.Http.Headers.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\System.Buffers.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\System.IO.Pipelines.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\System.Memory.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\System.Text.Json.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\System.Threading.Channels.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\System.ValueTuple.dll
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authentication.Abstractions.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.Policy.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Connections.Abstractions.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Client.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Common.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Extensions.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.Abstractions.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.Core.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Common.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Core.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Protocols.Json.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebSockets.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebUtilities.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.ObjectPool.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Microsoft.Net.Http.Headers.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\System.Buffers.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\System.IO.Pipelines.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\System.Memory.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\System.Text.Json.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\System.Threading.Channels.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\bin\Debug\System.ValueTuple.xml
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.AssemblyReference.cache
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\obj\Debug\SignalRClient.Form1.resources
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\obj\Debug\SignalRClient.Properties.Resources.resources
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.GenerateResource.cache
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.CoreCompileInputs.cache
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.CopyComplete
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\obj\Debug\SignalRClient.exe
+C:\Users\edgaras.navickas\source\repos\SignalRClient\SignalRClient\obj\Debug\SignalRClient.pdb
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\SignalRClient.exe.config
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\SignalRClient.exe
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\SignalRClient.pdb
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authentication.Abstractions.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.Policy.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.Core.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Common.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Core.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebSockets.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.ObjectPool.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Net.Http.Headers.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\System.Buffers.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\System.IO.Pipelines.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\System.Memory.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\System.Text.Json.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\System.Threading.Channels.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\System.ValueTuple.dll
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authentication.Abstractions.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.Policy.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Connections.Abstractions.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Client.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Common.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Extensions.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.Abstractions.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.Core.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Common.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Core.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Protocols.Json.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebSockets.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebUtilities.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.ObjectPool.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Net.Http.Headers.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\System.Buffers.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\System.IO.Pipelines.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\System.Memory.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\System.Text.Json.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\System.Threading.Channels.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\bin\Debug\System.ValueTuple.xml
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.AssemblyReference.cache
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.Form1.resources
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.Properties.Resources.resources
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.GenerateResource.cache
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.CoreCompileInputs.cache
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.CopyComplete
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.exe
+C:\Users\edgaras.navickas\Desktop\pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.pdb
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\SignalRClient.exe.config
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\SignalRClient.exe
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\SignalRClient.pdb
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authentication.Abstractions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.Policy.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.Core.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Common.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Core.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebSockets.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.ObjectPool.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.Net.Http.Headers.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\System.Buffers.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\System.Memory.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\System.Text.Json.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\System.Threading.Channels.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\System.ValueTuple.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authentication.Abstractions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.Policy.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Connections.Abstractions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Client.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Common.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Extensions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.Abstractions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.Core.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Common.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Core.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Protocols.Json.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebSockets.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebUtilities.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.ObjectPool.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Microsoft.Net.Http.Headers.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\System.Buffers.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\System.Memory.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\System.Text.Json.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\System.Threading.Channels.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\bin\Debug\System.ValueTuple.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csprojAssemblyReference.cache
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\obj\Debug\SignalRClient.Form1.resources
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\obj\Debug\SignalRClient.Properties.Resources.resources
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.GenerateResource.cache
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.CoreCompileInputs.cache
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.CopyComplete
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\obj\Debug\SignalRClient.exe
+C:\Users\Domas\Desktop\Objektinis programų projektav\opp\SignalRClient\SignalRClient\obj\Debug\SignalRClient.pdb
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\SignalRClient.exe.config
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\SignalRClient.exe
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\SignalRClient.pdb
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authentication.Abstractions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.Policy.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.Core.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Common.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Core.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebSockets.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.ObjectPool.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.Net.Http.Headers.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\System.Buffers.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\System.Memory.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\System.Text.Json.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\System.Threading.Channels.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\System.ValueTuple.dll
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authentication.Abstractions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.Policy.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Connections.Abstractions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Client.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Common.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Extensions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.Abstractions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.Core.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Common.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Core.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Protocols.Json.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebSockets.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebUtilities.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.ObjectPool.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Microsoft.Net.Http.Headers.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\System.Buffers.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\System.Memory.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\System.Text.Json.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\System.Threading.Channels.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\bin\Debug\System.ValueTuple.xml
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csprojAssemblyReference.cache
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\obj\Debug\SignalRClient.Form1.resources
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\obj\Debug\SignalRClient.Properties.Resources.resources
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.GenerateResource.cache
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.CoreCompileInputs.cache
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.CopyComplete
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\obj\Debug\SignalRClient.exe
+C:\Users\Domas\Desktop\Objektinis programų projektav\2021-10-12 is github\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\SignalRClient\obj\Debug\SignalRClient.pdb
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\SignalRClient.exe
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.Core.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Common.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.IO.Pipelines.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Memory.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Text.Json.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Threading.Channels.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\SignalRClient.exe.config
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\SignalRClient.pdb
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authentication.Abstractions.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.Policy.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Core.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebSockets.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.ObjectPool.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Net.Http.Headers.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Buffers.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.ValueTuple.dll
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authentication.Abstractions.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.Policy.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Connections.Abstractions.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Client.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Common.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Extensions.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.Abstractions.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.Core.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Common.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Core.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Protocols.Json.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebSockets.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebUtilities.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.ObjectPool.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Net.Http.Headers.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Buffers.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.IO.Pipelines.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Memory.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Text.Json.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Threading.Channels.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.ValueTuple.xml
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.Form1.resources
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.Properties.Resources.resources
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.GenerateResource.cache
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.CoreCompileInputs.cache
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.CopyComplete
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.exe
+C:\Users\edgar\Desktop\opp3\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.pdb
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\SignalRClient.exe.config
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\SignalRClient.exe
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\SignalRClient.pdb
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authentication.Abstractions.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.Policy.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.Core.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Common.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Core.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebSockets.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.ObjectPool.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Net.Http.Headers.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Buffers.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Memory.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Text.Json.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Threading.Channels.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.ValueTuple.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authentication.Abstractions.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.Policy.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Connections.Abstractions.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Client.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Common.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Extensions.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.Abstractions.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.Core.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Common.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Core.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Protocols.Json.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebSockets.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebUtilities.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.ObjectPool.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Net.Http.Headers.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Buffers.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Memory.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Text.Json.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Threading.Channels.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.ValueTuple.xml
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csprojAssemblyReference.cache
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.Form1.resources
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.Properties.Resources.resources
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.GenerateResource.cache
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.CoreCompileInputs.cache
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.CopyComplete
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.exe
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.pdb
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.exe
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.pdb
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\SignalRClient.exe.config
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\SignalRClient.exe
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\SignalRClient.pdb
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authentication.Abstractions.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.Policy.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Connections.Abstractions.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Client.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Common.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Extensions.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.Abstractions.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.Core.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Common.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Core.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebSockets.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebUtilities.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.ObjectPool.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Options.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Primitives.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Net.Http.Headers.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Newtonsoft.Json.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Buffers.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.ComponentModel.Annotations.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.IO.Pipelines.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Memory.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Net.WebSockets.WebSocketProtocol.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Numerics.Vectors.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Security.Principal.Windows.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Text.Encodings.Web.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Text.Json.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Threading.Channels.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.ValueTuple.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authentication.Abstractions.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Authorization.Policy.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Connections.Abstractions.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Client.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Connections.Common.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Extensions.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.Routing.Abstractions.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Client.Core.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Common.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Core.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.SignalR.Protocols.Json.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebSockets.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.AspNetCore.WebUtilities.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.ObjectPool.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Options.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Extensions.Primitives.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Microsoft.Net.Http.Headers.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\Newtonsoft.Json.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Buffers.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.IO.Pipelines.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Memory.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Numerics.Vectors.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Text.Encodings.Web.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Text.Json.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Threading.Channels.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\bin\Debug\System.ValueTuple.xml
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csprojAssemblyReference.cache
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.Form1.resources
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.Properties.Resources.resources
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.GenerateResource.cache
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.CoreCompileInputs.cache
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.CopyComplete

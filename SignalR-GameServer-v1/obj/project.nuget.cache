@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NtWP96dhLUVxpdOTg6fvS4fFulJbelQbbxepoqgmtO1o23TVrWaGGjgCL/+HHCVd2M42T80Kl4HKSbR+XOAv1w==",
+  "dgSpecHash": "PSYoUEs1xDHDPhlqa6H8LFi6uFfwMUIFuYTHosGKmgpBaoGf5Dmf+cBSvPS88pS1aZKMIm9Dbb1sZUH9bhzuMA==",
   "success": true,
-  "projectFilePath": "E:\\All the other good stuff\\OPP\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
+  "projectFilePath": "C:\\Work\\uni\\OPP\\fixed3\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tautvis\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Tautvis\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",
