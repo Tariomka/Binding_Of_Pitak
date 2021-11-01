@@ -20,11 +20,12 @@ namespace SignalR_GameServer_v1.Hubs
         public Map map;
         public GameHub()
         {
-            Creature hero = new Hero();
+            //Example of decorated speed
+            /*Creature hero = new Hero();
             hero.SetSpeed(10);
             Debug.WriteLine(hero.GetSpeed());
             Creature h2 = new ArmorBootsDecorator(hero);
-            Debug.WriteLine(h2.GetSpeed());
+            Debug.WriteLine(h2.GetSpeed());*/
             createMap();
         }
 
