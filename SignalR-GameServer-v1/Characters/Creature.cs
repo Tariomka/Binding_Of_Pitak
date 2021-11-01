@@ -5,13 +5,23 @@ using System.Threading.Tasks;
 
 namespace SignalR_GameServer_v1.Characters
 {
-    public class Creature
+    public abstract class Creature
     {
         private int id { get; set; }
-        public int health { get; set; }
-        public int speed { get; set; }
-        public int actionCount { get; set; }
-        public int posX { get; set; }
-        public int posY { get; set; }
+        private int health { get; set; }
+        private int speed { get; set; }
+        private int actionCount { get; set; }
+        private int posX { get; set; }
+        private int posY { get; set; }
+
+        public virtual int GetSpeed()
+        {
+            return speed;
+        }
+
+        public void SetSpeed(int speed)
+        {
+            this.speed = speed;
+        }
     }
 }

@@ -3,6 +3,9 @@ using System.Threading.Tasks;
 using SignalR_GameServer_v1.MapLibrary;
 using System;
 using System.Collections.Generic;
+using SignalR_GameServer_v1.Characters;
+using SignalR_GameServer_v1.Decorator;
+using System.Diagnostics;
 
 namespace SignalR_GameServer_v1.Hubs
 {
@@ -17,6 +20,11 @@ namespace SignalR_GameServer_v1.Hubs
         public Map map;
         public GameHub()
         {
+            Creature hero = new Hero();
+            hero.SetSpeed(10);
+            Debug.WriteLine(hero.GetSpeed());
+            Creature h2 = new ArmorBootsDecorator(hero);
+            Debug.WriteLine(h2.GetSpeed());
             createMap();
         }
 

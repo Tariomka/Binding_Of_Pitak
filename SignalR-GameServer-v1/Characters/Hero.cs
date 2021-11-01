@@ -10,10 +10,11 @@ namespace SignalR_GameServer_v1.Characters
         public List<Item> itemList;
         public string name { get; set; }
 
-        //TODO
+        
+
         public void Move (string direction)
         {
-
+            
         }
     }
 }
