@@ -30,9 +30,9 @@ namespace SignalR_GameServer_v1.Characters
         }
 
         //TODO
-        public override void move(string direction)
-        {
+        //public override void move(string direction)
+        //{
 
-        }
+        //}
     }
 }
