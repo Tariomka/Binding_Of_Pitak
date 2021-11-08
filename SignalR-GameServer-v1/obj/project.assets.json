@@ -1854,6 +1854,15 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
+      },
+      "BoP.MapLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/BoP.MapLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BoP.MapLibrary.dll": {}
         }
       }
     }
@@ -6254,12 +6263,19 @@
         "system.xml.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xmldocument.nuspec"
       ]
+    },
+    "BoP.MapLibrary/1.0.0": {
+      "type": "project",
+      "path": "../SignalRClient/BoP.Map/BoP.MapLibrary.csproj",
+      "msbuildProject": "../SignalRClient/BoP.Map/BoP.MapLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.AspNetCore.SignalR >= 1.1.0",
-      "Moq >= 4.16.1"
+      "Moq >= 4.16.1",
+      "BoP.MapLibrary >= 1.0.0",
+      "Microsoft.AspNetCore.SignalR >= 1.1.0"
     ]
   },
   "packageFolders": {
@@ -6288,7 +6304,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Work\\uni\\OPP\\fixed3\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj": {
+              "projectPath": "C:\\Work\\uni\\OPP\\fixed3\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -6332,4 +6352,5 @@
       }
     }
   }
+}
 }

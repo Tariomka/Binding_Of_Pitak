@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj": {}
+    "C:\\Work\\uni\\OPP\\fixed3\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj": {
+    "C:\\Work\\uni\\OPP\\fixed3\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
+        "projectUniqueName": "C:\\Work\\uni\\OPP\\fixed3\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
         "projectName": "SignalR-GameServer-v1",
-        "projectPath": "D:\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
-        "packagesPath": "C:\\Users\\Abudabi\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\obj\\",
+        "projectPath": "C:\\Work\\uni\\OPP\\fixed3\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
+        "packagesPath": "C:\\Users\\Tautvis\\.nuget\\packages\\",
+        "outputPath": "C:\\Work\\uni\\OPP\\fixed3\\Binding_Of_Pitak\\SignalR-GameServer-v1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Abudabi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,7 +27,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Work\\uni\\OPP\\fixed3\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj": {
+                "projectPath": "C:\\Work\\uni\\OPP\\fixed3\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -68,6 +72,58 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Work\\uni\\OPP\\fixed3\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Work\\uni\\OPP\\fixed3\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj",
+        "projectName": "BoP.MapLibrary",
+        "projectPath": "C:\\Work\\uni\\OPP\\fixed3\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj",
+        "packagesPath": "C:\\Users\\Tautvis\\.nuget\\packages\\",
+        "outputPath": "C:\\Work\\uni\\OPP\\fixed3\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Tautvis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

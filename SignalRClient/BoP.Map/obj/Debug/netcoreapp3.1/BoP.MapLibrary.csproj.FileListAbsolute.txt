@@ -1,0 +1,9 @@
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.deps.json
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.pdb
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.AssemblyInfoInputs.cache
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.AssemblyInfo.cs
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.csproj.CoreCompileInputs.cache
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.pdb
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.csprojAssemblyReference.cache

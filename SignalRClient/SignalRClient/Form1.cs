@@ -55,15 +55,15 @@ namespace SignalRClient
                 movePlayer(pid, direction);
             });
 
-            connection.On<int, int>("ReceiveMapCoordinates", (x, y) =>
-            {
-                mapWidth = x;
-                mapHeight = y;
-            });
+            //connection.On<int, int>("ReceiveMapCoordinates", (x, y) =>
+            //{
+            //    mapWidth = x;
+            //    mapHeight = y;
+            //});
 
-            connection.On<int, Dictionary<string, int>>("NewIdReceived", (id, playersInGame) =>
+            connection.On<int, Dictionary<string, int>, List<KeyValuePair<Point, string>>>("GameJoined", (id, playersInGame, tiles) =>
             {
-                this.OnNewIdReceived(id, playersInGame);
+                this.OnGameJoined(id, playersInGame, tiles);
             });
 
             
@@ -74,16 +74,16 @@ namespace SignalRClient
 
             try
             {
+                messagesList.Items.Add("Connecting to game server...");
                 await connection.StartAsync();
-                messagesList.Items.Add("Connection started");
+                messagesList.Items.Add("Done");
 
+                messagesList.Items.Add("Joining the game...");
                 await connection.InvokeAsync("JoinGame", this.uid);
 
-                await connection.InvokeAsync("GetMapSize");
-                messagesList.Items.Add("Map size:" + mapWidth + " " + mapHeight);
+                //await connection.InvokeAsync("GetMapSize");
+                //messagesList.Items.Add("Map size:" + mapWidth + " " + mapHeight);
 
-
-                createMap(mapWidth, mapHeight);
 
                 //connectButton.IsEnabled = false;
                 //sendButton.IsEnabled = true;
@@ -94,20 +94,74 @@ namespace SignalRClient
             }
         }
 
-        private void OnNewIdReceived(int id, Dictionary<string, int> playersInGame)
+        #region Map and Tiles Logic
+
+        private void GenerateMap(List<KeyValuePair<Point, string>> tiles)
+        {
+            AddMessage("Generating map...");
+
+            foreach (var tile in tiles)
+            {
+                AddTile(point: tile.Key, tileType: tile.Value);
+
+            }
+            AddMessage("Done.");
+        }
+
+        private void AddTile(Point point, string tileType)
+        {
+            var picture = new PictureBox
+            {
+                Name = $"tile_{point.X}_{point.Y}_tileType",
+                Size = new Size(40, 40),
+                Location = new Point(point.X * 40, point.Y * 40),
+                Image = GetTileImage(tileType)
+            };
+            this.Controls.Add(picture);
+            this.picCanvas.SendToBack();
+        }
+
+        private Bitmap GetTileImage(string tyleType)
+        {
+            switch (tyleType)
+            {
+                case "Grass":
+                    return Properties.Resources.grass;
+                case "Lava":
+                    return Properties.Resources.lava;
+                default:
+                    return Properties.Resources.grass;
+            }
+        }
+
+        #endregion
+
+
+        private void OnGameJoined(int id, Dictionary<string, int> playersInGame, List<KeyValuePair<Point, string>> tiles)
         {
             this.playerid = id;
             AddMessage($"My Player ID is: {this.playerid}");
             AddMessage($"Players in game: {string.Join(",", playersInGame.Values.ToArray())}");
-            this.GeneratePlayers(playersInGame);
+
+            try
+            {
+                this.GenerateMap(tiles);
+                this.GeneratePlayers(playersInGame);
+            }
+            catch (Exception ex)
+            {
+                AddMessage(ex.Message);
+            }
         }
 
         private void GeneratePlayers(Dictionary<string, int> playersInGame)
         {
+            AddMessage("Generating players...");
             foreach(var id in playersInGame.Values)
             {
                 this.AddPlayer(id);
             }
+            AddMessage("Done");
         }
 
         private void OnNewPlayerJoined(int id)
@@ -249,38 +303,14 @@ namespace SignalRClient
                     pid, direction);
         }
 
-        private void createMap(int width, int height)
-        {
-            int a = 5;
-            Random rnd = new Random();
-            for (int i = 0; i < width; i += 40)
-            {
-                for (int j = 0; j < height; j += 40)
-                {
-                    a++;
-                    Tile til = GetTile(rnd.Next(30));
-                    string pictureName = String.Concat("pictureBox", a);
-                    var picture = new PictureBox
-                    {
-                        Name = pictureName,
-                        Size = new Size(40, 40),
-                        Location = new Point(i, j),
-                        Image = Image.FromFile(til.image),
+        //private Tile GetTile(int rnd)
+        //{
+        //    if (rnd < 26)
+        //        return grass.GetTile();
+        //    else
+        //        return lava.GetTile();
+        //}
 
-                    };
-                    this.Controls.Add(picture);
-                }
-            }
-            this.picCanvas.SendToBack();
-        }
-
-        private Tile GetTile(int rnd)
-        {
-            if (rnd < 26)
-                return grass.GetTile();
-            else
-                return lava.GetTile();
-        }
 
     }
 }

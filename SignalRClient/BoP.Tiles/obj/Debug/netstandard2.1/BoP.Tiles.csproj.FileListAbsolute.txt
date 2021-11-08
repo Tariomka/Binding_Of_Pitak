@@ -1,0 +1,9 @@
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Tiles\bin\Debug\netstandard2.1\BoP.Tiles.deps.json
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Tiles\bin\Debug\netstandard2.1\BoP.Tiles.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Tiles\bin\Debug\netstandard2.1\BoP.Tiles.pdb
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Tiles\obj\Debug\netstandard2.1\BoP.Tiles.csprojAssemblyReference.cache
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Tiles\obj\Debug\netstandard2.1\BoP.Tiles.AssemblyInfoInputs.cache
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Tiles\obj\Debug\netstandard2.1\BoP.Tiles.AssemblyInfo.cs
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Tiles\obj\Debug\netstandard2.1\BoP.Tiles.csproj.CoreCompileInputs.cache
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Tiles\obj\Debug\netstandard2.1\BoP.Tiles.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Tiles\obj\Debug\netstandard2.1\BoP.Tiles.pdb

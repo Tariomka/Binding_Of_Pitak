@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.SignalR;
 using System.Threading.Tasks;
-using SignalR_GameServer_v1.MapLibrary;
 using System;
 using System.Collections.Generic;
+using BoP.MapLibrary;
 
 namespace SignalR_GameServer_v1.Hubs
 {
@@ -10,27 +10,26 @@ namespace SignalR_GameServer_v1.Hubs
     {
         public static MapSettings Settings = MapSettings.getInstance();
 
-        public int MapWidth = Settings.mapWidth;
-        public int MapHeight = Settings.mapHeight;
-        public static int PlayerIndex = 0;
-        public static Dictionary<string, int> Players = new Dictionary<string, int>();
-        public Map Map;
-        public GameHub()
+        public int mapWidth = settings.mapWidth;
+        public int mapHeight = settings.mapHeight;
+        public static int playerIndex = 0;
+        public static Dictionary<string, int> players = new Dictionary<string, int>();
+        public static Map gameMap = null;
+
+
+        private Map GetMap()
         {
-            CreateMap();
+            if (gameMap == null)
+            {
+                gameMap = new MapBuilder()
+                    .AddTile(TileTypes.Grass)
+                    .AddTile(TileTypes.Lava)
+                    .Build(MapSettings.HorizontalTiles, MapSettings.VerticalTiles);
+            }
+            return gameMap;
         }
 
-        public async Task SendMessage(string user, string message)
-        {
-            //await Clients.All.SendAsync("ReceiveMessage", user, message);
-            await Clients.All.SendAsync("ReceiveMessage", user, message);
-            //await Clients.Caller.SendAsync("ReceiveMessage", user, "delivered: " + message);
-        }
-
-        public async Task SendCoordinates(int playerId, string direction)
-        {
-            await Clients.Others.SendAsync("ReceiveCoordinates", playerId, direction);
-        }
+        #region Receive Messages
 
         public async Task JoinGame(Guid uid)
         {
@@ -42,56 +41,35 @@ namespace SignalR_GameServer_v1.Hubs
                 Players.Add(playerid, PlayerIndex);
             }
 
-            await SendNewIdReceived(Players[playerid], Players);
-            await PlayerJoined(Players[playerid]);
+            await SendGameJoinedMessage(players[playerid], players, this.GetMap());
+            await SendPlayerJoinedMessage(players[playerid]);
         }
 
-        public Task SendNewIdReceived(int id, Dictionary<string, int> playersInGame)
+        public async Task SendCoordinates(int playerId, string direction)
         {
-            return Clients.Caller.SendAsync("NewIdReceived", id, playersInGame);
+            await Clients.Others.SendAsync("ReceiveCoordinates", playerId, direction);
         }
 
-        public Task PlayerJoined(int id)
+        public async Task SendMessage(string user, string message)
+        {
+            //await Clients.All.SendAsync("ReceiveMessage", user, message);
+            await Clients.All.SendAsync("ReceiveMessage", user, message);
+            //await Clients.Caller.SendAsync("ReceiveMessage", user, "delivered: " + message);
+        }
+
+        #endregion
+
+        #region Send Messages
+
+        public Task SendPlayerJoinedMessage(int id)
         {
             return Clients.Others.SendAsync("PlayerJoined", id);
         }
 
-
-        //temp bybi dejau nx
-        //--------------------------------------------------------------
-        string[,] mapLayout;
-        public async Task SendMapLayout(string[,] mapLayout)
+        public Task SendGameJoinedMessage(int id, Dictionary<string, int> playersInGame, Map map)
         {
-            await Clients.Others.SendAsync("ReceiveMapLayout", mapLayout);
+            return Clients.Caller.SendAsync("GameJoined", id, playersInGame, map.Tiles);
         }
-        private void CreateMap()
-        {
-            Map = new Map(0);
-            mapLayout = Map.GetLayout();
-            //int a = 5;
-            //Random rnd = new Random();
-            //for (int i = 0; i < width; i += 40)
-            //{
-            //    for (int j = 0; j < height; j += 40)
-            //    {
-            //        a++;
-            //        Tile til = GetTile(rnd.Next(30));
-            //        string pictureName = String.Concat("pictureBox", a);
-            //        var picture = new PictureBox
-            //        {
-            //            Name = pictureName,
-            //            Size = new Size(40, 40),
-            //            Location = new Point(i, j),
-            //            Image = Image.FromFile(til.image),
-            //
-            //        };
-            //        this.Controls.Add(picture);
-            //    }
-            //}
-            //this.picCanvas.SendToBack();
-        }
-
-        //---------------------------------------------------
 
         public Task SendMessageToCaller(string message)
         {
@@ -103,9 +81,7 @@ namespace SignalR_GameServer_v1.Hubs
             return Clients.Group("SignalR Users").SendAsync("ReceiveMessage", message);
         }
 
-        public async Task GetMapSize()
-        {
-            await Clients.All.SendAsync("ReceiveMapCoordinates", MapWidth, MapHeight);
-        }
+        #endregion
+
     }
 }

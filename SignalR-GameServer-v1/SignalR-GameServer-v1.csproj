@@ -12,4 +12,7 @@
 	<ItemGroup>
 		<Folder Include="Hubs\" />
 	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\SignalRClient\BoP.Map\BoP.MapLibrary.csproj" />
+	</ItemGroup>
 </Project>
