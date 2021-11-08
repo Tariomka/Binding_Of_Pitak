@@ -9,36 +9,59 @@ namespace SignalR_GameServer_v1.MapLibrary
     public class Map
     {
         private int id { get; set; }
+        private int lavelNum { get; set; }
         private int sizeX { get; set; }
         private int sizeY { get; set; }
 
-        List<Tile> tile;
+        List<Tile> tiles;
         TileFactory grass = new GrassFactory(1);
         TileFactory lava = new LavaFactory(1);
         public MapSettings settings;
+        private string[,] layout;
 
         
-        public Map(int id)
+        public Map()
         {
             settings = MapSettings.getInstance();
-            this.id = id;
-            sizeX = settings.mapWidth;
-            sizeY = settings.mapHeight;
-            tile = new List<Tile>();
+            sizeX = settings.mapWidth/40;
+            sizeY = settings.mapHeight/40;
+            layout = new string[sizeX, sizeY];
+            tiles = new List<Tile>();
             GenerateMap();
+        }
+
+        public void AddTile(Tile tile)
+        {
+            tiles.Add(tile);
         }
 
         private void GenerateMap()
         {
-            
-            for (int i = 0; i < settings.mapHeight; i+=40)
+            for (int i = 0; i < sizeX; i++)
             {
-                for (int j = 0; j < settings.mapWidth; j+=40)
+                for (int j = 0; j < sizeY; j++)
                 {
-                    tile.Add(GetTile());
+                    tiles.Add(GetGrassTile());
+                    layout[i, j] = tiles.Last().type;
                 }
             }
+            //for (int i = 0; i < settings.mapHeight; i+=40)
+            //{
+            //    for (int j = 0; j < settings.mapWidth; j+=40)
+            //    {
+            //        tile.Add(GetTile());
+            //    }
+            //}
         }
+
+
+        public void Construct(IBuilder builder)
+        {
+            //builder.addTiles();
+            //builder.assembleLayout();
+        }
+
+
         public string[,] GetLayout()
         {
             int h = settings.mapHeight / 40;
@@ -48,10 +71,20 @@ namespace SignalR_GameServer_v1.MapLibrary
             {
                 for (int j = 0; j < w; j ++)
                 {                    
-                    retArray[i, j] = tile[i * 4 + j].image;
+                    retArray[i, j] = tiles[i * 4 + j].image;
                 }
             }
             return retArray;
+        }
+
+        private Tile GetGrassTile()
+        {
+            return grass.GetTile();
+        }
+
+        private Tile GetLavaTile()
+        {
+            return lava.GetTile();
         }
 
         private Tile GetTile()

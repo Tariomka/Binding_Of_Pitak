@@ -7,14 +7,32 @@ namespace SignalR_GameServer_v1.Characters
 {
     public class Hero : Creature
     {
-        public List<Item> itemList;
-        public string name { get; set; }
+        private List<Item> itemList;
 
-        
-
-        public void Move (string direction)
+        public Hero() : base()
         {
-            
+            itemList = new List<Item>();
+        }
+
+        public Hero(int id, string name, int health, int speed, int actionCount) : base(id, name, health, speed, actionCount)
+        {
+            itemList = new List<Item>();
+        }
+
+        public void equipItem(Item item)
+        {
+            this.itemList.Add(item);
+        }
+
+        public int getItemCount()
+        {
+            return itemList.Count;
+        }
+
+        //TODO
+        public override void move(string direction)
+        {
+
         }
     }
 }

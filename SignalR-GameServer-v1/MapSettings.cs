@@ -8,6 +8,9 @@ namespace SignalR_GameServer_v1
 {
     public class MapSettings
     {
+        public static int HorizontalTiles = 25;
+        public static int VerticalTiles = 16;
+
         private static MapSettings instance = null;
 
         public int mapWidth;
