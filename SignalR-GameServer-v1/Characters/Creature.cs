@@ -61,6 +61,11 @@ namespace SignalR_GameServer_v1.Characters
             return this.name;
         }
 
+        public void SetName(string name)
+        {
+            this.name = name;
+        }
+
         public virtual int GetSpeed()
         {
             return speed;
