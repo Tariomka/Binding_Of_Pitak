@@ -1854,6 +1854,7 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
+        }
       },
       "BoP.MapLibrary/1.0.0": {
         "type": "project",
@@ -2383,6 +2384,7 @@
       "path": "newtonsoft.json/11.0.2",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.md",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
@@ -3707,6 +3709,7 @@
       "path": "system.io/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4464,6 +4467,7 @@
       "path": "system.reflection/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4727,6 +4731,7 @@
       "path": "system.reflection.primitives/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4894,6 +4899,7 @@
       "path": "system.runtime/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5600,6 +5606,7 @@
       "path": "system.text.encoding/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5930,6 +5937,7 @@
       "path": "system.threading.tasks/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6272,10 +6280,9 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Microsoft.AspNetCore.SignalR >= 1.1.0",
-      "Moq >= 4.16.1",
       "BoP.MapLibrary >= 1.0.0",
-      "Microsoft.AspNetCore.SignalR >= 1.1.0"
+      "Microsoft.AspNetCore.SignalR >= 1.1.0",
+      "Moq >= 4.16.1"
     ]
   },
   "packageFolders": {
@@ -6305,8 +6312,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Work\\uni\\OPP\\fixed3\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj": {
-              "projectPath": "C:\\Work\\uni\\OPP\\fixed3\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj"
+            "D:\\GitHub\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj": {
+              "projectPath": "D:\\GitHub\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj"
             }
           }
         }
@@ -6352,5 +6359,4 @@
       }
     }
   }
-}
 }

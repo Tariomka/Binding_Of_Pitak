@@ -8,7 +8,7 @@ namespace SignalR_GameServer_v1.Hubs
 {
     public class GameHub : Hub
     {
-        public static MapSettings Settings = MapSettings.getInstance();
+        public static MapSettings settings = MapSettings.getInstance();
 
         public int mapWidth = settings.mapWidth;
         public int mapHeight = settings.mapHeight;
@@ -35,10 +35,10 @@ namespace SignalR_GameServer_v1.Hubs
         {
             var playerid = uid.ToString();
 
-            if (!Players.ContainsKey(playerid))
+            if (!players.ContainsKey(playerid))
             {
-                PlayerIndex++;
-                Players.Add(playerid, PlayerIndex);
+                playerIndex++;
+                players.Add(playerid, playerIndex);
             }
 
             await SendGameJoinedMessage(players[playerid], players, this.GetMap());

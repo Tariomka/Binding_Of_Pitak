@@ -64,8 +64,8 @@ namespace SignalR_GameServer_v1.MapLibrary
 
         public string[,] GetLayout()
         {
-            int h = Settings.mapHeight / 40;
-            int w = Settings.mapWidth / 40;
+            int h = settings.mapHeight / 40;
+            int w = settings.mapWidth / 40;
             string[,] retArray = new string[h,w];
             for (int i = 0; i < h; i ++)
             {
