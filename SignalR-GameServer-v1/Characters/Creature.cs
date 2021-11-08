@@ -61,6 +61,11 @@ namespace SignalR_GameServer_v1.Characters
             return this.name;
         }
 
+        public virtual int GetSpeed()
+        {
+            return speed;
+        }
+
         public void SetDetails(int id, string name, int health, int speed, int actionCount)
         {
             this.id = id;
@@ -68,6 +73,11 @@ namespace SignalR_GameServer_v1.Characters
             this.health = health;
             this.speed = speed;
             this.actionCount = actionCount;
+        }
+
+        public void SetSpeed(int speed)
+        {
+            this.speed = speed;
         }
 
         public void update(string msg)
