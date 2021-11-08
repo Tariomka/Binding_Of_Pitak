@@ -262,19 +262,6 @@ namespace SignalRClient
             }
         }
 
-        //private void sendBoxCoordinatesOld(string direction)
-        //{
-        //    int x = pictureBox1.Location.X;
-        //    int y = pictureBox1.Location.Y;
-        //
-        //    if (direction == "RIGHT") x += 40;
-        //    else if (direction == "LEFT") x -= 40;
-        //    else if (direction == "UP") y -= 40;
-        //    else if (direction == "DOWN") y += 40;
-        //    pictureBox1.Location = new Point(x, y);
-        //    // _ = SendGetCoordinatesAsync(x, y);
-        //}
-
         private void movePlayer(int pid, string direction)
         {
             var player = players[pid];

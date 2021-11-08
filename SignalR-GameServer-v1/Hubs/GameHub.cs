@@ -17,6 +17,7 @@ namespace SignalR_GameServer_v1.Hubs
         public int mapHeight = settings.mapHeight;
         public static int playerIndex = 0;
         public static Dictionary<string, int> players = new Dictionary<string, int>();
+        //public static List<Hero> players = new List<Hero>();
         public static Map gameMap = null;
 
         //public GameHub()
