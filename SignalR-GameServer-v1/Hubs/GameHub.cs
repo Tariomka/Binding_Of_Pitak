@@ -150,6 +150,14 @@ namespace SignalR_GameServer_v1.Hubs
                         movedir = new MoveDownCommand(hero);
                         await SendMessage(user, "Move Down!");
                         break;
+                    case "ATTACK":
+                        movedir = new AttackCommand(hero);
+                        await SendMessage(user, "Attack!");
+                        break;
+                    case "ENDTURN":
+                        movedir = new EndTurnCommand(hero);
+                        await SendMessage(user, "End Turn!");
+                        break;
                     default:
                         movedir = null;
                         await SendMessage(user, "Unsuccessful movement!");
@@ -163,7 +171,7 @@ namespace SignalR_GameServer_v1.Hubs
             }
 
             //hero.move(direction);
-            await GetPlayerCoordinates(name);
+                    await GetPlayerCoordinates(name);
         }
 
         public Task GetPlayerCoordinates(int name)

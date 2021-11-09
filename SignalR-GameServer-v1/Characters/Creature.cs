@@ -20,8 +20,6 @@ namespace SignalR_GameServer_v1.Characters
 
         private Subject server;
 
-        private CreatureController controller;
-
         protected Creature()
         {
             this.id = "";
@@ -31,7 +29,6 @@ namespace SignalR_GameServer_v1.Characters
             this.actionCount = 0;
             this.posX = 0;
             this.posY = 0;
-            this.controller = new CreatureController();
         }
 
         protected Creature(string id, int name, int health, int speed, int actionCount, int posx, int posy)
@@ -43,7 +40,6 @@ namespace SignalR_GameServer_v1.Characters
             this.actionCount = actionCount;
             this.posX = posx;
             this.posY = posy;
-            this.controller = new CreatureController();
         }
 
         public string GetDetails()
@@ -109,18 +105,16 @@ namespace SignalR_GameServer_v1.Characters
             //this.notifyServer(direction);
         }
 
-        public void attack()
+        public void Attack()
         {
-            AttackCommand attack = new AttackCommand(this);
-            controller.Run(attack);
-            controller.Undo();
+            // attack logic
+            
         }
 
-        public void endTurn()
+        public void EndTurn()
         {
-            EndTurnCommand endturn = new EndTurnCommand(this);
-            controller.Run(endturn);
-            controller.Undo();
+            //end turn logic
+            
         }
 
         public int getPosX()

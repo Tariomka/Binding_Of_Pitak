@@ -213,8 +213,6 @@ namespace SignalRClient
         {
             try
             {
-                //await connection.InvokeAsync("SendMessage",
-                //    this.playerName, "move up!");
                 movePlayer(this.playerid, "UP");
             }
             catch (Exception ex)
@@ -227,8 +225,6 @@ namespace SignalRClient
         {
             try
             {
-                //await connection.InvokeAsync("SendMessage",
-                //    this.playerName, "move down!");
                 movePlayer(this.playerid, "DOWN");
             }
             catch (Exception ex)
@@ -241,8 +237,6 @@ namespace SignalRClient
         {
             try
             {
-                //await connection.InvokeAsync("SendMessage",
-                //    this.playerName, "move right!");
                 movePlayer(this.playerid, "RIGHT");
             }
             catch (Exception ex)
@@ -255,8 +249,6 @@ namespace SignalRClient
         {
             try
             {
-                //await connection.InvokeAsync("SendMessage",
-                //    this.playerName, "move left!");
                 movePlayer(this.playerid, "LEFT");
             }
             catch (Exception ex)
@@ -269,8 +261,6 @@ namespace SignalRClient
         {
             try
             {
-                //await connection.InvokeAsync("SendMessage",
-                //    this.playerName, "undo move!");
                 movePlayer(this.playerid, "UNDO");
             }
             catch (Exception ex)
