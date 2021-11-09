@@ -6,8 +6,10 @@ using BoP.MapLibrary;
 using SignalR_GameServer_v1.Characters;
 using SignalR_GameServer_v1.Decorator;
 using System.Diagnostics;
+using System.Linq;
 using SignalR_GameServer_v1.Command;
 using SignalR_GameServer_v1.MapLibrary;
+using SignalR_GameServer_v1.Observer;
 using Map = BoP.MapLibrary.Map;
 
 namespace SignalR_GameServer_v1.Hubs
@@ -23,8 +25,8 @@ namespace SignalR_GameServer_v1.Hubs
         public static List<Hero> heroes = new List<Hero>();
         public static Map gameMap = null;
         public static Dictionary<string, int> heroesIdsAndNames = new Dictionary<string, int>();
-
         private static CreatureController controller = new CreatureController();
+        private static Subject server = new Server();
 
         //public gamehub()
         //{
@@ -66,7 +68,10 @@ namespace SignalR_GameServer_v1.Hubs
             if(heroes.Find(x => x.GetId() == playerid) == null)
             {
                 playerIndex++;
-                heroes.Add( new Hero(playerid, playerIndex, 100, 1, 0, 480, 320));
+                var newPlayer = new Hero(playerid, playerIndex, 100, 1, 0, 480, 320);
+                heroes.Add(newPlayer);
+                
+                server.attach(newPlayer);
             }
 
             heroesIdsAndNames.Add(heroes.Find(x => x.GetId() == playerid).GetId(), heroes.Find(x => x.GetId() == playerid).GetName());
@@ -178,7 +183,7 @@ namespace SignalR_GameServer_v1.Hubs
         {
             var hero = heroes.Find(x => x.GetName() == name);
 
-            return Clients.All.SendAsync("PlayerNewCoordinates", name, hero.getPosX(), hero.GetPosY());
+            return Clients.All.SendAsync("PlayerNewCoordinates", name, hero.GetPosX(), hero.GetPosY());
         }
 
         #endregion
