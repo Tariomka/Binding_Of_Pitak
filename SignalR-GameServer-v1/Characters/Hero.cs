@@ -8,14 +8,13 @@ namespace SignalR_GameServer_v1.Characters
     public class Hero : Creature
     {
         private List<Item> itemList;
-
         public Hero() : base()
         {
             itemList = new List<Item>();
-            this.SetName("Player");
+            this.SetName(0);
         }
 
-        public Hero(int id, string name, int health, int speed, int actionCount) : base(id, name, health, speed, actionCount)
+        public Hero(string id, int name, int health, int speed, int actionCount, int posx, int posy) : base(id, name, health, speed, actionCount, posx, posy)
         {
             itemList = new List<Item>();
         }
