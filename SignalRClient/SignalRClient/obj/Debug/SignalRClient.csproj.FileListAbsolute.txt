@@ -645,3 +645,5 @@ C:\Users\edgar\Desktop\2021-10-26 opp\SignalRClient\SignalRClient\obj\Debug\Sign
 C:\Users\edgar\Desktop\2021-10-26 opp\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.CopyComplete
 C:\Users\edgar\Desktop\2021-10-26 opp\SignalRClient\SignalRClient\obj\Debug\SignalRClient.exe
 C:\Users\edgar\Desktop\2021-10-26 opp\SignalRClient\SignalRClient\obj\Debug\SignalRClient.pdb
+C:\Users\edgar\Desktop\2021-10-26 opp\SignalRClient\SignalRClient\bin\Debug\Model.dll
+C:\Users\edgar\Desktop\2021-10-26 opp\SignalRClient\SignalRClient\bin\Debug\Model.pdb

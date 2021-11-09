@@ -300,5 +300,11 @@
   <ItemGroup>
     <None Include="Resources\lava.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{1c205c25-f18e-46d6-af9c-e8ec53025d16}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -356,3 +356,5 @@ C:\Users\edgar\Desktop\2021-10-26 opp\SignalR-GameServer-v1\obj\Debug\netcoreapp
 C:\Users\edgar\Desktop\2021-10-26 opp\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.dll
 C:\Users\edgar\Desktop\2021-10-26 opp\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.pdb
 C:\Users\edgar\Desktop\2021-10-26 opp\SignalR-GameServer-v1\obj\Debug\netcoreapp3.1\SignalR-GameServer-v1.genruntimeconfig.cache
+C:\Users\edgar\Desktop\2021-10-26 opp\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\Model.dll
+C:\Users\edgar\Desktop\2021-10-26 opp\SignalR-GameServer-v1\bin\Debug\netcoreapp3.1\Model.pdb

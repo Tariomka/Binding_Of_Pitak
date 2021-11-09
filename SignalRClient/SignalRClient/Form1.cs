@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.AspNetCore.SignalR.Client;
+using SignalR_GameServer_v1.Characters;
 using SignalRClient.Map;
 
 namespace SignalRClient
@@ -61,7 +62,7 @@ namespace SignalRClient
                 mapHeight = y;
             });
 
-            connection.On<int, Dictionary<string, int>>("NewIdReceived", (id, playersInGame) =>
+            connection.On<int, List<Hero>>("NewIdReceived", (id, playersInGame) =>
             {
                 this.OnNewIdReceived(id, playersInGame);
             });
@@ -94,19 +95,24 @@ namespace SignalRClient
             }
         }
 
-        private void OnNewIdReceived(int id, Dictionary<string, int> playersInGame)
+        private void OnNewIdReceived(int id, List<Hero> heroList)
         {
             this.playerid = id;
+
+           // List<int> playersInGame = new List<int>();
+           // heroList.ForEach(x => playersInGame.Add(x.GetName()));
+
             AddMessage($"My Player ID is: {this.playerid}");
-            AddMessage($"Players in game: {string.Join(",", playersInGame.Values.ToArray())}");
-            this.GeneratePlayers(playersInGame);
+            //AddMessage($"Players in game: {string.Join(",", heroList.Count())}");
+            this.GeneratePlayers(heroList);
         }
 
-        private void GeneratePlayers(Dictionary<string, int> playersInGame)
+        private void GeneratePlayers(List<Hero> heroList)
         {
-            foreach(var id in playersInGame.Values)
+            foreach (var hero in heroList)
             {
-                this.AddPlayer(id);
+                AddMessage($"GeneratePlayers {hero.GetName()}");
+                this.AddPlayer(hero.GetName());
             }
         }
 
@@ -118,6 +124,7 @@ namespace SignalRClient
 
         private void AddPlayer(int id)
         {
+            AddMessage($"AddPlayer {id}");
             if (!players.ContainsKey(id))
                 this.players.Add(id, GetNewPlayer(id));
 
@@ -133,6 +140,7 @@ namespace SignalRClient
         
         private PictureBox GetNewPlayer(int id)
         {
+            AddMessage($"GetNewPLayer {id}");
             var pb = new PictureBox();
             //((System.ComponentModel.ISupportInitialize)(pb)).BeginInit();
             // 

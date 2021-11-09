@@ -4,8 +4,6 @@ using SignalR_GameServer_v1.MapLibrary;
 using System;
 using System.Collections.Generic;
 using SignalR_GameServer_v1.Characters;
-using SignalR_GameServer_v1.Decorator;
-using System.Diagnostics;
 
 namespace SignalR_GameServer_v1.Hubs
 {
@@ -17,6 +15,10 @@ namespace SignalR_GameServer_v1.Hubs
         public int mapHeight = settings.mapHeight;
         public static int playerIndex = 0;
         public static Dictionary<string, int> players = new Dictionary<string, int>();
+
+
+        public List<Hero> heroList = new List<Hero>();
+
         public Map map;
         public GameHub()
         {
@@ -45,19 +47,32 @@ namespace SignalR_GameServer_v1.Hubs
         {
             var playerid = uid.ToString();
 
-            if (!players.ContainsKey(playerid))
+            Hero newHero = new Hero();
+
+            List<string> heroIds = new List<string>();
+
+            heroList.ForEach(x => heroIds.Add(x.GetId()));
+
+            if (!heroIds.Contains(playerid))
             {
                 playerIndex++;
-                players.Add(playerid, playerIndex);
+                newHero.SetName(playerIndex);
+                newHero.SetId(playerid);
+                heroList.Add(newHero);
             }
 
-            await SendNewIdReceived(players[playerid], players);
-            await PlayerJoined(players[playerid]);
+            //hero's name is the same thing as player index
+            await SendNewIdReceived(newHero.GetName(), heroList);
+            await PlayerJoined(newHero.GetName());
+
+           
+
+
         }
 
-        public Task SendNewIdReceived(int id, Dictionary<string, int> playersInGame)
+        public Task SendNewIdReceived(int id, List<Hero> heroList)
         {
-            return Clients.Caller.SendAsync("NewIdReceived", id, playersInGame);
+            return Clients.Caller.SendAsync("NewIdReceived", id, heroList);
         }
 
         public Task PlayerJoined(int id)

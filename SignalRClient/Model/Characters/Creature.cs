@@ -7,7 +7,7 @@ namespace SignalR_GameServer_v1.Characters
 {
     public abstract class Creature
     {
-        private int id { get; set; }
+        private string id { get; set; }
         private int health { get; set; }
         private int speed { get; set; }
         private int actionCount { get; set; }
@@ -23,5 +23,37 @@ namespace SignalR_GameServer_v1.Characters
         {
             this.speed = speed;
         }
+
+        public virtual string GetId()
+        {
+            return id;
+        }
+
+        public void SetId(string id)
+        {
+            this.id = id;
+        }
+
+        public virtual int GetPosX()
+        {
+            return posX;
+        }
+
+        public void SetPostX(int posX)
+        {
+            this.posX = posX;
+        }
+
+        public virtual int GetPosY()
+        {
+            return posY;
+        }
+
+        public void SetPostY(int posY)
+        {
+            this.posY = posY;
+        }
+
+
     }
 }

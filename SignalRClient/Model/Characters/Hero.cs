@@ -8,13 +8,23 @@ namespace SignalR_GameServer_v1.Characters
     public class Hero : Creature
     {
         public List<Item> itemList;
-        public string name { get; set; }
+        private int name { get; set; }
 
         
 
         public void Move (string direction)
         {
             
+        }
+
+        public void SetName(int name)
+        {
+            this.name = name;
+        }
+
+        public int GetName()
+        {
+            return name;
         }
     }
 }

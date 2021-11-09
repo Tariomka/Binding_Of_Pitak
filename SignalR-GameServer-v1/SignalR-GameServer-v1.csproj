@@ -11,4 +11,7 @@
 	<ItemGroup>
 		<Folder Include="Hubs\" />
 	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\SignalRClient\Model\Model.csproj" />
+	</ItemGroup>
 </Project>
