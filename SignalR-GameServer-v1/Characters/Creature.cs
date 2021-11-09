@@ -83,7 +83,7 @@ namespace SignalR_GameServer_v1.Characters
 
         public void update(string msg)
         {
-            Console.WriteLine(this.name + "received message: " + msg);
+            Console.WriteLine("Player " + this.name + " received message: " + msg);
         }
 
         public void notifyServer(string result)
@@ -96,13 +96,13 @@ namespace SignalR_GameServer_v1.Characters
             this.server = server;
         }
 
-        public void move(string direction)
+        public void Move(string direction)
         {
             if (direction == "LEFT") MovePosX(-40);
             else if (direction == "RIGHT") MovePosX(40);
             else if (direction == "UP") MovePosY(-40);
             else if (direction == "DOWN") MovePosY(40);
-            //this.notifyServer(direction);
+            this.notifyServer(direction);
         }
 
         public void Attack()
@@ -117,7 +117,7 @@ namespace SignalR_GameServer_v1.Characters
             
         }
 
-        public int getPosX()
+        public int GetPosX()
         {
             return this.posX;
         }

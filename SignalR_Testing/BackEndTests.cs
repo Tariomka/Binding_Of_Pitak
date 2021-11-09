@@ -118,11 +118,11 @@ namespace SignalR_Testing
             string leftDir = "LEFT";
             string wrongDir = "Ups!";
 
-            testHero.move(upDir);
-            testHero.move(downDir);
-            testHero.move(rightDir);
-            testHero.move(leftDir);
-            testHero.move(wrongDir);
+            testHero.Move(upDir);
+            testHero.Move(downDir);
+            testHero.Move(rightDir);
+            testHero.Move(leftDir);
+            testHero.Move(wrongDir);
 
             string msg = "test message";
             testHero.update(msg);
