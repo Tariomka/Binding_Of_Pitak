@@ -18,6 +18,7 @@ namespace SignalR_GameServer_v1.Hubs
         public static int playerIndex = 0;
         public static Dictionary<string, int> players = new Dictionary<string, int>();
         public static Map gameMap = null;
+        public static Director director = new Director();
 
         //public GameHub()
         //{
@@ -34,10 +35,14 @@ namespace SignalR_GameServer_v1.Hubs
         {
             if (gameMap == null)
             {
-                gameMap = new MapBuilder()
-                    .AddTile(TileTypes.Grass)
-                    .AddTile(TileTypes.Lava)
-                    .Build(MapSettings.HorizontalTiles, MapSettings.VerticalTiles);
+                MapBuilder builder = new MapBuilder();
+                director.Builder = builder;
+                director.BuildMixedMap();
+                gameMap = builder.Build(MapSettings.HorizontalTiles, MapSettings.VerticalTiles);
+                //gameMap = new MapBuilder()
+                //    .AddTile(TileTypes.Grass)
+                //    .AddTile(TileTypes.Lava)
+                //    .Build(MapSettings.HorizontalTiles, MapSettings.VerticalTiles);
             }
             return gameMap;
         }

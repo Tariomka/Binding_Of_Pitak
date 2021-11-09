@@ -40,6 +40,8 @@ namespace BoP.MapLibrary
                     break;
             }
         }
+
+        
         public List<KeyValuePair<Point, string>> GetLayout()
         {
             List<KeyValuePair<Point, string>> layout = new List<KeyValuePair<Point, string>>();

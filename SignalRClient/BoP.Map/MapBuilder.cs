@@ -14,6 +14,15 @@ namespace BoP.MapLibrary
             return this;
         }
 
+        public void BuildGrassTile()
+        {
+            this.tileTypes.Add(new KeyValuePair<string, double>("Grass", 0));
+        }
+        public void BuildLavaTile()
+        {
+            this.tileTypes.Add(new KeyValuePair<string, double>("Lava", 0));
+        }
+
         public Map Build(int width, int height)
         {
             var map = new Map();
