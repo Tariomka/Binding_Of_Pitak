@@ -16,6 +16,7 @@ namespace SignalR_GameServer_v1.Command
 
         public override void execute()
         {
+            target.SetPosX(target.getPosX() + 40);
             target.move("Right");
         }
 

@@ -17,18 +17,19 @@ namespace SignalR_GameServer_v1.Hubs
         public int mapHeight = settings.mapHeight;
         public static int playerIndex = 0;
         public static Dictionary<string, int> players = new Dictionary<string, int>();
-        //public static List<Hero> players = new List<Hero>();
+        public static List<Hero> heroes = new List<Hero>();
         public static Map gameMap = null;
+        public static Dictionary<string, int> heroesIdsAndNames = new Dictionary<string, int>();
 
-        //public GameHub()
+        //public gamehub()
         //{
-        //    //Example of decorated speed
-        //    /*Creature hero = new Hero();
-        //    hero.SetSpeed(10);
-        //    Debug.WriteLine(hero.GetSpeed());
-        //    Creature h2 = new ArmorBootsDecorator(hero);
-        //    Debug.WriteLine(h2.GetSpeed());*/
-        //    createMap();
+        //    //example of decorated speed
+        //    /*creature hero = new hero();
+        //    hero.setspeed(10);
+        //    debug.writeline(hero.getspeed());
+        //    creature h2 = new armorbootsdecorator(hero);
+        //    debug.writeline(h2.getspeed());*/
+        //    createmap();
         //}
 
         private Map GetMap()
@@ -55,8 +56,17 @@ namespace SignalR_GameServer_v1.Hubs
                 players.Add(playerid, playerIndex);
             }
 
-            await SendGameJoinedMessage(players[playerid], players, this.GetMap());
-            await SendPlayerJoinedMessage(players[playerid]);
+            //due to decorator changes
+            //await SendGameJoinedMessage(players[playerid], players, this.GetMap());
+            //await SendPlayerJoinedMessage(players[playerid]);
+
+            var newHero = new Hero(playerid, playerIndex, 100, 1, 0, 480, 320);
+            heroes.Add(newHero);
+
+            heroesIdsAndNames.Add(newHero.GetId(), newHero.GetName());
+
+            await SendGameJoinedMessage(heroes.Find(x => x.GetId() == playerid).GetName(), heroesIdsAndNames, this.GetMap());
+            await SendPlayerJoinedMessage(newHero.GetName());
         }
 
         public async Task SendCoordinates(int playerId, string direction)
@@ -93,6 +103,20 @@ namespace SignalR_GameServer_v1.Hubs
         public Task SendMessageTogroup(string message)
         {
             return Clients.Group("SignalR Users").SendAsync("ReceiveMessage", message);
+        }
+
+        public async Task MovePlayer(int name, string direction)
+        {
+            var hero = heroes.Find(x => x.GetName() == name);
+            hero.move(direction);
+            await GetPlayerCoordinates(name);
+        }
+
+        public Task GetPlayerCoordinates(int name)
+        {
+            var hero = heroes.Find(x => x.GetName() == name);
+
+            return Clients.Caller.SendAsync("PlayerNewCoordinates", name, hero.getPosX(), hero.GetPosY());
         }
 
         #endregion
