@@ -6,6 +6,9 @@ using BoP.MapLibrary;
 using SignalR_GameServer_v1.Characters;
 using SignalR_GameServer_v1.Decorator;
 using System.Diagnostics;
+using SignalR_GameServer_v1.Command;
+using SignalR_GameServer_v1.MapLibrary;
+using Map = BoP.MapLibrary.Map;
 
 namespace SignalR_GameServer_v1.Hubs
 {
@@ -20,6 +23,8 @@ namespace SignalR_GameServer_v1.Hubs
         public static List<Hero> heroes = new List<Hero>();
         public static Map gameMap = null;
         public static Dictionary<string, int> heroesIdsAndNames = new Dictionary<string, int>();
+
+        private static CreatureController controller = new CreatureController();
 
         //public gamehub()
         //{
@@ -55,7 +60,6 @@ namespace SignalR_GameServer_v1.Hubs
                 playerIndex++;
                 players.Add(playerid, playerIndex);
             }
-
             
             await SendGameJoinedMessage(players[playerid], players, this.GetMap());
             await SendPlayerJoinedMessage(players[playerid]);*/
@@ -110,7 +114,55 @@ namespace SignalR_GameServer_v1.Hubs
         public async Task MovePlayer(int name, string direction)
         {
             var hero = heroes.Find(x => x.GetName() == name);
-            hero.move(direction);
+            string user = "Player " + hero.GetName();
+
+            if (direction == "UNDO")
+            {
+                bool flag = controller.Undo();
+                switch (flag)
+                {
+                    case false:
+                        await SendMessage(user, "Undo Unsuccessful!");
+                        break;
+                    default:
+                        await SendMessage(user, "Move Undone!");
+                        break;
+                }
+            }
+            else
+            {
+                ICommand movedir;
+                switch (direction)
+                {
+                    case "LEFT":
+                        movedir = new MoveLeftCommand(hero);
+                        await SendMessage(user, "Move Left!");
+                        break;
+                    case "RIGHT":
+                        movedir = new MoveRightCommand(hero);
+                        await SendMessage(user, "Move Right!");
+                        break;
+                    case "UP":
+                        movedir = new MoveUpCommand(hero);
+                        await SendMessage(user, "Move Up!");
+                        break;
+                    case "DOWN":
+                        movedir = new MoveDownCommand(hero);
+                        await SendMessage(user, "Move Down!");
+                        break;
+                    default:
+                        movedir = null;
+                        await SendMessage(user, "Unsuccessful movement!");
+                        break;
+                }
+
+                if (movedir != null)
+                {
+                    controller.Run(movedir);
+                }
+            }
+
+            //hero.move(direction);
             await GetPlayerCoordinates(name);
         }
 

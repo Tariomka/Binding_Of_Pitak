@@ -102,22 +102,10 @@ namespace SignalR_GameServer_v1.Characters
 
         public void move(string direction)
         {
-            ICommand movedir;
-            if (direction == "LEFT") movedir = new MoveLeftCommand(this);
-            else if (direction == "RIGHT") movedir = new MoveRightCommand(this);
-            else if (direction == "UP") movedir = new MoveUpCommand(this);
-            else if (direction == "DOWN") movedir = new MoveDownCommand(this);
-            else movedir = null;
-
-
-            if (movedir != null)
-            {
-                controller.Run(movedir);
-                controller.Undo();
-            }
-            else Console.WriteLine("Something went wrong");
-            
-
+            if (direction == "LEFT") MovePosX(-40);
+            else if (direction == "RIGHT") MovePosX(40);
+            else if (direction == "UP") MovePosY(-40);
+            else if (direction == "DOWN") MovePosY(40);
             //this.notifyServer(direction);
         }
 
@@ -153,6 +141,16 @@ namespace SignalR_GameServer_v1.Characters
         public void SetPosY(int posY)
         {
             this.posY = posY;
+        }
+
+        public void MovePosX(int posX)
+        {
+            this.posX += posX;
+        }
+
+        public void MovePosY(int posY)
+        {
+            this.posY += posY;
         }
     }
 }
