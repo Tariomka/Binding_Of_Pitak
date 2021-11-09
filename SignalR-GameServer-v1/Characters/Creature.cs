@@ -10,8 +10,8 @@ namespace SignalR_GameServer_v1.Characters
 {
     public abstract class Creature : IObserver
     {
-        private int id;
-        private string name;
+        private string id;
+        private int name;
         private int health;
         private int speed;
         private int actionCount;
@@ -24,8 +24,8 @@ namespace SignalR_GameServer_v1.Characters
 
         protected Creature()
         {
-            this.id = 0;
-            this.name = "";
+            this.id = "";
+            this.name = 0;
             this.health = 0;
             this.speed = 0;
             this.actionCount = 0;
@@ -34,15 +34,15 @@ namespace SignalR_GameServer_v1.Characters
             this.controller = new CreatureController();
         }
 
-        protected Creature(int id, string name, int health, int speed, int actionCount)
+        protected Creature(string id, int name, int health, int speed, int actionCount, int posx, int posy)
         {
             this.id = id;
             this.name = name;
             this.health = health;
             this.speed = speed;
             this.actionCount = actionCount;
-            this.posX = 0;
-            this.posY = 0;
+            this.posX = posx;
+            this.posY = posy;
             this.controller = new CreatureController();
         }
 
@@ -51,17 +51,17 @@ namespace SignalR_GameServer_v1.Characters
             return id + " " + name + " " + health;
         }
 
-        public int GetId()
+        public string GetId()
         {
             return this.id;
         }
 
-        public string GetName()
+        public int GetName()
         {
             return this.name;
         }
 
-        public void SetName(string name)
+        public void SetName(int name)
         {
             this.name = name;
         }
@@ -71,7 +71,7 @@ namespace SignalR_GameServer_v1.Characters
             return speed;
         }
 
-        public void SetDetails(int id, string name, int health, int speed, int actionCount)
+        public void SetDetails(string id, int name, int health, int speed, int actionCount)
         {
             this.id = id;
             this.name = name;
@@ -133,6 +133,26 @@ namespace SignalR_GameServer_v1.Characters
             EndTurnCommand endturn = new EndTurnCommand(this);
             controller.Run(endturn);
             controller.Undo();
+        }
+
+        public int getPosX()
+        {
+            return this.posX;
+        }
+
+        public void SetPosX(int posx)
+        {
+            this.posX = posx;
+        }
+
+        public int GetPosY()
+        {
+            return this.posY;
+        }
+
+        public void SetPosY(int posY)
+        {
+            this.posY = posY;
         }
     }
 }

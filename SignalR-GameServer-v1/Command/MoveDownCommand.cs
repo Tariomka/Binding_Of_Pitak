@@ -16,6 +16,7 @@ namespace SignalR_GameServer_v1.Command
 
         public override void execute()
         {
+            target.SetPosY(target.GetPosY() + 40);
             target.move("Down");
         }
 
