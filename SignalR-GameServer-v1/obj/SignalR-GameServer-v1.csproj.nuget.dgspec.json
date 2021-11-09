@@ -1,23 +1,94 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\edgar\\Desktop\\2021-10-26 opp\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj": {}
+    "D:\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\edgar\\Desktop\\2021-10-26 opp\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj": {
+    "D:\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edgar\\Desktop\\2021-10-26 opp\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
+        "projectUniqueName": "D:\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
         "projectName": "SignalR-GameServer-v1",
-        "projectPath": "C:\\Users\\edgar\\Desktop\\2021-10-26 opp\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
-        "packagesPath": "C:\\Users\\edgar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edgar\\Desktop\\2021-10-26 opp\\SignalR-GameServer-v1\\obj\\",
+        "projectPath": "D:\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
+        "packagesPath": "C:\\Users\\Abudabi\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Abudabi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\GitHub\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj": {
+                "projectPath": "D:\\GitHub\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitHub\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitHub\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj",
+        "projectName": "BoP.MapLibrary",
+        "projectPath": "D:\\GitHub\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj",
+        "packagesPath": "C:\\Users\\Abudabi\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Abudabi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -42,12 +113,6 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "dependencies": {
-            "Microsoft.AspNetCore.SignalR": {
-              "target": "Package",
-              "version": "[1.1.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -59,14 +124,11 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
