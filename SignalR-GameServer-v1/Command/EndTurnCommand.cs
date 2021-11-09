@@ -16,8 +16,7 @@ namespace SignalR_GameServer_v1.Command
 
         public override void execute()
         {
-            //target.EndTurn();
-            Console.WriteLine("EndTurn");
+            target.EndTurn();
         }
 
         public override void undo()

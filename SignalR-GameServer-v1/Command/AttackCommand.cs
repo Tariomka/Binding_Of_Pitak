@@ -15,8 +15,7 @@ namespace SignalR_GameServer_v1.Command
         }
         public override void execute()
         {
-            //target.Attack();
-            Console.WriteLine("Attack");
+            target.Attack();
         }
 
         public override void undo()

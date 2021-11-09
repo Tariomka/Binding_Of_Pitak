@@ -188,8 +188,8 @@ namespace SignalR_Testing
             hub.SendMessage(hero.GetName(), message);
             hub.SendCoordinates(hero.GetId(), "LEFT");
 
-            hub.GetMapSize();
-            hub.SendMapLayout(maplayout);
+            //hub.GetMapSize();
+            //hub.SendMapLayout(maplayout);
             //--------------------------------------------
         }
 

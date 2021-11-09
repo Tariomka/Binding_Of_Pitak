@@ -13,6 +13,9 @@ namespace SignalR_GameServer_v1.MapLibrary
         public int mapWidth;
         public int mapHeight;
 
+        public static int HorizontalTiles = 25;
+        public static int VerticalTiles = 16;
+
         private MapSettings()
         {
             mapWidth = 1000;

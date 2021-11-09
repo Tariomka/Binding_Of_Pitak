@@ -188,8 +188,6 @@ namespace SignalRClient
             messagesList.Items.Add(message);
         }
 
-
-        
         private PictureBox GetNewPlayer(int id)
         {
             var pb = new PictureBox();
@@ -211,12 +209,10 @@ namespace SignalRClient
             return pb;
         }
 
-        private async void UP_Click(object sender, EventArgs e)
+        private void UP_Click(object sender, EventArgs e)
         {
             try
             {
-                await connection.InvokeAsync("SendMessage",
-                    this.playerName, "move up!");
                 movePlayer(this.playerid, "UP");
             }
             catch (Exception ex)
@@ -225,12 +221,10 @@ namespace SignalRClient
             }
         }
 
-        private async void DOWN_Click(object sender, EventArgs e)
+        private void DOWN_Click(object sender, EventArgs e)
         {
             try
             {
-                await connection.InvokeAsync("SendMessage",
-                    this.playerName, "move down!");
                 movePlayer(this.playerid, "DOWN");
             }
             catch (Exception ex)
@@ -239,12 +233,10 @@ namespace SignalRClient
             }
         }
 
-        private async void RIGHT_Click(object sender, EventArgs e)
+        private void RIGHT_Click(object sender, EventArgs e)
         {
             try
             {
-                await connection.InvokeAsync("SendMessage",
-                    this.playerName, "move right!");
                 movePlayer(this.playerid, "RIGHT");
             }
             catch (Exception ex)
@@ -253,13 +245,23 @@ namespace SignalRClient
             }
         }
 
-        private async void LEFT_Click(object sender, EventArgs e)
+        private void LEFT_Click(object sender, EventArgs e)
         {
             try
             {
-                await connection.InvokeAsync("SendMessage",
-                    this.playerName, "move left!");
                 movePlayer(this.playerid, "LEFT");
+            }
+            catch (Exception ex)
+            {
+                messagesList.Items.Add(ex.Message);
+            }
+        }
+
+        private void UNDO_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                movePlayer(this.playerid, "UNDO");
             }
             catch (Exception ex)
             {
@@ -310,14 +312,5 @@ namespace SignalRClient
 
             player.Location = new Point(posx, posy);
         }
-        //private Tile GetTile(int rnd)
-        //{
-        //    if (rnd < 26)
-        //        return grass.GetTile();
-        //    else
-        //        return lava.GetTile();
-        //}
-
-
     }
 }
