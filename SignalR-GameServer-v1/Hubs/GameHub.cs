@@ -50,23 +50,25 @@ namespace SignalR_GameServer_v1.Hubs
         {
             var playerid = uid.ToString();
 
-            if (!players.ContainsKey(playerid))
+            /*if (!players.ContainsKey(playerid))
             {
                 playerIndex++;
                 players.Add(playerid, playerIndex);
             }
 
-            //due to decorator changes
-            //await SendGameJoinedMessage(players[playerid], players, this.GetMap());
-            //await SendPlayerJoinedMessage(players[playerid]);
+            
+            await SendGameJoinedMessage(players[playerid], players, this.GetMap());
+            await SendPlayerJoinedMessage(players[playerid]);*/
+            if(heroes.Find(x => x.GetId() == playerid) == null)
+            {
+                playerIndex++;
+                heroes.Add( new Hero(playerid, playerIndex, 100, 1, 0, 480, 320));
+            }
 
-            var newHero = new Hero(playerid, playerIndex, 100, 1, 0, 480, 320);
-            heroes.Add(newHero);
-
-            heroesIdsAndNames.Add(newHero.GetId(), newHero.GetName());
+            heroesIdsAndNames.Add(heroes.Find(x => x.GetId() == playerid).GetId(), heroes.Find(x => x.GetId() == playerid).GetName());
 
             await SendGameJoinedMessage(heroes.Find(x => x.GetId() == playerid).GetName(), heroesIdsAndNames, this.GetMap());
-            await SendPlayerJoinedMessage(newHero.GetName());
+            await SendPlayerJoinedMessage(heroes.Find(x => x.GetId() == playerid).GetName());
         }
 
         public async Task SendCoordinates(int playerId, string direction)
@@ -116,7 +118,7 @@ namespace SignalR_GameServer_v1.Hubs
         {
             var hero = heroes.Find(x => x.GetName() == name);
 
-            return Clients.Caller.SendAsync("PlayerNewCoordinates", name, hero.getPosX(), hero.GetPosY());
+            return Clients.All.SendAsync("PlayerNewCoordinates", name, hero.getPosX(), hero.GetPosY());
         }
 
         #endregion
