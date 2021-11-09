@@ -81,7 +81,7 @@ namespace SignalR_GameServer_v1.Hubs
 
         public Task SendGameJoinedMessage(int id, Dictionary<string, int> playersInGame, Map map)
         {
-            return Clients.Caller.SendAsync("GameJoined", id, playersInGame, map.Tiles);
+            return Clients.Caller.SendAsync("GameJoined", id, playersInGame, map.frameTiles);
         }
 
         public Task SendMessageToCaller(string message)

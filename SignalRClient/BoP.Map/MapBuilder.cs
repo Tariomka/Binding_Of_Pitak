@@ -5,12 +5,12 @@ namespace BoP.MapLibrary
 {
     public class MapBuilder : IMapBuilder
     {
-        private List<KeyValuePair<string, double>> tyleTypes = new List<KeyValuePair<string, double>>();
+        private List<KeyValuePair<string, double>> tileTypes = new List<KeyValuePair<string, double>>();
         private Random random = new Random();
 
         public MapBuilder AddTile(string TileType)
         {
-            this.tyleTypes.Add(new KeyValuePair<string, double>(TileType, 0));
+            this.tileTypes.Add(new KeyValuePair<string, double>(TileType, 0));
             return this;
         }
 
@@ -29,15 +29,15 @@ namespace BoP.MapLibrary
 
         private string GetNextTile()
         {
-            switch (tyleTypes.Count)
+            switch (tileTypes.Count)
             {
                 case 0:
                     return TileTypes.Tiles[0];
                 case 1:
-                    return tyleTypes[0].Key;
+                    return tileTypes[0].Key;
                 default:
-                    var next = this.random.Next(1, tyleTypes.Count + 1);
-                    return tyleTypes[next - 1].Key;
+                    var next = this.random.Next(1, tileTypes.Count + 1);
+                    return tileTypes[next - 1].Key;
             }
         }
     }
