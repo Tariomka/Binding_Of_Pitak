@@ -24,29 +24,18 @@ namespace SignalR_GameServer_v1.Hubs
         public static Dictionary<string, int> players = new Dictionary<string, int>();
         public static List<Hero> heroes = new List<Hero>();
         public static Map gameMap = null;
-        public static Dictionary<string, int> heroesIdsAndNames = new Dictionary<string, int>();
         private static CreatureController controller = new CreatureController();
         private static Subject server = new Server();
-
-        //public gamehub()
-        //{
-        //    //example of decorated speed
-        //    /*creature hero = new hero();
-        //    hero.setspeed(10);
-        //    debug.writeline(hero.getspeed());
-        //    creature h2 = new armorbootsdecorator(hero);
-        //    debug.writeline(h2.getspeed());*/
-        //    createmap();
-        //}
+        public static Director director = new Director();
 
         private Map GetMap()
         {
             if (gameMap == null)
             {
-                gameMap = new MapBuilder()
-                    .AddTile(TileTypes.Grass)
-                    .AddTile(TileTypes.Lava)
-                    .Build(MapSettings.HorizontalTiles, MapSettings.VerticalTiles);
+                MapBuilder builder = new MapBuilder();
+                director.Builder = builder;
+                director.BuildMixedMap();
+                gameMap = builder.Build(MapSettings.HorizontalTiles, MapSettings.VerticalTiles);
             }
             return gameMap;
         }
@@ -57,27 +46,43 @@ namespace SignalR_GameServer_v1.Hubs
         {
             var playerid = uid.ToString();
 
-            /*if (!players.ContainsKey(playerid))
+            if(!players.ContainsKey(playerid))
             {
                 playerIndex++;
                 players.Add(playerid, playerIndex);
-            }
-            
-            await SendGameJoinedMessage(players[playerid], players, this.GetMap());
-            await SendPlayerJoinedMessage(players[playerid]);*/
-            if(heroes.Find(x => x.GetId() == playerid) == null)
-            {
-                playerIndex++;
-                var newPlayer = new Hero(playerid, playerIndex, 100, 1, 0, 480, 320);
-                heroes.Add(newPlayer);
+
+                var newPlayer = new Hero(playerIndex, "Player", 100, 1, 0, 480, 320);
+                if (playerIndex == 1)
+                {
+                    heroes.Add(newPlayer);
+                    server.attach(newPlayer);
+                }
+                else if (playerIndex % 3 == 0)
+                {
+                    Hero decoratedHero = new ArmorBootsDecorator(newPlayer);
+                    heroes.Add(decoratedHero);
+                    server.attach(decoratedHero);
+                }
+                else if (playerIndex % 3 == 1)
+                {
+                    Hero decoratedHero = new ArmorBootsDecorator(newPlayer);
+                    Hero decoratedHero2 = new ArmorGlovesDecorator(decoratedHero);
+                    heroes.Add(decoratedHero2);
+                    server.attach(decoratedHero2);
+                }
+                else
+                {
+                    Hero decoratedHero = new ArmorBootsDecorator(newPlayer);
+                    Hero decoratedHero2 = new ArmorGlovesDecorator(decoratedHero);
+                    Hero decoratedHero3 = new ArmorLegsDecorator(decoratedHero2);
+                    heroes.Add(decoratedHero3);
+                    server.attach(decoratedHero3);
+                }
                 
-                server.attach(newPlayer);
             }
 
-            heroesIdsAndNames.Add(heroes.Find(x => x.GetId() == playerid).GetId(), heroes.Find(x => x.GetId() == playerid).GetName());
-
-            await SendGameJoinedMessage(heroes.Find(x => x.GetId() == playerid).GetName(), heroesIdsAndNames, this.GetMap());
-            await SendPlayerJoinedMessage(heroes.Find(x => x.GetId() == playerid).GetName());
+            await SendGameJoinedMessage(players[playerid], players, this.GetMap());
+            await SendPlayerJoinedMessage(players[playerid]);
         }
 
         public async Task SendCoordinates(int playerId, string direction)
@@ -87,9 +92,7 @@ namespace SignalR_GameServer_v1.Hubs
 
         public async Task SendMessage(string user, string message)
         {
-            //await Clients.All.SendAsync("ReceiveMessage", user, message);
             await Clients.All.SendAsync("ReceiveMessage", user, message);
-            //await Clients.Caller.SendAsync("ReceiveMessage", user, "delivered: " + message);
         }
 
         #endregion
@@ -103,7 +106,7 @@ namespace SignalR_GameServer_v1.Hubs
 
         public Task SendGameJoinedMessage(int id, Dictionary<string, int> playersInGame, Map map)
         {
-            return Clients.Caller.SendAsync("GameJoined", id, playersInGame, map.Tiles);
+            return Clients.Caller.SendAsync("GameJoined", id, playersInGame, map.frameTiles, map.frameItems);
         }
 
         public Task SendMessageToCaller(string message)
@@ -116,10 +119,10 @@ namespace SignalR_GameServer_v1.Hubs
             return Clients.Group("SignalR Users").SendAsync("ReceiveMessage", message);
         }
 
-        public async Task MovePlayer(int name, string direction)
+        public async Task MovePlayer(int id, string direction)
         {
-            var hero = heroes.Find(x => x.GetName() == name);
-            string user = "Player " + hero.GetName();
+            var hero = heroes.Find(x => x.GetId() == id);
+            string user = "Player " + hero.GetId();
 
             if (direction == "UNDO")
             {
@@ -175,15 +178,14 @@ namespace SignalR_GameServer_v1.Hubs
                 }
             }
 
-            //hero.move(direction);
-                    await GetPlayerCoordinates(name);
+            await GetPlayerCoordinates(id);
         }
 
-        public Task GetPlayerCoordinates(int name)
+        public Task GetPlayerCoordinates(int id)
         {
-            var hero = heroes.Find(x => x.GetName() == name);
+            var hero = heroes.Find(x => x.GetId() == id);
 
-            return Clients.All.SendAsync("PlayerNewCoordinates", name, hero.GetPosX(), hero.GetPosY());
+            return Clients.All.SendAsync("PlayerNewCoordinates", id, hero.GetPosX(), hero.GetPosY());
         }
 
         #endregion

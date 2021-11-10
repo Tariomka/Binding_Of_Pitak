@@ -111,3 +111,16 @@ D:\GitHub\Binding_Of_Pitak\SignalR_Testing\obj\Debug\netcoreapp3.1\SignalR_Testi
 D:\GitHub\Binding_Of_Pitak\SignalR_Testing\obj\Debug\netcoreapp3.1\SignalR_Testing.genruntimeconfig.cache
 D:\GitHub\Binding_Of_Pitak\SignalR_Testing\bin\Debug\netcoreapp3.1\Castle.Core.dll
 D:\GitHub\Binding_Of_Pitak\SignalR_Testing\bin\Debug\netcoreapp3.1\Moq.dll
+C:\Users\edgar\Desktop\opp laboras\SignalR_Testing\bin\Debug\netcoreapp3.1\CoverletSourceRootsMapping
+C:\Users\edgar\Desktop\opp laboras\SignalR_Testing\obj\Debug\netcoreapp3.1\SignalR_Testing.csprojAssemblyReference.cache
+C:\Users\edgar\Desktop\opp laboras\SignalR_Testing\obj\Debug\netcoreapp3.1\SignalR_Testing.AssemblyInfoInputs.cache
+C:\Users\edgar\Desktop\opp laboras\SignalR_Testing\obj\Debug\netcoreapp3.1\SignalR_Testing.AssemblyInfo.cs
+C:\Users\edgar\Desktop\opp laboras\SignalR_Testing\obj\Debug\netcoreapp3.1\SignalR_Testing.csproj.CoreCompileInputs.cache
+C:\Users\edgar\Desktop\opp laboras\SignalR_Testing\obj\Debug\netcoreapp3.1\SignalR_Testing.dll
+C:\Users\edgar\Desktop\opp laboras\SignalR_Testing\obj\Debug\netcoreapp3.1\SignalR_Testing.pdb
+C:\Users\Domas\Downloads\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalR_Testing\bin\Debug\netcoreapp3.1\CoverletSourceRootsMapping
+C:\Users\Domas\Downloads\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalR_Testing\obj\Debug\netcoreapp3.1\SignalR_Testing.csproj.AssemblyReference.cache
+C:\Users\Domas\Downloads\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalR_Testing\obj\Debug\netcoreapp3.1\SignalR_Testing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Domas\Downloads\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalR_Testing\obj\Debug\netcoreapp3.1\SignalR_Testing.AssemblyInfoInputs.cache
+C:\Users\Domas\Downloads\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalR_Testing\obj\Debug\netcoreapp3.1\SignalR_Testing.AssemblyInfo.cs
+C:\Users\Domas\Downloads\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalR_Testing\obj\Debug\netcoreapp3.1\SignalR_Testing.csproj.CoreCompileInputs.cache

@@ -8,15 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.AspNetCore.SignalR.Client;
-using SignalRClient.Map;
 
 namespace SignalRClient
 {
     public partial class Form1 : Form
     {
         HubConnection connection;
-        TileFactory grass = new GrassFactory(1);
-        TileFactory lava = new LavaFactory(1);
         public int mapHeight;
         public int mapWidth;
         private Guid uid = Guid.NewGuid();
@@ -66,9 +63,9 @@ namespace SignalRClient
             //    mapHeight = y;
             //});
 
-            connection.On<int, Dictionary<string, int>, List<KeyValuePair<Point, string>>>("GameJoined", (id, playersInGame, tiles) =>
+            connection.On<int, Dictionary<string, int>, List<KeyValuePair<Point, string>>, List<KeyValuePair<Point, string>>>("GameJoined", (id, playersInGame, tiles, items) =>
             {
-                this.OnGameJoined(id, playersInGame, tiles);
+                this.OnGameJoined(id, playersInGame, tiles, items);
             });
 
             
@@ -101,14 +98,17 @@ namespace SignalRClient
 
         #region Map and Tiles Logic
 
-        private void GenerateMap(List<KeyValuePair<Point, string>> tiles)
+        private void GenerateMap(List<KeyValuePair<Point, string>> tiles, List<KeyValuePair<Point, string>> items)
         {
             AddMessage("Generating map...");
 
+            foreach (var item in items)
+            {
+                AddItem(point: item.Key, itemType: item.Value);
+            }
             foreach (var tile in tiles)
             {
                 AddTile(point: tile.Key, tileType: tile.Value);
-
             }
             AddMessage("Done.");
         }
@@ -134,15 +134,51 @@ namespace SignalRClient
                     return Properties.Resources.grass;
                 case "Lava":
                     return Properties.Resources.lava;
+                case "Dirt":
+                    return Properties.Resources.dirt;
                 default:
                     return Properties.Resources.grass;
+            }
+        }
+
+        private void AddItem(Point point, string itemType)
+        {
+            var picture = new PictureBox
+            {
+                Name = $"item_{point.X}_{point.Y}_itemType",
+                Size = new Size(40, 40),
+                Location = new Point(point.X * 40, point.Y * 40),
+                Image = GetItemImage(itemType)
+            };
+            this.Controls.Add(picture);
+            this.picCanvas.SendToBack();
+        }
+
+        private Bitmap GetItemImage(string itemType)
+        {
+            switch (itemType)
+            {
+                case "minorheal":
+                    return Properties.Resources.minorheal;
+                case "majorheal":
+                    return Properties.Resources.majorheal;
+                case "bluegun":
+                    return Properties.Resources.bluegun;
+                case "greengun":
+                    return Properties.Resources.greengun;
+                case "blueenergy":
+                    return Properties.Resources.blueenergy;
+                case "greenenergy":
+                    return Properties.Resources.greenenergy;
+                default:
+                    return Properties.Resources.minorheal;
             }
         }
 
         #endregion
 
 
-        private void OnGameJoined(int id, Dictionary<string, int> playersInGame, List<KeyValuePair<Point, string>> tiles)
+        private void OnGameJoined(int id, Dictionary<string, int> playersInGame, List<KeyValuePair<Point, string>> tiles, List<KeyValuePair<Point, string>> items)
         {
             this.playerid = id;
             AddMessage($"My Player ID is: {this.playerid}");
@@ -150,7 +186,7 @@ namespace SignalRClient
 
             try
             {
-                this.GenerateMap(tiles);
+                this.GenerateMap(tiles, items);
                 this.GeneratePlayers(playersInGame);
             }
             catch (Exception ex)

@@ -1,26 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.IO;
-using System.Threading.Tasks;
 
-namespace SignalR_GameServer_v1.MapLibrary
+namespace BoP.MapLibrary
 {
     class GrassTile : Tile
     {
         private readonly string _type;
         private readonly string _image;
         private int _cost;
+        private int _posX;
+        private int _posY;
 
         public GrassTile(int cost)
         {
             _type = "Grass";
-            string workingDirectory = Environment.CurrentDirectory;
-            string currentDir = Directory.GetParent(workingDirectory).Parent.FullName;
-            string image = currentDir + @"\Resources\grass.png";
-            _image = image;
+            //string workingDirectory = Environment.CurrentDirectory;
+            //string currentDir = Directory.GetParent(workingDirectory).Parent.FullName;
+            //string image = currentDir + @"\Resources\grass.png";
+            //_image = image;
             _cost = cost;
+        }
+        public override void SetPosition(int x, int y)
+        {
+            _posX = x;
+            _posY = y;
         }
 
         public override string type
@@ -37,6 +41,14 @@ namespace SignalR_GameServer_v1.MapLibrary
         {
             get { return _cost; }
             set { _cost = value; }
+        }
+        public override int posX 
+        { 
+            get { return _posX; } 
+        }
+        public override int posY
+        {
+            get { return _posY; }
         }
     }
 }
