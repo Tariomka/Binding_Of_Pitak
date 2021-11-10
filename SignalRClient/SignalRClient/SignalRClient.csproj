@@ -300,5 +300,29 @@
   <ItemGroup>
     <None Include="Resources\lava.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dirt.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minorheal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bluegun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\majorheal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greengun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueenergy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greenenergy.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

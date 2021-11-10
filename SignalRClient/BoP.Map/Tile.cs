@@ -14,6 +14,5 @@ namespace BoP.MapLibrary
         public abstract int posY { get; }
 
         public abstract void SetPosition(int x, int y);
-    }
-    
+    }    
 }

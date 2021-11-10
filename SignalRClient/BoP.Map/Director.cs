@@ -19,6 +19,8 @@ namespace BoP.MapLibrary
         {
             this._builder.BuildGrassTile();
             this._builder.BuildLavaTile();
+            this._builder.BuildDirtTile();
+            this._builder.AddItem();
         }
     }
 }
