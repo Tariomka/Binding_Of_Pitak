@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1jfvy7CX34qMHgu0BpIwPoYAk6aPpk+Y1XnZ5vjI2+KcuSu5OpA1J6Xi123i29ipwryAqFB948bzXESQeL9x2g==",
+  "dgSpecHash": "RkzKeYNr8vKFlMz5uY1Je4tT8oxJtPdeA+FohFqrEE7UodAt1lYSAyuN9qFgj3r/BdVm4tYM4+EgANZgUKzQ/A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Domas\\Downloads\\Binding_Of_Pitak-main\\Binding_Of_Pitak-main\\SignalR_Testing\\SignalR_Testing.csproj",
+  "projectFilePath": "C:\\Users\\Domas\\Desktop\\Objektinis_programu_projektavimas\\GitHub\\Binding_Of_Pitak\\SignalR_Testing\\SignalR_Testing.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Domas\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\Domas\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",

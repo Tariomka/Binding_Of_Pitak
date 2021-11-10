@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PzQA0czn8jXt3vvU8MhvlW/wjghNbLj8l+gjaHUK40oBNhilzC2szjqMZni1LJfiRDiWIxJdCqPWM+ywPvWfsQ==",
+  "dgSpecHash": "QZfka5XHMXGc/zD+xsg8q3V0egiFKmnk5bzF3SmKdAcSz1bSXWD78GkJ5B6hzCNvYLhXnRuL7ffZsINNskfCnA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Domas\\Downloads\\Binding_Of_Pitak-main\\Binding_Of_Pitak-main\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
+  "projectFilePath": "C:\\Users\\Domas\\Desktop\\Objektinis_programu_projektavimas\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Domas\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\Domas\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
