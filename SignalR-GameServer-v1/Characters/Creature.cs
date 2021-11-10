@@ -44,7 +44,7 @@ namespace SignalR_GameServer_v1.Characters
 
         public string GetDetails()
         {
-            return id + " " + name + " " + health;
+            return this.id + " " + this.name + " " + this.health;
         }
 
         public int GetId()
@@ -83,7 +83,7 @@ namespace SignalR_GameServer_v1.Characters
 
         public void update(string msg)
         {
-            Console.WriteLine("Player " + this.name + " received message: " + msg);
+            Console.WriteLine(this.name + " " + this.id + " " + " received message: " + msg);
         }
 
         public void notifyServer(string result)

@@ -7427,23 +7427,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\edgar\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Abudabi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalR_Testing\\SignalR_Testing.csproj",
+      "projectUniqueName": "D:\\GitHub\\Binding_Of_Pitak\\SignalR_Testing\\SignalR_Testing.csproj",
       "projectName": "SignalR_Testing",
-      "projectPath": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalR_Testing\\SignalR_Testing.csproj",
-      "packagesPath": "C:\\Users\\edgar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalR_Testing\\obj\\",
+      "projectPath": "D:\\GitHub\\Binding_Of_Pitak\\SignalR_Testing\\SignalR_Testing.csproj",
+      "packagesPath": "C:\\Users\\Abudabi\\.nuget\\packages\\",
+      "outputPath": "D:\\GitHub\\Binding_Of_Pitak\\SignalR_Testing\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Abudabi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7457,8 +7453,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj": {
-              "projectPath": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj"
+            "D:\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj": {
+              "projectPath": "D:\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj"
             }
           }
         }
@@ -7505,14 +7501,11 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

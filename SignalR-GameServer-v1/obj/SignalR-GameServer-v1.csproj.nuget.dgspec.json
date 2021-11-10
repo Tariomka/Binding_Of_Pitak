@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj": {}
+    "D:\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj": {
+    "D:\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
+        "projectUniqueName": "D:\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
         "projectName": "SignalR-GameServer-v1",
-        "projectPath": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
-        "packagesPath": "C:\\Users\\edgar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalR-GameServer-v1\\obj\\",
+        "projectPath": "D:\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
+        "packagesPath": "C:\\Users\\Abudabi\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Abudabi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj": {
-                "projectPath": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj"
+              "D:\\GitHub\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj": {
+                "projectPath": "D:\\GitHub\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj"
               }
             }
           }
@@ -74,24 +71,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj": {
+    "D:\\GitHub\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj",
+        "projectUniqueName": "D:\\GitHub\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj",
         "projectName": "BoP.MapLibrary",
-        "projectPath": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj",
-        "packagesPath": "C:\\Users\\edgar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalRClient\\BoP.Map\\obj\\",
+        "projectPath": "D:\\GitHub\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj",
+        "packagesPath": "C:\\Users\\Abudabi\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Abudabi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -131,7 +125,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

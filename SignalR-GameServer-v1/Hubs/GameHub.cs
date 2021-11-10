@@ -71,14 +71,18 @@ namespace SignalR_GameServer_v1.Hubs
                 playerIndex++;
                 players.Add(playerid, playerIndex);
 
-                var newPlayer = new Hero(playerIndex, "", 100, 1, 0, 480, 320);
-                if (playerIndex % 3 == 0)
+                var newPlayer = new Hero(playerIndex, "Player", 100, 1, 0, 480, 320);
+                if (playerIndex == 1)
+                {
+                    heroes.Add(newPlayer);
+                    server.attach(newPlayer);
+                }
+                else if (playerIndex % 3 == 0)
                 {
                     Hero decoratedHero = new ArmorBootsDecorator(newPlayer);
                     heroes.Add(decoratedHero);
                     server.attach(decoratedHero);
                 }
-
                 else if (playerIndex % 3 == 1)
                 {
                     Hero decoratedHero = new ArmorBootsDecorator(newPlayer);
