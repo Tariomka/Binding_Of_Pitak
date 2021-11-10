@@ -967,3 +967,4 @@ C:\Users\edgar\Desktop\opp laboras\SignalRClient\SignalRClient\obj\Debug\SignalR
 C:\Users\edgar\Desktop\opp laboras\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.CopyComplete
 C:\Users\edgar\Desktop\opp laboras\SignalRClient\SignalRClient\obj\Debug\SignalRClient.exe
 C:\Users\edgar\Desktop\opp laboras\SignalRClient\SignalRClient\obj\Debug\SignalRClient.pdb
+C:\Users\edgar\Desktop\opp laboras\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csprojAssemblyReference.cache

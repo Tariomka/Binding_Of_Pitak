@@ -10,8 +10,8 @@ namespace SignalR_GameServer_v1.Characters
 {
     public abstract class Creature : IObserver
     {
-        private string id;
-        private int name;
+        private int id;
+        private string name;
         private int health;
         private int speed;
         private int actionCount;
@@ -22,8 +22,8 @@ namespace SignalR_GameServer_v1.Characters
 
         protected Creature()
         {
-            this.id = "";
-            this.name = 0;
+            this.id = 0;
+            this.name = "";
             this.health = 0;
             this.speed = 0;
             this.actionCount = 0;
@@ -31,7 +31,7 @@ namespace SignalR_GameServer_v1.Characters
             this.posY = 0;
         }
 
-        protected Creature(string id, int name, int health, int speed, int actionCount, int posx, int posy)
+        protected Creature(int id, string name, int health, int speed, int actionCount, int posx, int posy)
         {
             this.id = id;
             this.name = name;
@@ -47,17 +47,17 @@ namespace SignalR_GameServer_v1.Characters
             return id + " " + name + " " + health;
         }
 
-        public string GetId()
+        public int GetId()
         {
             return this.id;
         }
 
-        public int GetName()
+        public string GetName()
         {
             return this.name;
         }
 
-        public void SetName(int name)
+        public void SetName(string name)
         {
             this.name = name;
         }
@@ -67,7 +67,7 @@ namespace SignalR_GameServer_v1.Characters
             return speed;
         }
 
-        public void SetDetails(string id, int name, int health, int speed, int actionCount)
+        public void SetDetails(int id, string name, int health, int speed, int actionCount)
         {
             this.id = id;
             this.name = name;
