@@ -27,6 +27,8 @@ namespace SignalR_GameServer_v1.Hubs
         private static CreatureController controller = new CreatureController();
         private static Subject server = new Server();
         public static Director director = new Director();
+        
+
 
         private Map GetMap()
         {
@@ -36,6 +38,24 @@ namespace SignalR_GameServer_v1.Hubs
                 director.Builder = builder;
                 director.BuildMixedMap();
                 gameMap = builder.Build(MapSettings.HorizontalTiles, MapSettings.VerticalTiles);
+                //gameMap = new MapBuilder()
+                //    .AddTile(TileTypes.Grass)
+                //    .AddTile(TileTypes.Lava)
+                //    .Build(MapSettings.HorizontalTiles, MapSettings.VerticalTiles);
+                Hero exHero = new Hero();
+                exHero.AddItem(new Item());
+                exHero.AddItem(new Item());
+                exHero.AddItem(new Item());
+                exHero.AddItem(new Item());
+                Hero shallowHero = exHero.ShallowCopy();
+                Hero deepHero = exHero.Clone();
+                exHero.LoseItem();
+                shallowHero.LoseItem();
+                deepHero.LoseItem();
+                Console.WriteLine(exHero.getItemCount());
+                Console.WriteLine(shallowHero.getItemCount());
+                Console.WriteLine(deepHero.getItemCount());
+
             }
             return gameMap;
         }
