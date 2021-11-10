@@ -42,7 +42,6 @@ namespace SignalR_GameServer_v1.Characters
         {
             Creature copy = (Creature)this.MemberwiseClone();
             copy.server = server;
-            copy.controller = controller;
             return copy;
         }
 
