@@ -65,13 +65,34 @@ namespace SignalR_GameServer_v1.Hubs
             
             await SendGameJoinedMessage(players[playerid], players, this.GetMap());
             await SendPlayerJoinedMessage(players[playerid]);*/
+
             if(heroes.Find(x => x.GetId() == playerid) == null)
             {
                 playerIndex++;
                 var newPlayer = new Hero(playerid, playerIndex, 100, 1, 0, 480, 320);
-                heroes.Add(newPlayer);
+                if (playerIndex % 3 == 0)
+                {
+                    Hero decoratedHero = new ArmorBootsDecorator(newPlayer);
+                    heroes.Add(decoratedHero);
+                    server.attach(decoratedHero);
+                }
+
+                else if (playerIndex % 3 == 1)
+                {
+                    Hero decoratedHero = new ArmorBootsDecorator(newPlayer);
+                    Hero decoratedHero2 = new ArmorGlovesDecorator(decoratedHero);
+                    heroes.Add(decoratedHero2);
+                    server.attach(decoratedHero2);
+                }
+                else
+                {
+                    Hero decoratedHero = new ArmorBootsDecorator(newPlayer);
+                    Hero decoratedHero2 = new ArmorGlovesDecorator(decoratedHero);
+                    Hero decoratedHero3 = new ArmorLegsDecorator(decoratedHero2);
+                    heroes.Add(decoratedHero3);
+                    server.attach(decoratedHero3);
+                }
                 
-                server.attach(newPlayer);
             }
 
             heroesIdsAndNames.Add(heroes.Find(x => x.GetId() == playerid).GetId(), heroes.Find(x => x.GetId() == playerid).GetName());

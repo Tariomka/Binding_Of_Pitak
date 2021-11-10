@@ -8,18 +8,12 @@ namespace SignalR_GameServer_v1.Decorator
 {
     public class ArmorGlovesDecorator : Decorator
     {
-        public ArmorGlovesDecorator(Creature component) : base(component)
+        public ArmorGlovesDecorator(Hero component) : base(component)
         {
         }
-        public void IncreaseSpeed()
-        {
-            wrapee.SetSpeed(wrapee.GetSpeed() + 1);
-        }
-
         public override int GetSpeed()
         {
-            IncreaseSpeed();
-            return base.GetSpeed();
+            return base.GetSpeed() + 1;
         }
     }
 

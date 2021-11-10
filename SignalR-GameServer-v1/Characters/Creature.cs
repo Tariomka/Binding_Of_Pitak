@@ -96,12 +96,12 @@ namespace SignalR_GameServer_v1.Characters
             this.server = server;
         }
 
-        public void Move(string direction)
+        public virtual void Move(string direction)
         {
-            if (direction == "LEFT") MovePosX(-40);
-            else if (direction == "RIGHT") MovePosX(40);
-            else if (direction == "UP") MovePosY(-40);
-            else if (direction == "DOWN") MovePosY(40);
+            if (direction == "LEFT") MovePosX(-40 * this.GetSpeed());
+            else if (direction == "RIGHT") MovePosX(40 * this.GetSpeed());
+            else if (direction == "UP") MovePosY(-40 * this.GetSpeed());
+            else if (direction == "DOWN") MovePosY(40 * this.GetSpeed());
             this.notifyServer(direction);
         }
 
@@ -145,6 +145,16 @@ namespace SignalR_GameServer_v1.Characters
         public void MovePosY(int posY)
         {
             this.posY += posY;
+        }
+
+        public int GetHealth()
+        {
+            return this.health;
+        }
+
+        public int GetActionCount()
+        {
+            return this.actionCount;
         }
     }
 }
