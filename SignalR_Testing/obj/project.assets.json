@@ -2238,10 +2238,21 @@
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
       },
+      "BoP.MapLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/BoP.MapLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BoP.MapLibrary.dll": {}
+        }
+      },
       "SignalR-GameServer-v1/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "BoP.MapLibrary": "1.0.0",
           "Microsoft.AspNetCore.SignalR": "1.1.0",
           "Moq": "4.16.1"
         },
@@ -7394,6 +7405,11 @@
         "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "BoP.MapLibrary/1.0.0": {
+      "type": "project",
+      "path": "../SignalRClient/BoP.Map/BoP.MapLibrary.csproj",
+      "msbuildProject": "../SignalRClient/BoP.Map/BoP.MapLibrary.csproj"
     },
     "SignalR-GameServer-v1/1.0.0": {
       "type": "project",

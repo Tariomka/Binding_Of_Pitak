@@ -13,9 +13,6 @@
         "packagesPath": "C:\\Users\\Abudabi\\.nuget\\packages\\",
         "outputPath": "D:\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\Abudabi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

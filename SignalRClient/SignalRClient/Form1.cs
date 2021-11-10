@@ -55,6 +55,11 @@ namespace SignalRClient
                 movePlayer(pid, direction);
             });
 
+            connection.On<int, int, int>("PlayerNewCoordinates", (playerid, posx, posy) =>
+            {
+                PaintNewPlayerPosition(playerid, posx, posy);
+            });
+
             //connection.On<int, int>("ReceiveMapCoordinates", (x, y) =>
             //{
             //    mapWidth = x;
@@ -183,8 +188,6 @@ namespace SignalRClient
             messagesList.Items.Add(message);
         }
 
-
-        
         private PictureBox GetNewPlayer(int id)
         {
             var pb = new PictureBox();
@@ -206,12 +209,10 @@ namespace SignalRClient
             return pb;
         }
 
-        private async void UP_Click(object sender, EventArgs e)
+        private void UP_Click(object sender, EventArgs e)
         {
             try
             {
-                await connection.InvokeAsync("SendMessage",
-                    this.playerName, "move up!");
                 movePlayer(this.playerid, "UP");
             }
             catch (Exception ex)
@@ -220,12 +221,10 @@ namespace SignalRClient
             }
         }
 
-        private async void DOWN_Click(object sender, EventArgs e)
+        private void DOWN_Click(object sender, EventArgs e)
         {
             try
             {
-                await connection.InvokeAsync("SendMessage",
-                    this.playerName, "move down!");
                 movePlayer(this.playerid, "DOWN");
             }
             catch (Exception ex)
@@ -234,12 +233,10 @@ namespace SignalRClient
             }
         }
 
-        private async void RIGHT_Click(object sender, EventArgs e)
+        private void RIGHT_Click(object sender, EventArgs e)
         {
             try
             {
-                await connection.InvokeAsync("SendMessage",
-                    this.playerName, "move right!");
                 movePlayer(this.playerid, "RIGHT");
             }
             catch (Exception ex)
@@ -248,13 +245,23 @@ namespace SignalRClient
             }
         }
 
-        private async void LEFT_Click(object sender, EventArgs e)
+        private void LEFT_Click(object sender, EventArgs e)
         {
             try
             {
-                await connection.InvokeAsync("SendMessage",
-                    this.playerName, "move left!");
                 movePlayer(this.playerid, "LEFT");
+            }
+            catch (Exception ex)
+            {
+                messagesList.Items.Add(ex.Message);
+            }
+        }
+
+        private void UNDO_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                movePlayer(this.playerid, "UNDO");
             }
             catch (Exception ex)
             {
@@ -270,7 +277,9 @@ namespace SignalRClient
             int x = player.Location.X;
             int y = player.Location.Y;
 
-            if (direction == "RIGHT") x += 40;
+            _ = SendMovePlayer(this.playerid, direction);
+
+            /*if (direction == "RIGHT") x += 40;
             else if (direction == "LEFT") x -= 40;
             else if (direction == "UP") y -= 40;
             else if (direction == "DOWN") y += 40;
@@ -281,7 +290,7 @@ namespace SignalRClient
             if (pid == this.playerid)
             {
                 _ = SendGetCoordinatesAsync(this.playerid, direction);
-            }
+            }*/
         }
 
         private async Task SendGetCoordinatesAsync(int pid, string direction)
@@ -290,14 +299,18 @@ namespace SignalRClient
                     pid, direction);
         }
 
-        //private Tile GetTile(int rnd)
-        //{
-        //    if (rnd < 26)
-        //        return grass.GetTile();
-        //    else
-        //        return lava.GetTile();
-        //}
+        private async Task SendMovePlayer(int pid, string direction)
+        {
+            await connection.InvokeAsync("MovePlayer",
+                    pid, direction);
+        }
 
+        private void PaintNewPlayerPosition(int playerid, int posx, int posy)
+        {
+            var player = players[playerid];
+            player.BringToFront();
 
+            player.Location = new Point(posx, posy);
+        }
     }
 }

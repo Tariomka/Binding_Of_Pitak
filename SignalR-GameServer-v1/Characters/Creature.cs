@@ -10,8 +10,8 @@ namespace SignalR_GameServer_v1.Characters
 {
     public abstract class Creature : IObserver
     {
-        private int id;
-        private string name;
+        private string id;
+        private int name;
         private int health;
         private int speed;
         private int actionCount;
@@ -20,30 +20,26 @@ namespace SignalR_GameServer_v1.Characters
 
         private Subject server;
 
-        private CreatureController controller;
-
         protected Creature()
         {
-            this.id = 0;
-            this.name = "";
+            this.id = "";
+            this.name = 0;
             this.health = 0;
             this.speed = 0;
             this.actionCount = 0;
             this.posX = 0;
             this.posY = 0;
-            this.controller = new CreatureController();
         }
 
-        protected Creature(int id, string name, int health, int speed, int actionCount)
+        protected Creature(string id, int name, int health, int speed, int actionCount, int posx, int posy)
         {
             this.id = id;
             this.name = name;
             this.health = health;
             this.speed = speed;
             this.actionCount = actionCount;
-            this.posX = 0;
-            this.posY = 0;
-            this.controller = new CreatureController();
+            this.posX = posx;
+            this.posY = posy;
         }
 
         public string GetDetails()
@@ -51,17 +47,17 @@ namespace SignalR_GameServer_v1.Characters
             return id + " " + name + " " + health;
         }
 
-        public int GetId()
+        public string GetId()
         {
             return this.id;
         }
 
-        public string GetName()
+        public int GetName()
         {
             return this.name;
         }
 
-        public void SetName(string name)
+        public void SetName(int name)
         {
             this.name = name;
         }
@@ -71,7 +67,7 @@ namespace SignalR_GameServer_v1.Characters
             return speed;
         }
 
-        public void SetDetails(int id, string name, int health, int speed, int actionCount)
+        public void SetDetails(string id, int name, int health, int speed, int actionCount)
         {
             this.id = id;
             this.name = name;
@@ -87,7 +83,7 @@ namespace SignalR_GameServer_v1.Characters
 
         public void update(string msg)
         {
-            Console.WriteLine(this.name + "received message: " + msg);
+            Console.WriteLine("Player " + this.name + " received message: " + msg);
         }
 
         public void notifyServer(string result)
@@ -100,39 +96,55 @@ namespace SignalR_GameServer_v1.Characters
             this.server = server;
         }
 
-        public void move(string direction)
+        public void Move(string direction)
         {
-            ICommand movedir;
-            if (direction == "LEFT") movedir = new MoveLeftCommand(this);
-            else if (direction == "RIGHT") movedir = new MoveRightCommand(this);
-            else if (direction == "UP") movedir = new MoveUpCommand(this);
-            else if (direction == "DOWN") movedir = new MoveDownCommand(this);
-            else movedir = null;
+            if (direction == "LEFT") MovePosX(-40);
+            else if (direction == "RIGHT") MovePosX(40);
+            else if (direction == "UP") MovePosY(-40);
+            else if (direction == "DOWN") MovePosY(40);
+            this.notifyServer(direction);
+        }
 
-
-            if (movedir != null)
-            {
-                controller.Run(movedir);
-                controller.Undo();
-            }
-            else Console.WriteLine("Something went wrong");
+        public void Attack()
+        {
+            // attack logic
             
-
-            //this.notifyServer(direction);
         }
 
-        public void attack()
+        public void EndTurn()
         {
-            AttackCommand attack = new AttackCommand(this);
-            controller.Run(attack);
-            controller.Undo();
+            //end turn logic
+            
         }
 
-        public void endTurn()
+        public int GetPosX()
         {
-            EndTurnCommand endturn = new EndTurnCommand(this);
-            controller.Run(endturn);
-            controller.Undo();
+            return this.posX;
+        }
+
+        public void SetPosX(int posx)
+        {
+            this.posX = posx;
+        }
+
+        public int GetPosY()
+        {
+            return this.posY;
+        }
+
+        public void SetPosY(int posY)
+        {
+            this.posY = posY;
+        }
+
+        public void MovePosX(int posX)
+        {
+            this.posX += posX;
+        }
+
+        public void MovePosY(int posY)
+        {
+            this.posY += posY;
         }
     }
 }

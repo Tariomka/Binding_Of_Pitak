@@ -118,11 +118,11 @@ namespace SignalR_Testing
             string leftDir = "LEFT";
             string wrongDir = "Ups!";
 
-            testHero.move(upDir);
-            testHero.move(downDir);
-            testHero.move(rightDir);
-            testHero.move(leftDir);
-            testHero.move(wrongDir);
+            testHero.Move(upDir);
+            testHero.Move(downDir);
+            testHero.Move(rightDir);
+            testHero.Move(leftDir);
+            testHero.Move(wrongDir);
 
             string msg = "test message";
             testHero.update(msg);
@@ -188,8 +188,8 @@ namespace SignalR_Testing
             hub.SendMessage(hero.GetName(), message);
             hub.SendCoordinates(hero.GetId(), "LEFT");
 
-            hub.GetMapSize();
-            hub.SendMapLayout(maplayout);
+            //hub.GetMapSize();
+            //hub.SendMapLayout(maplayout);
             //--------------------------------------------
         }
 
