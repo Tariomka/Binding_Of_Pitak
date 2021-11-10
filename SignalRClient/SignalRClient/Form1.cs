@@ -8,15 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.AspNetCore.SignalR.Client;
-using SignalRClient.Map;
 
 namespace SignalRClient
 {
     public partial class Form1 : Form
     {
         HubConnection connection;
-        TileFactory grass = new GrassFactory(1);
-        TileFactory lava = new LavaFactory(1);
         public int mapHeight;
         public int mapWidth;
         private Guid uid = Guid.NewGuid();

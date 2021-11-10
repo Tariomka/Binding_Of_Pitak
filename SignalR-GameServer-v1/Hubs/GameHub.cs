@@ -24,29 +24,18 @@ namespace SignalR_GameServer_v1.Hubs
         public static Dictionary<string, int> players = new Dictionary<string, int>();
         public static List<Hero> heroes = new List<Hero>();
         public static Map gameMap = null;
-        public static Dictionary<string, int> heroesIdsAndNames = new Dictionary<string, int>();
         private static CreatureController controller = new CreatureController();
         private static Subject server = new Server();
-
-        //public gamehub()
-        //{
-        //    //example of decorated speed
-        //    /*creature hero = new hero();
-        //    hero.setspeed(10);
-        //    debug.writeline(hero.getspeed());
-        //    creature h2 = new armorbootsdecorator(hero);
-        //    debug.writeline(h2.getspeed());*/
-        //    createmap();
-        //}
+        public static Director director = new Director();
 
         private Map GetMap()
         {
             if (gameMap == null)
             {
-                gameMap = new MapBuilder()
-                    .AddTile(TileTypes.Grass)
-                    .AddTile(TileTypes.Lava)
-                    .Build(MapSettings.HorizontalTiles, MapSettings.VerticalTiles);
+                MapBuilder builder = new MapBuilder();
+                director.Builder = builder;
+                director.BuildMixedMap();
+                gameMap = builder.Build(MapSettings.HorizontalTiles, MapSettings.VerticalTiles);
             }
             return gameMap;
         }
@@ -56,15 +45,6 @@ namespace SignalR_GameServer_v1.Hubs
         public async Task JoinGame(Guid uid)
         {
             var playerid = uid.ToString();
-
-            /*if (!players.ContainsKey(playerid))
-            {
-                playerIndex++;
-                players.Add(playerid, playerIndex);
-            }
-            
-            await SendGameJoinedMessage(players[playerid], players, this.GetMap());
-            await SendPlayerJoinedMessage(players[playerid]);*/
 
             if(!players.ContainsKey(playerid))
             {
@@ -101,8 +81,6 @@ namespace SignalR_GameServer_v1.Hubs
                 
             }
 
-            //heroesIdsAndNames.Add(heroes.Find(x => x.GetId() == playerid).GetId(), heroes.Find(x => x.GetId() == playerid).GetName());
-
             await SendGameJoinedMessage(players[playerid], players, this.GetMap());
             await SendPlayerJoinedMessage(players[playerid]);
         }
@@ -114,9 +92,7 @@ namespace SignalR_GameServer_v1.Hubs
 
         public async Task SendMessage(string user, string message)
         {
-            //await Clients.All.SendAsync("ReceiveMessage", user, message);
             await Clients.All.SendAsync("ReceiveMessage", user, message);
-            //await Clients.Caller.SendAsync("ReceiveMessage", user, "delivered: " + message);
         }
 
         #endregion
@@ -130,7 +106,7 @@ namespace SignalR_GameServer_v1.Hubs
 
         public Task SendGameJoinedMessage(int id, Dictionary<string, int> playersInGame, Map map)
         {
-            return Clients.Caller.SendAsync("GameJoined", id, playersInGame, map.Tiles);
+            return Clients.Caller.SendAsync("GameJoined", id, playersInGame, map.frameTiles);
         }
 
         public Task SendMessageToCaller(string message)
@@ -202,8 +178,7 @@ namespace SignalR_GameServer_v1.Hubs
                 }
             }
 
-            //hero.move(direction);
-                    await GetPlayerCoordinates(id);
+            await GetPlayerCoordinates(id);
         }
 
         public Task GetPlayerCoordinates(int id)
