@@ -10,8 +10,8 @@ namespace SignalR_GameServer_v1.Characters
 {
     public abstract class Creature : IObserver
     {
-        private string id;
-        private int name;
+        private int id;
+        private string name;
         private int health;
         private int speed;
         private int actionCount;
@@ -22,8 +22,8 @@ namespace SignalR_GameServer_v1.Characters
 
         protected Creature()
         {
-            this.id = "";
-            this.name = 0;
+            this.id = 0;
+            this.name = "";
             this.health = 0;
             this.speed = 0;
             this.actionCount = 0;
@@ -31,7 +31,7 @@ namespace SignalR_GameServer_v1.Characters
             this.posY = 0;
         }
 
-        protected Creature(string id, int name, int health, int speed, int actionCount, int posx, int posy)
+        protected Creature(int id, string name, int health, int speed, int actionCount, int posx, int posy)
         {
             this.id = id;
             this.name = name;
@@ -44,20 +44,20 @@ namespace SignalR_GameServer_v1.Characters
 
         public string GetDetails()
         {
-            return id + " " + name + " " + health;
+            return this.id + " " + this.name + " " + this.health;
         }
 
-        public string GetId()
+        public int GetId()
         {
             return this.id;
         }
 
-        public int GetName()
+        public string GetName()
         {
             return this.name;
         }
 
-        public void SetName(int name)
+        public void SetName(string name)
         {
             this.name = name;
         }
@@ -67,7 +67,7 @@ namespace SignalR_GameServer_v1.Characters
             return speed;
         }
 
-        public void SetDetails(string id, int name, int health, int speed, int actionCount)
+        public void SetDetails(int id, string name, int health, int speed, int actionCount)
         {
             this.id = id;
             this.name = name;
@@ -83,7 +83,7 @@ namespace SignalR_GameServer_v1.Characters
 
         public void update(string msg)
         {
-            Console.WriteLine("Player " + this.name + " received message: " + msg);
+            Console.WriteLine(this.name + " " + this.id + " " + " received message: " + msg);
         }
 
         public void notifyServer(string result)
@@ -96,12 +96,12 @@ namespace SignalR_GameServer_v1.Characters
             this.server = server;
         }
 
-        public void Move(string direction)
+        public virtual void Move(string direction)
         {
-            if (direction == "LEFT") MovePosX(-40);
-            else if (direction == "RIGHT") MovePosX(40);
-            else if (direction == "UP") MovePosY(-40);
-            else if (direction == "DOWN") MovePosY(40);
+            if (direction == "LEFT") MovePosX(-40 * this.GetSpeed());
+            else if (direction == "RIGHT") MovePosX(40 * this.GetSpeed());
+            else if (direction == "UP") MovePosY(-40 * this.GetSpeed());
+            else if (direction == "DOWN") MovePosY(40 * this.GetSpeed());
             this.notifyServer(direction);
         }
 
@@ -145,6 +145,16 @@ namespace SignalR_GameServer_v1.Characters
         public void MovePosY(int posY)
         {
             this.posY += posY;
+        }
+
+        public int GetHealth()
+        {
+            return this.health;
+        }
+
+        public int GetActionCount()
+        {
+            return this.actionCount;
         }
     }
 }

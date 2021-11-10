@@ -11,10 +11,10 @@ namespace SignalR_GameServer_v1.Characters
         public Hero() : base()
         {
             itemList = new List<Item>();
-            this.SetName(0);
+            this.SetName("");
         }
 
-        public Hero(string id, int name, int health, int speed, int actionCount, int posx, int posy) : base(id, name, health, speed, actionCount, posx, posy)
+        public Hero(int id, string name, int health, int speed, int actionCount, int posx, int posy) : base(id, name, health, speed, actionCount, posx, posy)
         {
             itemList = new List<Item>();
         }

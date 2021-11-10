@@ -960,7 +960,6 @@ C:\Users\edgar\Desktop\opp laboras\SignalRClient\SignalRClient\bin\Debug\System.
 C:\Users\edgar\Desktop\opp laboras\SignalRClient\SignalRClient\bin\Debug\System.Threading.Channels.xml
 C:\Users\edgar\Desktop\opp laboras\SignalRClient\SignalRClient\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\edgar\Desktop\opp laboras\SignalRClient\SignalRClient\bin\Debug\System.ValueTuple.xml
-C:\Users\edgar\Desktop\opp laboras\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csprojAssemblyReference.cache
 C:\Users\edgar\Desktop\opp laboras\SignalRClient\SignalRClient\obj\Debug\SignalRClient.Form1.resources
 C:\Users\edgar\Desktop\opp laboras\SignalRClient\SignalRClient\obj\Debug\SignalRClient.Properties.Resources.resources
 C:\Users\edgar\Desktop\opp laboras\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.GenerateResource.cache
@@ -968,3 +967,4 @@ C:\Users\edgar\Desktop\opp laboras\SignalRClient\SignalRClient\obj\Debug\SignalR
 C:\Users\edgar\Desktop\opp laboras\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csproj.CopyComplete
 C:\Users\edgar\Desktop\opp laboras\SignalRClient\SignalRClient\obj\Debug\SignalRClient.exe
 C:\Users\edgar\Desktop\opp laboras\SignalRClient\SignalRClient\obj\Debug\SignalRClient.pdb
+C:\Users\edgar\Desktop\opp laboras\SignalRClient\SignalRClient\obj\Debug\SignalRClient.csprojAssemblyReference.cache
