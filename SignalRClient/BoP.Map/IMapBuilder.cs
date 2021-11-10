@@ -4,5 +4,7 @@
     {
         MapBuilder AddTile(string TileType);
         Map Build(int width, int height);
+        void BuildGrassTile();
+        void BuildLavaTile();
     }
 }
