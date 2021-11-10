@@ -11,6 +11,7 @@ using SignalR_GameServer_v1.Command;
 using SignalR_GameServer_v1.MapLibrary;
 using SignalR_GameServer_v1.Observer;
 using Map = BoP.MapLibrary.Map;
+using Item = SignalR_GameServer_v1.Characters.Item;
 
 namespace SignalR_GameServer_v1.Hubs
 {
