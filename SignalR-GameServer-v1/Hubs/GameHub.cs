@@ -19,6 +19,8 @@ namespace SignalR_GameServer_v1.Hubs
         public static Dictionary<string, int> players = new Dictionary<string, int>();
         public static Map gameMap = null;
         public static Director director = new Director();
+        
+
 
         //public GameHub()
         //{
@@ -43,6 +45,20 @@ namespace SignalR_GameServer_v1.Hubs
                 //    .AddTile(TileTypes.Grass)
                 //    .AddTile(TileTypes.Lava)
                 //    .Build(MapSettings.HorizontalTiles, MapSettings.VerticalTiles);
+                Hero exHero = new Hero();
+                exHero.AddItem(new Item());
+                exHero.AddItem(new Item());
+                exHero.AddItem(new Item());
+                exHero.AddItem(new Item());
+                Hero shallowHero = exHero.ShallowCopy();
+                Hero deepHero = exHero.Clone();
+                exHero.LoseItem();
+                shallowHero.LoseItem();
+                deepHero.LoseItem();
+                Console.WriteLine(exHero.getItemCount());
+                Console.WriteLine(shallowHero.getItemCount());
+                Console.WriteLine(deepHero.getItemCount());
+
             }
             return gameMap;
         }

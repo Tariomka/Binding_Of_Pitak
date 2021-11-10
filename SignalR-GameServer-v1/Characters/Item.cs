@@ -26,6 +26,17 @@ namespace SignalR_GameServer_v1.Characters
             this.posY = 0;
         }
 
+        public Item(Item old) 
+        {
+            id = old.id;
+            name = old.name;
+            type = old.type;
+            effect = old.type;
+            usage = old.usage;
+            posX = old.posX;
+            posY = old.posY;
+        }
+
         public Item(int id, string name, string type, string effect, int usage, int posX, int posY)
         {
             this.id = id;
