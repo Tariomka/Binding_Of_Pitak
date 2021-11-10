@@ -8,7 +8,7 @@ using SignalR_GameServer_v1.Observer;
 
 namespace SignalR_GameServer_v1.Characters
 {
-    public abstract class Creature : IObserver
+    public abstract class Creature : IObserver, ICloneable
     {
         private int id;
         private string name;
@@ -32,6 +32,21 @@ namespace SignalR_GameServer_v1.Characters
             this.posX = 0;
             this.posY = 0;
             this.controller = new CreatureController();
+        }
+
+        //shallowcopy
+        public Creature ShallowCopy()
+        {
+            return (Creature)this.MemberwiseClone();
+        }
+
+        //deepcopy
+        public object Clone()
+        {
+            Creature copy = (Creature)this.MemberwiseClone();
+            copy.server = server;
+            copy.controller = controller;
+            return copy;
         }
 
         protected Creature(int id, string name, int health, int speed, int actionCount)
