@@ -31,6 +31,8 @@ namespace SignalR_GameServer_v1.Characters
             this.posY = 0;
         }
 
+        protected Subject GetServer() { return server; }
+
         //shallowcopy
         public Creature ShallowCopy()
         {
