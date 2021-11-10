@@ -9,7 +9,6 @@ namespace SignalR_GameServer_v1.Decorator
     public abstract class Decorator : Hero
     {
         public Decorator(Hero component) : base (component.GetId(), component.GetName(),component.GetHealth(), component.GetSpeed(),component.GetActionCount(), component.GetPosX(),component.GetPosY())
-        //public Decorator(Creature component) : base(component)
         {
         }
 
