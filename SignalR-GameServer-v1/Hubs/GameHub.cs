@@ -36,10 +36,13 @@ namespace SignalR_GameServer_v1.Hubs
                 director.Builder = builder;
                 director.BuildMixedMap();
                 gameMap = builder.Build(MapSettings.HorizontalTiles, MapSettings.VerticalTiles);
+<<<<<<< HEAD
                 //gameMap = new MapBuilder()
                 //    .AddTile(TileTypes.Grass)
                 //    .AddTile(TileTypes.Lava)
                 //    .Build(MapSettings.HorizontalTiles, MapSettings.VerticalTiles);
+=======
+>>>>>>> parent of e9a45b1 (Merge branch 'Tautvio' into Arturo)
             }
             return gameMap;
         }
