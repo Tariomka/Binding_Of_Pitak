@@ -12,6 +12,8 @@ using SignalR_GameServer_v1.MapLibrary;
 using SignalR_GameServer_v1.Observer;
 using Map = BoP.MapLibrary.Map;
 using Item = SignalR_GameServer_v1.Characters.Item;
+using SignalR_GameServer_v1.Iterators;
+using SignalR_GameServer_v1.States;
 
 namespace SignalR_GameServer_v1.Hubs
 {
@@ -23,7 +25,7 @@ namespace SignalR_GameServer_v1.Hubs
         public int mapHeight = settings.mapHeight;
         public static int playerIndex = 0;
         public static Dictionary<string, int> players = new Dictionary<string, int>();
-        public static List<Hero> heroes = new List<Hero>();
+        public static CreaturesCollection heroes = new CreaturesCollection();
         public static Map gameMap = null;
         private static CreatureController controller = new CreatureController();
         private static Subject server = new Server();
@@ -41,19 +43,19 @@ namespace SignalR_GameServer_v1.Hubs
                 //    .AddTile(TileTypes.Grass)
                 //    .AddTile(TileTypes.Lava)
                 //    .Build(MapSettings.HorizontalTiles, MapSettings.VerticalTiles);
-                Hero exHero = new Hero();
-                exHero.AddItem(new Item());
-                exHero.AddItem(new Item());
-                exHero.AddItem(new Item());
-                exHero.AddItem(new Item());
-                Hero shallowHero = exHero.ShallowCopy();
-                Hero deepHero = exHero.Clone();
-                exHero.LoseItem();
-                shallowHero.LoseItem();
-                deepHero.LoseItem();
-                Console.WriteLine(exHero.getItemCount());
-                Console.WriteLine(shallowHero.getItemCount());
-                Console.WriteLine(deepHero.getItemCount());
+                //Hero exHero = new Hero();
+                //exHero.AddItem(new Item());
+                //exHero.AddItem(new Item());
+                //exHero.AddItem(new Item());
+                //exHero.AddItem(new Item());
+                //Hero shallowHero = exHero.ShallowCopy();
+                //Hero deepHero = exHero.Clone();
+                //exHero.LoseItem();
+                //shallowHero.LoseItem();
+                //deepHero.LoseItem();
+                //Console.WriteLine(exHero.getItemCount());
+                //Console.WriteLine(shallowHero.getItemCount());
+                //Console.WriteLine(deepHero.getItemCount());
             }
             return gameMap;
         }
@@ -62,41 +64,45 @@ namespace SignalR_GameServer_v1.Hubs
 
         public async Task JoinGame(Guid uid)
         {
-            var playerid = uid.ToString();
+            var id = uid.ToString();
+            var playerid = Context.ConnectionId;
 
             if(!players.ContainsKey(playerid))
             {
                 playerIndex++;
                 players.Add(playerid, playerIndex);
 
-                var newPlayer = new Hero(playerIndex, "Player", 100, 1, 0, 480, 320);
+                var newPlayer = new Hero(playerIndex, "Player", 100, 5, 0, 480, 320);
+                server.attach(newPlayer);
+                heroes.Add(newPlayer);
+
                 if (playerIndex == 1)
                 {
-                    heroes.Add(newPlayer);
-                    server.attach(newPlayer);
+                    heroes.GetCreature(0).TransitionTo(new ReadyState());
+                    await SendStateToCaller();
                 }
-                else if (playerIndex % 3 == 0)
-                {
-                    Hero decoratedHero = new ArmorBootsDecorator(newPlayer);
-                    heroes.Add(decoratedHero);
-                    server.attach(decoratedHero);
-                }
-                else if (playerIndex % 3 == 1)
-                {
-                    Hero decoratedHero = new ArmorBootsDecorator(newPlayer);
-                    Hero decoratedHero2 = new ArmorGlovesDecorator(decoratedHero);
-                    heroes.Add(decoratedHero2);
-                    server.attach(decoratedHero2);
-                }
-                else
-                {
-                    Hero decoratedHero = new ArmorBootsDecorator(newPlayer);
-                    Hero decoratedHero2 = new ArmorGlovesDecorator(decoratedHero);
-                    Hero decoratedHero3 = new ArmorLegsDecorator(decoratedHero2);
-                    heroes.Add(decoratedHero3);
-                    server.attach(decoratedHero3);
-                }
-                
+                //else if (playerIndex % 3 == 0)
+                //{
+                //    Hero decoratedHero = new ArmorBootsDecorator(newPlayer);
+                //    heroes.Add(decoratedHero);
+                //    server.attach(decoratedHero);
+                //}
+                //else if (playerIndex % 3 == 1)
+                //{
+                //    Hero decoratedHero = new ArmorBootsDecorator(newPlayer);
+                //    Hero decoratedHero2 = new ArmorGlovesDecorator(decoratedHero);
+                //    heroes.Add(decoratedHero2);
+                //    server.attach(decoratedHero2);
+                //}
+                //else
+                //{
+                //    Hero decoratedHero = new ArmorBootsDecorator(newPlayer);
+                //    Hero decoratedHero2 = new ArmorGlovesDecorator(decoratedHero);
+                //    Hero decoratedHero3 = new ArmorLegsDecorator(decoratedHero2);
+                //    heroes.Add(decoratedHero3);
+                //    server.attach(decoratedHero3);
+                //}
+
             }
 
             await SendGameJoinedMessage(players[playerid], players, this.GetMap());
@@ -111,6 +117,10 @@ namespace SignalR_GameServer_v1.Hubs
         public async Task SendMessage(string user, string message)
         {
             await Clients.All.SendAsync("ReceiveMessage", user, message);
+        }
+        public async Task SendGlobalMessage(string message)
+        {
+            await Clients.All.SendAsync("ReceiveGlobalMessage", message);
         }
 
         #endregion
@@ -132,6 +142,16 @@ namespace SignalR_GameServer_v1.Hubs
             return Clients.Caller.SendAsync("ReceiveMessage", message);
         }
 
+        public Task SendStateToCaller()
+        {
+            return Clients.Caller.SendAsync("SwitchState");
+        }
+
+        public Task SendStateToSpecificClient(string id)
+        {
+            return Clients.Client(id).SendAsync("SwitchState");
+        }
+
         public Task SendMessageTogroup(string message)
         {
             return Clients.Group("SignalR Users").SendAsync("ReceiveMessage", message);
@@ -139,25 +159,12 @@ namespace SignalR_GameServer_v1.Hubs
 
         public async Task MovePlayer(int id, string direction)
         {
-            var hero = heroes.Find(x => x.GetId() == id);
+            var hero = heroes.Find(id);
             string user = "Player " + hero.GetId();
 
-            if (direction == "UNDO")
+            ICommand movedir = null;
+            if (hero.GetRemainingSpeed() > 0)
             {
-                bool flag = controller.Undo();
-                switch (flag)
-                {
-                    case false:
-                        await SendMessage(user, "Undo Unsuccessful!");
-                        break;
-                    default:
-                        await SendMessage(user, "Move Undone!");
-                        break;
-                }
-            }
-            else
-            {
-                ICommand movedir;
                 switch (direction)
                 {
                     case "LEFT":
@@ -180,33 +187,153 @@ namespace SignalR_GameServer_v1.Hubs
                         movedir = new AttackCommand(hero);
                         await SendMessage(user, "Attack!");
                         break;
-                    case "ENDTURN":
-                        movedir = new EndTurnCommand(hero);
-                        await SendMessage(user, "End Turn!");
-                        break;
                     default:
-                        movedir = null;
                         await SendMessage(user, "Unsuccessful movement!");
                         break;
                 }
+            }
+            else
+            {
+                await SendMessage(user, "No Speed Remaining!");
+            }
 
-                if (movedir != null)
-                {
-                    controller.Run(movedir);
-                }
+            if (movedir != null)
+            {
+                controller.Run(movedir);
             }
 
             await GetPlayerCoordinates(id);
         }
 
+        public async Task EndPlayerTurn(int id)
+        {
+            var hero = heroes.Find(id);
+            string user = "Player " + hero.GetId();
+
+            var command = new EndTurnCommand(hero);
+            await SendMessage(user, "End Turn!");
+            controller.Run(command);
+            await SendStateToCaller();
+
+            var nextHeroID = FindNextCreature(id);
+
+            if (nextHeroID > -1)
+            {
+                var nextHero = heroes.Find(nextHeroID);
+                string nextUser = "Player " + nextHero.GetId();
+                command = new EndTurnCommand(nextHero);
+                await SendMessage(nextUser, "Your Turn!");
+                controller.Run(command);
+                await SendStateToSpecificClient(players.First(x => x.Value == nextHero.GetId()).Key);
+            }
+            else
+            {
+                Console.WriteLine("Something went wrong!");
+            }
+
+            await GetPlayerCoordinates(id);
+        }
+
+        public async Task UndoPlayer(int id)
+        {
+            var hero = heroes.Find(id);
+            string user = "Player " + hero.GetId();
+
+            bool flag = controller.Undo();
+            switch (flag)
+            {
+                case false:
+                    await SendMessage(user, "Undo Unsuccessful!");
+                    break;
+                default:
+                    await SendMessage(user, "Move Undone!");
+                    break;
+            }
+            await GetPlayerCoordinates(id);
+        }
+
+        public async Task PlayerDeath(int id)
+        {
+            var hero = heroes.Find(id);
+            string user = "Player " + hero.GetId();
+
+            bool flag = hero.ReceiveDamage(999);
+
+            if (!flag)
+            {
+                await SendMessage(user, "Player has died!");
+                await SendStateToCaller();
+
+                int nextID = FindNextCreature(id);
+                switch (nextID)
+                {
+                    case -1:
+                        await SendGlobalMessage("All players have died!");
+                        break;
+                    case -2:
+                        break;
+                    default:
+                        var nextHero = heroes.Find(nextID);
+                        string nextUser = "Player " + nextHero.GetId();
+                        
+                        var command = new EndTurnCommand(nextHero);
+                        await SendMessage(nextUser, "Your Turn!");
+                        controller.Run(command);
+                        await SendStateToSpecificClient(players.First(x => x.Value == nextHero.GetId()).Key);
+                        break;
+                }
+            }
+
+        }
+
+
         public Task GetPlayerCoordinates(int id)
         {
-            var hero = heroes.Find(x => x.GetId() == id);
+            var hero = heroes.Find(id);
 
             return Clients.All.SendAsync("PlayerNewCoordinates", id, hero.GetPosX(), hero.GetPosY());
         }
 
         #endregion
+
+        public int FindNextCreature(int id)
+        {
+            int result = -1;
+            bool resultFlag = false;
+            bool valueFlag = true;
+            foreach(Creature creature in heroes)
+            {
+                string state = creature.GetState();
+                int creatureID = creature.GetId();
+                Console.WriteLine($"{creature.GetName()} {creatureID} - State - {state}");
+                switch(state)
+                {
+                    case "ReadyState":
+                        resultFlag = true;
+                        break;
+                    case "WaitingTurnState":
+                        if (result < 0)
+                        {
+                            result = creatureID;
+                        }
+                        if (creatureID > id && valueFlag)
+                        {
+                            result = creatureID;
+                            valueFlag = false;
+                        }
+                        break;
+                }
+            }
+
+            if (resultFlag)
+            {
+                return -2;
+            }
+            else
+            {
+                return result;
+            }
+        }
 
     }
 }

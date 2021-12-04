@@ -8,20 +8,28 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Abudabi\\.nuget\\packages\\": {}
+    "C:\\Users\\Abudabi\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj",
+      "projectUniqueName": "C:\\GitHub\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj",
       "projectName": "BoP.MapLibrary",
-      "projectPath": "D:\\GitHub\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj",
+      "projectPath": "C:\\GitHub\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj",
       "packagesPath": "C:\\Users\\Abudabi\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\obj\\",
+      "outputPath": "C:\\GitHub\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
         "C:\\Users\\Abudabi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -60,7 +68,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

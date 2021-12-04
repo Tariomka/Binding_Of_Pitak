@@ -57,6 +57,16 @@ namespace SignalRClient
                 PaintNewPlayerPosition(playerid, posx, posy);
             });
 
+            connection.On("SwitchState", () =>
+            {
+                SwitchButtonsState();
+            });
+
+            connection.On<string>("ReceiveGlobalMessage", (message) =>
+            {
+                AddMessage(message);
+            });
+
             //connection.On<int, int>("ReceiveMapCoordinates", (x, y) =>
             //{
             //    mapWidth = x;
@@ -297,12 +307,35 @@ namespace SignalRClient
         {
             try
             {
-                movePlayer(this.playerid, "UNDO");
+                _ = SendUndoPlayer(this.playerid);
             }
             catch (Exception ex)
             {
                 messagesList.Items.Add(ex.Message);
             }
+        }
+
+        private void ENDTURN_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                _ = SendEndPlayerTurn(this.playerid);
+            }
+            catch (Exception ex)
+            {
+                messagesList.Items.Add(ex.Message);
+            }
+        }
+
+        private void SwitchButtonsState()
+        {
+            UP.Enabled = !UP.Enabled;
+            DOWN.Enabled = !DOWN.Enabled;
+            LEFT.Enabled = !LEFT.Enabled;
+            RIGHT.Enabled = !RIGHT.Enabled;
+            UNDO.Enabled = !UNDO.Enabled;
+            ENDTURN.Enabled = !ENDTURN.Enabled;
+            DEATH.Enabled = !DEATH.Enabled;
         }
 
         private void movePlayer(int pid, string direction)
@@ -341,12 +374,39 @@ namespace SignalRClient
                     pid, direction);
         }
 
+        private async Task SendEndPlayerTurn(int pid)
+        {
+            await connection.InvokeAsync("EndPlayerTurn", pid);
+        }
+
+        private async Task SendUndoPlayer(int pid)
+        {
+            await connection.InvokeAsync("UndoPlayer", pid);
+        }
+
+        private async Task SendPlayerDeath(int pid)
+        {
+            await connection.InvokeAsync("PlayerDeath", pid);
+        }
+
         private void PaintNewPlayerPosition(int playerid, int posx, int posy)
         {
             var player = players[playerid];
             player.BringToFront();
 
             player.Location = new Point(posx, posy);
+        }
+
+        private void DEATH_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                _ = SendPlayerDeath(this.playerid);
+            }
+            catch (Exception ex)
+            {
+                messagesList.Items.Add(ex.Message);
+            }
         }
     }
 }
