@@ -69,34 +69,37 @@ namespace SignalR_GameServer_v1.Hubs
                 playerIndex++;
                 players.Add(playerid, playerIndex);
 
-                var newPlayer = new Hero(playerIndex, "Player", 100, 1, 0, 480, 320);
-                if (playerIndex == 1)
-                {
-                    heroes.Add(newPlayer);
-                    server.attach(newPlayer);
-                }
-                else if (playerIndex % 3 == 0)
-                {
-                    Hero decoratedHero = new ArmorBootsDecorator(newPlayer);
-                    heroes.Add(decoratedHero);
-                    server.attach(decoratedHero);
-                }
-                else if (playerIndex % 3 == 1)
-                {
-                    Hero decoratedHero = new ArmorBootsDecorator(newPlayer);
-                    Hero decoratedHero2 = new ArmorGlovesDecorator(decoratedHero);
-                    heroes.Add(decoratedHero2);
-                    server.attach(decoratedHero2);
-                }
-                else
-                {
-                    Hero decoratedHero = new ArmorBootsDecorator(newPlayer);
-                    Hero decoratedHero2 = new ArmorGlovesDecorator(decoratedHero);
-                    Hero decoratedHero3 = new ArmorLegsDecorator(decoratedHero2);
-                    heroes.Add(decoratedHero3);
-                    server.attach(decoratedHero3);
-                }
-                
+                var newPlayer = new Hero(playerIndex, "Player", 100, 5, 0, 480, 320);
+                server.attach(newPlayer);
+                heroes.Add(newPlayer);
+
+                //if (playerIndex == 1)
+                //{
+                //    heroes.Add(newPlayer);
+                //    server.attach(newPlayer);
+                //}
+                //else if (playerIndex % 3 == 0)
+                //{
+                //    Hero decoratedHero = new ArmorBootsDecorator(newPlayer);
+                //    heroes.Add(decoratedHero);
+                //    server.attach(decoratedHero);
+                //}
+                //else if (playerIndex % 3 == 1)
+                //{
+                //    Hero decoratedHero = new ArmorBootsDecorator(newPlayer);
+                //    Hero decoratedHero2 = new ArmorGlovesDecorator(decoratedHero);
+                //    heroes.Add(decoratedHero2);
+                //    server.attach(decoratedHero2);
+                //}
+                //else
+                //{
+                //    Hero decoratedHero = new ArmorBootsDecorator(newPlayer);
+                //    Hero decoratedHero2 = new ArmorGlovesDecorator(decoratedHero);
+                //    Hero decoratedHero3 = new ArmorLegsDecorator(decoratedHero2);
+                //    heroes.Add(decoratedHero3);
+                //    server.attach(decoratedHero3);
+                //}
+
             }
 
             await SendGameJoinedMessage(players[playerid], players, this.GetMap());
@@ -157,39 +160,45 @@ namespace SignalR_GameServer_v1.Hubs
             }
             else
             {
-                ICommand movedir;
-                switch (direction)
+                ICommand movedir = null;
+                if (hero.GetRemainingSpeed() > 0)
                 {
-                    case "LEFT":
-                        movedir = new MoveLeftCommand(hero);
-                        await SendMessage(user, "Move Left!");
-                        break;
-                    case "RIGHT":
-                        movedir = new MoveRightCommand(hero);
-                        await SendMessage(user, "Move Right!");
-                        break;
-                    case "UP":
-                        movedir = new MoveUpCommand(hero);
-                        await SendMessage(user, "Move Up!");
-                        break;
-                    case "DOWN":
-                        movedir = new MoveDownCommand(hero);
-                        await SendMessage(user, "Move Down!");
-                        break;
-                    case "ATTACK":
-                        movedir = new AttackCommand(hero);
-                        await SendMessage(user, "Attack!");
-                        break;
-                    case "ENDTURN":
-                        movedir = new EndTurnCommand(hero);
-                        await SendMessage(user, "End Turn!");
-                        break;
-                    default:
-                        movedir = null;
-                        await SendMessage(user, "Unsuccessful movement!");
-                        break;
+                    switch (direction)
+                    {
+                        case "LEFT":
+                            movedir = new MoveLeftCommand(hero);
+                            await SendMessage(user, "Move Left!");
+                            break;
+                        case "RIGHT":
+                            movedir = new MoveRightCommand(hero);
+                            await SendMessage(user, "Move Right!");
+                            break;
+                        case "UP":
+                            movedir = new MoveUpCommand(hero);
+                            await SendMessage(user, "Move Up!");
+                            break;
+                        case "DOWN":
+                            movedir = new MoveDownCommand(hero);
+                            await SendMessage(user, "Move Down!");
+                            break;
+                        case "ATTACK":
+                            movedir = new AttackCommand(hero);
+                            await SendMessage(user, "Attack!");
+                            break;
+                        case "ENDTURN":
+                            movedir = new EndTurnCommand(hero);
+                            await SendMessage(user, "End Turn!");
+                            break;
+                        default:
+                            await SendMessage(user, "Unsuccessful movement!");
+                            break;
+                    }
                 }
-
+                else
+                {
+                    await SendMessage(user, "No Speed Remaining!");
+                }
+                
                 if (movedir != null)
                 {
                     controller.Run(movedir);

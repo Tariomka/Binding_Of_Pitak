@@ -305,6 +305,19 @@ namespace SignalRClient
             }
         }
 
+        private void ENDTURN_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                movePlayer(this.playerid, "ENDTURN");
+                ENDTURN.Enabled = false;
+            }
+            catch (Exception ex)
+            {
+                messagesList.Items.Add(ex.Message);
+            }
+        }
+
         private void movePlayer(int pid, string direction)
         {
             var player = players[pid];

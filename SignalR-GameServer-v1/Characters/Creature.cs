@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using SignalR_GameServer_v1.Command;
 using SignalR_GameServer_v1.Observer;
+using SignalR_GameServer_v1.States;
+
 
 namespace SignalR_GameServer_v1.Characters
 {
@@ -19,7 +21,11 @@ namespace SignalR_GameServer_v1.Characters
         private int posY;
 
         private Subject server;
+        private State _state;
 
+        private int speedRemaining;
+
+        #region constructor
         protected Creature()
         {
             this.id = 0;
@@ -29,10 +35,24 @@ namespace SignalR_GameServer_v1.Characters
             this.actionCount = 0;
             this.posX = 0;
             this.posY = 0;
+            this.speedRemaining = 0;
         }
 
-        protected Subject GetServer() { return server; }
+        protected Creature(int id, string name, int health, int speed, int actionCount, int posx, int posy)
+        {
+            this.id = id;
+            this.name = name;
+            this.health = health;
+            this.speed = speed;
+            this.actionCount = actionCount;
+            this.posX = posx;
+            this.posY = posy;
+            TransitionTo(new ReadyState());
+            this.speedRemaining = this.speed;
+        }
+        #endregion
 
+        #region prototype
         //shallowcopy
         public Creature ShallowCopy()
         {
@@ -46,17 +66,11 @@ namespace SignalR_GameServer_v1.Characters
             copy.server = server;
             return copy;
         }
+        #endregion
 
-        protected Creature(int id, string name, int health, int speed, int actionCount, int posx, int posy)
-        {
-            this.id = id;
-            this.name = name;
-            this.health = health;
-            this.speed = speed;
-            this.actionCount = actionCount;
-            this.posX = posx;
-            this.posY = posy;
-        }
+
+        #region getters
+        protected Subject GetServer() { return server; }
 
         public string GetDetails()
         {
@@ -73,14 +87,48 @@ namespace SignalR_GameServer_v1.Characters
             return this.name;
         }
 
-        public void SetName(string name)
-        {
-            this.name = name;
-        }
-
         public virtual int GetSpeed()
         {
             return speed;
+        }
+
+        public int GetRemainingSpeed()
+        {
+            return speedRemaining;
+        }
+
+        public int GetHealth()
+        {
+            return this.health;
+        }
+
+        public int GetActionCount()
+        {
+            return this.actionCount;
+        }
+
+        public int GetPosX()
+        {
+            return this.posX;
+        }
+
+        public int GetPosY()
+        {
+            return this.posY;
+        }
+
+        public string GetState()
+        {
+            return this._state.GetType().Name;
+        }
+
+        #endregion
+
+        #region setters
+
+        public void SetName(string name)
+        {
+            this.name = name;
         }
 
         public void SetDetails(int id, string name, int health, int speed, int actionCount)
@@ -97,6 +145,24 @@ namespace SignalR_GameServer_v1.Characters
             this.speed = speed;
         }
 
+        public void setServer(Subject server)
+        {
+            this.server = server;
+        }
+
+        public void SetPosX(int posx)
+        {
+            this.posX = posx;
+        }
+
+        public void SetPosY(int posY)
+        {
+            this.posY = posY;
+        }
+
+        #endregion
+
+
         public void update(string msg)
         {
             Console.WriteLine(this.name + " " + this.id + " " + " received message: " + msg);
@@ -107,18 +173,9 @@ namespace SignalR_GameServer_v1.Characters
             server.receiveFromClient(result);
         }
 
-        public void setServer(Subject server)
+        public virtual void Move(string direction, bool flag)
         {
-            this.server = server;
-        }
-
-        public virtual void Move(string direction)
-        {
-            if (direction == "LEFT") MovePosX(-40 * this.GetSpeed());
-            else if (direction == "RIGHT") MovePosX(40 * this.GetSpeed());
-            else if (direction == "UP") MovePosY(-40 * this.GetSpeed());
-            else if (direction == "DOWN") MovePosY(40 * this.GetSpeed());
-            this.notifyServer(direction);
+            this._state.Move(direction, flag);
         }
 
         public void Attack()
@@ -129,28 +186,17 @@ namespace SignalR_GameServer_v1.Characters
 
         public void EndTurn()
         {
-            //end turn logic
-            
+            this._state.EndTurn();
         }
 
-        public int GetPosX()
+        public void TransitionTo(State state)
         {
-            return this.posX;
-        }
-
-        public void SetPosX(int posx)
-        {
-            this.posX = posx;
-        }
-
-        public int GetPosY()
-        {
-            return this.posY;
-        }
-
-        public void SetPosY(int posY)
-        {
-            this.posY = posY;
+            if (server != null)
+            {
+                this.notifyServer($"State - {state.GetType().Name}");
+            }
+            this._state = state;
+            this._state.SetContext(this);
         }
 
         public void MovePosX(int posX)
@@ -163,14 +209,10 @@ namespace SignalR_GameServer_v1.Characters
             this.posY += posY;
         }
 
-        public int GetHealth()
+        public void UpdateRemainingSpeed(int value)
         {
-            return this.health;
+            this.speedRemaining += value;
         }
 
-        public int GetActionCount()
-        {
-            return this.actionCount;
-        }
     }
 }

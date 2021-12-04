@@ -16,12 +16,12 @@ namespace SignalR_GameServer_v1.Command
 
         public override void execute()
         {
-            target.Move("LEFT");
+            target.Move("LEFT", true);
         }
 
         public override void undo()
         {
-            target.Move("RIGHT");
+            target.Move("RIGHT", false);
         }
     }
 }

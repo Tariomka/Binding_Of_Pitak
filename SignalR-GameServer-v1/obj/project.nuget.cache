@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KlWNyEOng0NtZbecvQuh1TZyh9M+35znNzBdo/eX91OUjja6odsYOKuV+j+ZVhKZfIcvFvRWb5wYR/NIZcyh5w==",
+  "dgSpecHash": "a3jtxFqeBuQ/ZUb1bO9v/wek0qWD+0SbljNUMDjI/h44Jf+BMKQTvCesEAIhoJyrZh1ebwmki4XtrGRRnp19oQ==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
+  "projectFilePath": "C:\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Abudabi\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\Abudabi\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
@@ -124,7 +124,8 @@
     "C:\\Users\\Abudabi\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Abudabi\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Abudabi\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Abudabi\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\Abudabi\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\Abudabi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.14\\microsoft.netcore.app.host.win-x64.3.1.14.nupkg.sha512"
   ],
   "logs": []
 }
