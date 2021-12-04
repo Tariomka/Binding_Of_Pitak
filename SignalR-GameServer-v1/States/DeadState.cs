@@ -9,7 +9,7 @@ namespace SignalR_GameServer_v1.States
     {
         public override void Attack()
         {
-            throw new NotImplementedException();
+            this._creature.notifyServer("Can't attack while dead!");
         }
 
         public override void EndTurn()

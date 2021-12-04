@@ -220,5 +220,20 @@ namespace SignalR_GameServer_v1.Characters
             this.speedRemaining = this.speed;
         }
 
+        public bool ReceiveDamage(int damage)
+        {
+            this.health -= damage;
+            if (this.health > 0)
+            {
+                return true;
+            }
+            else
+            {
+                TransitionTo(new DeadState());
+                this.health = 0;
+                return false;
+            }
+        }
+
     }
 }

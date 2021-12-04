@@ -62,6 +62,11 @@ namespace SignalRClient
                 SwitchButtonsState();
             });
 
+            connection.On<string>("ReceiveGlobalMessage", (message) =>
+            {
+                AddMessage(message);
+            });
+
             //connection.On<int, int>("ReceiveMapCoordinates", (x, y) =>
             //{
             //    mapWidth = x;
@@ -330,6 +335,7 @@ namespace SignalRClient
             RIGHT.Enabled = !RIGHT.Enabled;
             UNDO.Enabled = !UNDO.Enabled;
             ENDTURN.Enabled = !ENDTURN.Enabled;
+            DEATH.Enabled = !DEATH.Enabled;
         }
 
         private void movePlayer(int pid, string direction)
@@ -378,12 +384,29 @@ namespace SignalRClient
             await connection.InvokeAsync("UndoPlayer", pid);
         }
 
+        private async Task SendPlayerDeath(int pid)
+        {
+            await connection.InvokeAsync("PlayerDeath", pid);
+        }
+
         private void PaintNewPlayerPosition(int playerid, int posx, int posy)
         {
             var player = players[playerid];
             player.BringToFront();
 
             player.Location = new Point(posx, posy);
+        }
+
+        private void DEATH_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                _ = SendPlayerDeath(this.playerid);
+            }
+            catch (Exception ex)
+            {
+                messagesList.Items.Add(ex.Message);
+            }
         }
     }
 }

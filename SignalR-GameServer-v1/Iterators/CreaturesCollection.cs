@@ -9,7 +9,7 @@ namespace SignalR_GameServer_v1.Iterators
 {
     public class CreaturesCollection : IteratorAggregate
     {
-        private List<Hero> _creatures = new List<Hero>();
+        private List<Creature> _creatures = new List<Creature>();
         private bool _direction = false;
 
         public void ReverseDirection()
@@ -17,7 +17,7 @@ namespace SignalR_GameServer_v1.Iterators
             _direction = !_direction;
         }
 
-        public List<Hero> GetCreatures()
+        public List<Creature> GetCreatures()
         {
             return _creatures;
         }
@@ -27,7 +27,7 @@ namespace SignalR_GameServer_v1.Iterators
             return _creatures.Count;
         }
 
-        public Hero GetCreature(int pos)
+        public Creature GetCreature(int pos)
         {
             return _creatures[pos];
         }
@@ -37,12 +37,12 @@ namespace SignalR_GameServer_v1.Iterators
             this._creatures.Add(creature);
         }
 
-        public Hero Find(int id)
+        public Creature Find(int id)
         {
             return this._creatures.Find(x => x.GetId() == id);
         }
 
-        public Hero FindNext(int id)
+        public Creature FindNext(int id)
         {
             var current = this._creatures.FindIndex(x => x.GetId() == id);
             var creature = this._creatures[current == this._creatures.Count-1 ? 0 : current + 1];

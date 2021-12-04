@@ -118,6 +118,10 @@ namespace SignalR_GameServer_v1.Hubs
         {
             await Clients.All.SendAsync("ReceiveMessage", user, message);
         }
+        public async Task SendGlobalMessage(string message)
+        {
+            await Clients.All.SendAsync("ReceiveGlobalMessage", message);
+        }
 
         #endregion
 
@@ -211,13 +215,23 @@ namespace SignalR_GameServer_v1.Hubs
             controller.Run(command);
             await SendStateToCaller();
 
-            var nextHero = heroes.FindNext(id);
-            string nextUser = "Player " + nextHero.GetId();
-            command = new EndTurnCommand(nextHero);
-            await SendMessage(nextUser, "Your Turn!");
-            controller.Run(command);
-            await SendStateToSpecificClient(players.First(x => x.Value == nextHero.GetId()).Key);
-            
+            var nextHeroID = FindNextCreature(id);
+
+            if (nextHeroID > -1)
+            {
+                var nextHero = heroes.Find(nextHeroID);
+                string nextUser = "Player " + nextHero.GetId();
+                command = new EndTurnCommand(nextHero);
+                await SendMessage(nextUser, "Your Turn!");
+                controller.Run(command);
+                await SendStateToSpecificClient(players.First(x => x.Value == nextHero.GetId()).Key);
+            }
+            else
+            {
+                Console.WriteLine("Something went wrong!");
+            }
+
+            await GetPlayerCoordinates(id);
         }
 
         public async Task UndoPlayer(int id)
@@ -235,9 +249,42 @@ namespace SignalR_GameServer_v1.Hubs
                     await SendMessage(user, "Move Undone!");
                     break;
             }
-
+            await GetPlayerCoordinates(id);
         }
 
+        public async Task PlayerDeath(int id)
+        {
+            var hero = heroes.Find(id);
+            string user = "Player " + hero.GetId();
+
+            bool flag = hero.ReceiveDamage(999);
+
+            if (!flag)
+            {
+                await SendMessage(user, "Player has died!");
+                await SendStateToCaller();
+
+                int nextID = FindNextCreature(id);
+                switch (nextID)
+                {
+                    case -1:
+                        await SendGlobalMessage("All players have died!");
+                        break;
+                    case -2:
+                        break;
+                    default:
+                        var nextHero = heroes.Find(nextID);
+                        string nextUser = "Player " + nextHero.GetId();
+                        
+                        var command = new EndTurnCommand(nextHero);
+                        await SendMessage(nextUser, "Your Turn!");
+                        controller.Run(command);
+                        await SendStateToSpecificClient(players.First(x => x.Value == nextHero.GetId()).Key);
+                        break;
+                }
+            }
+
+        }
 
 
         public Task GetPlayerCoordinates(int id)
@@ -248,6 +295,45 @@ namespace SignalR_GameServer_v1.Hubs
         }
 
         #endregion
+
+        public int FindNextCreature(int id)
+        {
+            int result = -1;
+            bool resultFlag = false;
+            bool valueFlag = true;
+            foreach(Creature creature in heroes)
+            {
+                string state = creature.GetState();
+                int creatureID = creature.GetId();
+                Console.WriteLine($"{creature.GetName()} {creatureID} - State - {state}");
+                switch(state)
+                {
+                    case "ReadyState":
+                        resultFlag = true;
+                        break;
+                    case "WaitingTurnState":
+                        if (result < 0)
+                        {
+                            result = creatureID;
+                        }
+                        if (creatureID > id && valueFlag)
+                        {
+                            result = creatureID;
+                            valueFlag = false;
+                        }
+                        break;
+                }
+            }
+
+            if (resultFlag)
+            {
+                return -2;
+            }
+            else
+            {
+                return result;
+            }
+        }
 
     }
 }

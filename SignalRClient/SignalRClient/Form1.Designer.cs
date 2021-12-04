@@ -37,6 +37,7 @@ namespace SignalRClient
             this.picCanvas = new System.Windows.Forms.PictureBox();
             this.UNDO = new System.Windows.Forms.Button();
             this.ENDTURN = new System.Windows.Forms.Button();
+            this.DEATH = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -124,11 +125,23 @@ namespace SignalRClient
             this.ENDTURN.UseVisualStyleBackColor = true;
             this.ENDTURN.Click += new System.EventHandler(this.ENDTURN_Click);
             // 
+            // DEATH
+            // 
+            this.DEATH.Enabled = false;
+            this.DEATH.Location = new System.Drawing.Point(1237, 605);
+            this.DEATH.Name = "DEATH";
+            this.DEATH.Size = new System.Drawing.Size(75, 23);
+            this.DEATH.TabIndex = 18;
+            this.DEATH.Text = "DEATH";
+            this.DEATH.UseVisualStyleBackColor = false;
+            this.DEATH.Click += new System.EventHandler(this.DEATH_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1316, 669);
+            this.Controls.Add(this.DEATH);
             this.Controls.Add(this.ENDTURN);
             this.Controls.Add(this.UNDO);
             this.Controls.Add(this.messagesList);
@@ -155,6 +168,7 @@ namespace SignalRClient
         private System.Windows.Forms.ListBox messagesList;
         private System.Windows.Forms.Button UNDO;
         private System.Windows.Forms.Button ENDTURN;
+        private System.Windows.Forms.Button DEATH;
     }
 }
 
