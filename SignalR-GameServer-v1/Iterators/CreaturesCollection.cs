@@ -32,7 +32,7 @@ namespace SignalR_GameServer_v1.Iterators
             return _creatures[pos];
         }
 
-        public void Add(Hero creature)
+        public void Add(Creature creature)
         {
             this._creatures.Add(creature);
         }
