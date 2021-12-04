@@ -57,6 +57,11 @@ namespace SignalRClient
                 PaintNewPlayerPosition(playerid, posx, posy);
             });
 
+            connection.On("SwitchState", () =>
+            {
+                SwitchButtonsState();
+            });
+
             //connection.On<int, int>("ReceiveMapCoordinates", (x, y) =>
             //{
             //    mapWidth = x;
@@ -297,7 +302,7 @@ namespace SignalRClient
         {
             try
             {
-                movePlayer(this.playerid, "UNDO");
+                _ = SendUndoPlayer(this.playerid);
             }
             catch (Exception ex)
             {
@@ -309,13 +314,22 @@ namespace SignalRClient
         {
             try
             {
-                movePlayer(this.playerid, "ENDTURN");
-                ENDTURN.Enabled = false;
+                _ = SendEndPlayerTurn(this.playerid);
             }
             catch (Exception ex)
             {
                 messagesList.Items.Add(ex.Message);
             }
+        }
+
+        private void SwitchButtonsState()
+        {
+            UP.Enabled = !UP.Enabled;
+            DOWN.Enabled = !DOWN.Enabled;
+            LEFT.Enabled = !LEFT.Enabled;
+            RIGHT.Enabled = !RIGHT.Enabled;
+            UNDO.Enabled = !UNDO.Enabled;
+            ENDTURN.Enabled = !ENDTURN.Enabled;
         }
 
         private void movePlayer(int pid, string direction)
@@ -352,6 +366,16 @@ namespace SignalRClient
         {
             await connection.InvokeAsync("MovePlayer",
                     pid, direction);
+        }
+
+        private async Task SendEndPlayerTurn(int pid)
+        {
+            await connection.InvokeAsync("EndPlayerTurn", pid);
+        }
+
+        private async Task SendUndoPlayer(int pid)
+        {
+            await connection.InvokeAsync("UndoPlayer", pid);
         }
 
         private void PaintNewPlayerPosition(int playerid, int posx, int posy)

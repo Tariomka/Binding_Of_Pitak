@@ -12,6 +12,8 @@ using SignalR_GameServer_v1.MapLibrary;
 using SignalR_GameServer_v1.Observer;
 using Map = BoP.MapLibrary.Map;
 using Item = SignalR_GameServer_v1.Characters.Item;
+using SignalR_GameServer_v1.Iterators;
+using SignalR_GameServer_v1.States;
 
 namespace SignalR_GameServer_v1.Hubs
 {
@@ -23,7 +25,7 @@ namespace SignalR_GameServer_v1.Hubs
         public int mapHeight = settings.mapHeight;
         public static int playerIndex = 0;
         public static Dictionary<string, int> players = new Dictionary<string, int>();
-        public static List<Hero> heroes = new List<Hero>();
+        public static CreaturesCollection heroes = new CreaturesCollection();
         public static Map gameMap = null;
         private static CreatureController controller = new CreatureController();
         private static Subject server = new Server();
@@ -41,19 +43,19 @@ namespace SignalR_GameServer_v1.Hubs
                 //    .AddTile(TileTypes.Grass)
                 //    .AddTile(TileTypes.Lava)
                 //    .Build(MapSettings.HorizontalTiles, MapSettings.VerticalTiles);
-                Hero exHero = new Hero();
-                exHero.AddItem(new Item());
-                exHero.AddItem(new Item());
-                exHero.AddItem(new Item());
-                exHero.AddItem(new Item());
-                Hero shallowHero = exHero.ShallowCopy();
-                Hero deepHero = exHero.Clone();
-                exHero.LoseItem();
-                shallowHero.LoseItem();
-                deepHero.LoseItem();
-                Console.WriteLine(exHero.getItemCount());
-                Console.WriteLine(shallowHero.getItemCount());
-                Console.WriteLine(deepHero.getItemCount());
+                //Hero exHero = new Hero();
+                //exHero.AddItem(new Item());
+                //exHero.AddItem(new Item());
+                //exHero.AddItem(new Item());
+                //exHero.AddItem(new Item());
+                //Hero shallowHero = exHero.ShallowCopy();
+                //Hero deepHero = exHero.Clone();
+                //exHero.LoseItem();
+                //shallowHero.LoseItem();
+                //deepHero.LoseItem();
+                //Console.WriteLine(exHero.getItemCount());
+                //Console.WriteLine(shallowHero.getItemCount());
+                //Console.WriteLine(deepHero.getItemCount());
             }
             return gameMap;
         }
@@ -62,7 +64,8 @@ namespace SignalR_GameServer_v1.Hubs
 
         public async Task JoinGame(Guid uid)
         {
-            var playerid = uid.ToString();
+            var id = uid.ToString();
+            var playerid = Context.ConnectionId;
 
             if(!players.ContainsKey(playerid))
             {
@@ -73,11 +76,11 @@ namespace SignalR_GameServer_v1.Hubs
                 server.attach(newPlayer);
                 heroes.Add(newPlayer);
 
-                //if (playerIndex == 1)
-                //{
-                //    heroes.Add(newPlayer);
-                //    server.attach(newPlayer);
-                //}
+                if (playerIndex == 1)
+                {
+                    heroes.GetCreature(0).TransitionTo(new ReadyState());
+                    await SendStateToCaller();
+                }
                 //else if (playerIndex % 3 == 0)
                 //{
                 //    Hero decoratedHero = new ArmorBootsDecorator(newPlayer);
@@ -135,6 +138,16 @@ namespace SignalR_GameServer_v1.Hubs
             return Clients.Caller.SendAsync("ReceiveMessage", message);
         }
 
+        public Task SendStateToCaller()
+        {
+            return Clients.Caller.SendAsync("SwitchState");
+        }
+
+        public Task SendStateToSpecificClient(string id)
+        {
+            return Clients.Client(id).SendAsync("SwitchState");
+        }
+
         public Task SendMessageTogroup(string message)
         {
             return Clients.Group("SignalR Users").SendAsync("ReceiveMessage", message);
@@ -142,75 +155,94 @@ namespace SignalR_GameServer_v1.Hubs
 
         public async Task MovePlayer(int id, string direction)
         {
-            var hero = heroes.Find(x => x.GetId() == id);
+            var hero = heroes.Find(id);
             string user = "Player " + hero.GetId();
 
-            if (direction == "UNDO")
+            ICommand movedir = null;
+            if (hero.GetRemainingSpeed() > 0)
             {
-                bool flag = controller.Undo();
-                switch (flag)
+                switch (direction)
                 {
-                    case false:
-                        await SendMessage(user, "Undo Unsuccessful!");
+                    case "LEFT":
+                        movedir = new MoveLeftCommand(hero);
+                        await SendMessage(user, "Move Left!");
+                        break;
+                    case "RIGHT":
+                        movedir = new MoveRightCommand(hero);
+                        await SendMessage(user, "Move Right!");
+                        break;
+                    case "UP":
+                        movedir = new MoveUpCommand(hero);
+                        await SendMessage(user, "Move Up!");
+                        break;
+                    case "DOWN":
+                        movedir = new MoveDownCommand(hero);
+                        await SendMessage(user, "Move Down!");
+                        break;
+                    case "ATTACK":
+                        movedir = new AttackCommand(hero);
+                        await SendMessage(user, "Attack!");
                         break;
                     default:
-                        await SendMessage(user, "Move Undone!");
+                        await SendMessage(user, "Unsuccessful movement!");
                         break;
                 }
             }
             else
             {
-                ICommand movedir = null;
-                if (hero.GetRemainingSpeed() > 0)
-                {
-                    switch (direction)
-                    {
-                        case "LEFT":
-                            movedir = new MoveLeftCommand(hero);
-                            await SendMessage(user, "Move Left!");
-                            break;
-                        case "RIGHT":
-                            movedir = new MoveRightCommand(hero);
-                            await SendMessage(user, "Move Right!");
-                            break;
-                        case "UP":
-                            movedir = new MoveUpCommand(hero);
-                            await SendMessage(user, "Move Up!");
-                            break;
-                        case "DOWN":
-                            movedir = new MoveDownCommand(hero);
-                            await SendMessage(user, "Move Down!");
-                            break;
-                        case "ATTACK":
-                            movedir = new AttackCommand(hero);
-                            await SendMessage(user, "Attack!");
-                            break;
-                        case "ENDTURN":
-                            movedir = new EndTurnCommand(hero);
-                            await SendMessage(user, "End Turn!");
-                            break;
-                        default:
-                            await SendMessage(user, "Unsuccessful movement!");
-                            break;
-                    }
-                }
-                else
-                {
-                    await SendMessage(user, "No Speed Remaining!");
-                }
-                
-                if (movedir != null)
-                {
-                    controller.Run(movedir);
-                }
+                await SendMessage(user, "No Speed Remaining!");
+            }
+
+            if (movedir != null)
+            {
+                controller.Run(movedir);
             }
 
             await GetPlayerCoordinates(id);
         }
 
+        public async Task EndPlayerTurn(int id)
+        {
+            var hero = heroes.Find(id);
+            string user = "Player " + hero.GetId();
+
+            var command = new EndTurnCommand(hero);
+            await SendMessage(user, "End Turn!");
+            controller.Run(command);
+            await SendStateToCaller();
+
+            var nextHero = heroes.FindNext(id);
+            string nextUser = "Player " + nextHero.GetId();
+            command = new EndTurnCommand(nextHero);
+            await SendMessage(nextUser, "Your Turn!");
+            controller.Run(command);
+            await SendStateToSpecificClient(players.First(x => x.Value == nextHero.GetId()).Key);
+            
+        }
+
+        public async Task UndoPlayer(int id)
+        {
+            var hero = heroes.Find(id);
+            string user = "Player " + hero.GetId();
+
+            bool flag = controller.Undo();
+            switch (flag)
+            {
+                case false:
+                    await SendMessage(user, "Undo Unsuccessful!");
+                    break;
+                default:
+                    await SendMessage(user, "Move Undone!");
+                    break;
+            }
+
+        }
+
+
+
         public Task GetPlayerCoordinates(int id)
         {
-            var hero = heroes.Find(x => x.GetId() == id);
+            var hero = heroes.Find(id);
 
             return Clients.All.SendAsync("PlayerNewCoordinates", id, hero.GetPosX(), hero.GetPosY());
         }

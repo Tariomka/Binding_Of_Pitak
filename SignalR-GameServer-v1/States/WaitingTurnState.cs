@@ -14,7 +14,9 @@ namespace SignalR_GameServer_v1.States
 
         public override void EndTurn()
         {
-            throw new NotImplementedException();
+            this._creature.notifyServer("YOUR TURN");
+            this._creature.TransitionTo(new ReadyState());
+            this._creature.ResetRemainingSpeed();
         }
 
         public override void Move(string direction, bool flag)

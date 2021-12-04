@@ -47,8 +47,8 @@ namespace SignalR_GameServer_v1.Characters
             this.actionCount = actionCount;
             this.posX = posx;
             this.posY = posy;
-            TransitionTo(new ReadyState());
-            this.speedRemaining = this.speed;
+            TransitionTo(new WaitingTurnState());
+            ResetRemainingSpeed();
         }
         #endregion
 
@@ -138,6 +138,7 @@ namespace SignalR_GameServer_v1.Characters
             this.health = health;
             this.speed = speed;
             this.actionCount = actionCount;
+            TransitionTo(new WaitingTurnState());
         }
 
         public void SetSpeed(int speed)
@@ -212,6 +213,11 @@ namespace SignalR_GameServer_v1.Characters
         public void UpdateRemainingSpeed(int value)
         {
             this.speedRemaining += value;
+        }
+
+        public void ResetRemainingSpeed()
+        {
+            this.speedRemaining = this.speed;
         }
 
     }

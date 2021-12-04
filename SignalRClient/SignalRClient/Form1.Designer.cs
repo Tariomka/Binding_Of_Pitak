@@ -43,6 +43,7 @@ namespace SignalRClient
             // UP
             // 
             this.UP.DialogResult = System.Windows.Forms.DialogResult.Ignore;
+            this.UP.Enabled = false;
             this.UP.Location = new System.Drawing.Point(1103, 502);
             this.UP.Name = "UP";
             this.UP.Size = new System.Drawing.Size(128, 44);
@@ -53,6 +54,7 @@ namespace SignalRClient
             // 
             // DOWN
             // 
+            this.DOWN.Enabled = false;
             this.DOWN.Location = new System.Drawing.Point(1103, 602);
             this.DOWN.Name = "DOWN";
             this.DOWN.Size = new System.Drawing.Size(128, 44);
@@ -63,6 +65,7 @@ namespace SignalRClient
             // 
             // LEFT
             // 
+            this.LEFT.Enabled = false;
             this.LEFT.Location = new System.Drawing.Point(1034, 552);
             this.LEFT.Name = "LEFT";
             this.LEFT.Size = new System.Drawing.Size(128, 44);
@@ -73,6 +76,7 @@ namespace SignalRClient
             // 
             // RIGHT
             // 
+            this.RIGHT.Enabled = false;
             this.RIGHT.Location = new System.Drawing.Point(1168, 552);
             this.RIGHT.Name = "RIGHT";
             this.RIGHT.Size = new System.Drawing.Size(128, 44);
@@ -100,6 +104,7 @@ namespace SignalRClient
             // 
             // UNDO
             // 
+            this.UNDO.Enabled = false;
             this.UNDO.Location = new System.Drawing.Point(1237, 634);
             this.UNDO.Name = "UNDO";
             this.UNDO.Size = new System.Drawing.Size(75, 23);
@@ -110,6 +115,7 @@ namespace SignalRClient
             // 
             // ENDTURN
             // 
+            this.ENDTURN.Enabled = false;
             this.ENDTURN.Location = new System.Drawing.Point(1022, 634);
             this.ENDTURN.Name = "ENDTURN";
             this.ENDTURN.Size = new System.Drawing.Size(75, 23);

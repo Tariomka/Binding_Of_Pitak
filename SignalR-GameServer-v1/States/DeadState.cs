@@ -14,7 +14,7 @@ namespace SignalR_GameServer_v1.States
 
         public override void EndTurn()
         {
-            throw new NotImplementedException();
+            this._creature.notifyServer("Can't end turn while dead!");
         }
 
         public override void Move(string direction, bool flag)
