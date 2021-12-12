@@ -11,6 +11,7 @@ using SignalR_GameServer_v1.Command;
 using SignalR_GameServer_v1.MapLibrary;
 using SignalR_GameServer_v1.Observer;
 using Map = BoP.MapLibrary.Map;
+using SignalR_GameServer_v1.ChainOfResponsibility;
 
 namespace SignalR_GameServer_v1.Hubs
 {
@@ -28,6 +29,7 @@ namespace SignalR_GameServer_v1.Hubs
         private static CreatureController controller = new CreatureController();
         private static Subject server = new Server();
 
+        AbstractLogger loggerChain = GetChainOfLoggers();
         //public gamehub()
         //{
         //    //example of decorated speed
@@ -76,19 +78,36 @@ namespace SignalR_GameServer_v1.Hubs
 
             heroesIdsAndNames.Add(heroes.Find(x => x.GetId() == playerid).GetId(), heroes.Find(x => x.GetId() == playerid).GetName());
 
+            loggerChain.LogMessage(AbstractLogger.INFO, "new player id is: " + playerid);
+
             await SendGameJoinedMessage(heroes.Find(x => x.GetId() == playerid).GetName(), heroesIdsAndNames, this.GetMap());
             await SendPlayerJoinedMessage(heroes.Find(x => x.GetId() == playerid).GetName());
         }
 
         public async Task SendCoordinates(int playerId, string direction)
         {
-            await Clients.Others.SendAsync("ReceiveCoordinates", playerId, direction);
+            try
+            {
+                await Clients.Others.SendAsync("ReceiveCoordinates", playerId, direction);
+            }
+            catch(Exception e)
+            {
+                loggerChain.LogMessage(AbstractLogger.ERROR, "Error in SendCoordinates method: " + e);
+            }
         }
 
         public async Task SendMessage(string user, string message)
         {
             //await Clients.All.SendAsync("ReceiveMessage", user, message);
-            await Clients.All.SendAsync("ReceiveMessage", user, message);
+            try
+            {
+                await Clients.All.SendAsync("ReceiveMessage", user, message);
+
+            }
+            catch (Exception e)
+            {
+                loggerChain.LogMessage(AbstractLogger.ERROR, "Error in SendMessage method: " + e);
+            }
             //await Clients.Caller.SendAsync("ReceiveMessage", user, "delivered: " + message);
         }
 
@@ -186,6 +205,17 @@ namespace SignalR_GameServer_v1.Hubs
             return Clients.All.SendAsync("PlayerNewCoordinates", name, hero.GetPosX(), hero.GetPosY());
         }
 
+        private static AbstractLogger GetChainOfLoggers()
+        {
+            AbstractLogger errorLogger = new ErrorLogger(AbstractLogger.ERROR);
+            AbstractLogger debugLogger = new DebugLogger(AbstractLogger.DEBUG);
+            AbstractLogger infoLogger = new InfoLogger(AbstractLogger.INFO);
+
+            errorLogger.SetNextLogger(debugLogger);
+            debugLogger.SetNextLogger(infoLogger);
+
+            return errorLogger;
+        }
         #endregion
 
     }
