@@ -8,28 +8,38 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.AspNetCore.SignalR.Client;
+using SignalRClient.Map;
+using SignalRClient.ConnectionProxy;
+using System.Net;
+using System.Net.Sockets;
 
 namespace SignalRClient
 {
     public partial class Form1 : Form
     {
-        HubConnection connection;
+        ConnectionInterface connection;
+        //HubConnection connection;
+        TileFactory grass = new GrassFactory(1);
+        TileFactory lava = new LavaFactory(1);
         public int mapHeight;
         public int mapWidth;
         private Guid uid = Guid.NewGuid();
         private Dictionary<int, PictureBox> players = new Dictionary<int, PictureBox>();
         private int playerid = 0;
         private string playerName => $"Player {playerid}";
+        private string localIp = "";
 
         public Form1()
         {
             InitializeComponent();
 
-            connection = new HubConnectionBuilder()
+            /*connection = new HubConnectionBuilder()
                 .WithUrl("https://localhost:44332/GameHub")
-                .Build();
+                .Build();*/
 
-            connection.Closed += async (error) =>
+            connection = new HubConnectionProxy();
+           
+            ((HubConnectionAdapter)(((HubConnectionProxy)connection).hubConnectionAdapter)).connection.Closed += async (error) =>
             {
                 await Task.Delay(new Random().Next(0, 5) * 1000);
                 await connection.StartAsync();
@@ -38,21 +48,21 @@ namespace SignalRClient
 
         private async void Form1_Load(object sender, EventArgs e)
         {
-            connection.On<string, string>("ReceiveMessage", (user, message) =>
+            connection.On("ReceiveMessage", (user, message) =>
             {
                 this.Invoke((Action)(() =>
                 {
-                    var newMessage = $"{user}: {message}";
+                    var newMessage = $"{(string)user}: {message}";
                     messagesList.Items.Add(newMessage);
                 }));
             });
 
-            connection.On<int, string>("ReceiveCoordinates", (pid, direction) =>
+            connection.On("ReceiveCoordinates", (pid, direction) =>
             {
                 movePlayer(pid, direction);
             });
 
-            connection.On<int, int, int>("PlayerNewCoordinates", (playerid, posx, posy) =>
+            connection.On("PlayerNewCoordinates", (playerid, posx, posy) =>
             {
                 PaintNewPlayerPosition(playerid, posx, posy);
             });
@@ -62,9 +72,9 @@ namespace SignalRClient
                 SwitchButtonsState();
             });
 
-            connection.On<string>("ReceiveGlobalMessage", (message) =>
+            connection.On("ReceiveGlobalMessage", (message) =>
             {
-                AddMessage(message);
+                AddMessage((string)message);
             });
 
             //connection.On<int, int>("ReceiveMapCoordinates", (x, y) =>
@@ -73,25 +83,26 @@ namespace SignalRClient
             //    mapHeight = y;
             //});
 
-            connection.On<int, Dictionary<string, int>, List<KeyValuePair<Point, string>>, List<KeyValuePair<Point, string>>>("GameJoined", (id, playersInGame, tiles, items) =>
+            connection.On("GameJoined", (id, playersInGame, tiles, items) =>
             {
                 this.OnGameJoined(id, playersInGame, tiles, items);
             });
 
             
-            connection.On<int>("PlayerJoined", (id) =>
+            connection.On("PlayerJoined", (id) =>
             {
                 this.OnNewPlayerJoined(id);
             });
 
             try
             {
+                localIp = GetLocalIPAddress();
                 messagesList.Items.Add("Connecting to game server...");
                 await connection.StartAsync();
                 messagesList.Items.Add("Done");
 
                 messagesList.Items.Add("Joining the game...");
-                await connection.InvokeAsync("JoinGame", this.uid);
+                await connection.InvokeAsync(localIp, "JoinGame", this.uid);
 
                 //await connection.InvokeAsync("GetMapSize");
                 //messagesList.Items.Add("Map size:" + mapWidth + " " + mapHeight);
@@ -364,29 +375,29 @@ namespace SignalRClient
 
         private async Task SendGetCoordinatesAsync(int pid, string direction)
         {
-            await connection.InvokeAsync("SendCoordinates",
+            await connection.InvokeAsync(localIp, "SendCoordinates",
                     pid, direction);
         }
 
         private async Task SendMovePlayer(int pid, string direction)
         {
-            await connection.InvokeAsync("MovePlayer",
+            await connection.InvokeAsync(localIp, "MovePlayer",
                     pid, direction);
         }
 
         private async Task SendEndPlayerTurn(int pid)
         {
-            await connection.InvokeAsync("EndPlayerTurn", pid);
+            await connection.InvokeAsync(localIp,"EndPlayerTurn", pid);
         }
 
         private async Task SendUndoPlayer(int pid)
         {
-            await connection.InvokeAsync("UndoPlayer", pid);
+            await connection.InvokeAsync(localIp, "UndoPlayer", pid);
         }
 
         private async Task SendPlayerDeath(int pid)
         {
-            await connection.InvokeAsync("PlayerDeath", pid);
+            await connection.InvokeAsync(localIp, "PlayerDeath", pid);
         }
 
         private void PaintNewPlayerPosition(int playerid, int posx, int posy)
@@ -407,6 +418,19 @@ namespace SignalRClient
             {
                 messagesList.Items.Add(ex.Message);
             }
+        }
+
+        private static string GetLocalIPAddress()
+        {
+            var host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (var ip in host.AddressList)
+            {
+                if (ip.AddressFamily == AddressFamily.InterNetwork)
+                {
+                    return ip.ToString();
+                }
+            }
+            throw new Exception("No network adapters with an IPv4 address in the system!");
         }
     }
 }

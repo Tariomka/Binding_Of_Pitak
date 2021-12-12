@@ -118,6 +118,8 @@ C:\Users\edgar\Desktop\opp laboras\SignalR_Testing\obj\Debug\netcoreapp3.1\Signa
 C:\Users\edgar\Desktop\opp laboras\SignalR_Testing\obj\Debug\netcoreapp3.1\SignalR_Testing.csproj.CoreCompileInputs.cache
 C:\Users\edgar\Desktop\opp laboras\SignalR_Testing\obj\Debug\netcoreapp3.1\SignalR_Testing.dll
 C:\Users\edgar\Desktop\opp laboras\SignalR_Testing\obj\Debug\netcoreapp3.1\SignalR_Testing.pdb
+<<<<<<< HEAD
+=======
 C:\Users\Domas\Downloads\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalR_Testing\bin\Debug\netcoreapp3.1\CoverletSourceRootsMapping
 C:\Users\Domas\Downloads\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalR_Testing\obj\Debug\netcoreapp3.1\SignalR_Testing.csproj.AssemblyReference.cache
 C:\Users\Domas\Downloads\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalR_Testing\obj\Debug\netcoreapp3.1\SignalR_Testing.GeneratedMSBuildEditorConfig.editorconfig
@@ -130,3 +132,4 @@ C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\GitHub\Binding_Of_Pitak
 C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\GitHub\Binding_Of_Pitak\SignalR_Testing\obj\Debug\netcoreapp3.1\SignalR_Testing.AssemblyInfoInputs.cache
 C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\GitHub\Binding_Of_Pitak\SignalR_Testing\obj\Debug\netcoreapp3.1\SignalR_Testing.AssemblyInfo.cs
 C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\GitHub\Binding_Of_Pitak\SignalR_Testing\obj\Debug\netcoreapp3.1\SignalR_Testing.csproj.CoreCompileInputs.cache
+>>>>>>> 07fb11f617480307d03aab1681f64582642a45a6

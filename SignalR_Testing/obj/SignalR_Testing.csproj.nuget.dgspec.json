@@ -1,6 +1,26 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
+    "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalR_Testing\\SignalR_Testing.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
+        "projectName": "SignalR-GameServer-v1",
+        "projectPath": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj",
+        "packagesPath": "C:\\Users\\edgar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalR-GameServer-v1\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+=======
     "C:\\GitHub\\Binding_Of_Pitak\\SignalR_Testing\\SignalR_Testing.csproj": {}
   },
   "projects": {
@@ -22,6 +42,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+>>>>>>> 07fb11f617480307d03aab1681f64582642a45a6
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -34,8 +55,13 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
+<<<<<<< HEAD
+              "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj": {
+                "projectPath": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj"
+=======
               "C:\\GitHub\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj": {
                 "projectPath": "C:\\GitHub\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj"
+>>>>>>> 07fb11f617480307d03aab1681f64582642a45a6
               }
             }
           }
@@ -83,6 +109,27 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj",
+        "projectName": "BoP.MapLibrary",
+        "projectPath": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj",
+        "packagesPath": "C:\\Users\\edgar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalRClient\\BoP.Map\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+=======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
@@ -105,6 +152,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+>>>>>>> 07fb11f617480307d03aab1681f64582642a45a6
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -143,6 +191,27 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalR_Testing\\SignalR_Testing.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalR_Testing\\SignalR_Testing.csproj",
+        "projectName": "SignalR_Testing",
+        "projectPath": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalR_Testing\\SignalR_Testing.csproj",
+        "packagesPath": "C:\\Users\\edgar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalR_Testing\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+=======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
@@ -165,6 +234,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+>>>>>>> 07fb11f617480307d03aab1681f64582642a45a6
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -177,8 +247,13 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
+<<<<<<< HEAD
+              "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj": {
+                "projectPath": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj"
+=======
               "C:\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj": {
                 "projectPath": "C:\\GitHub\\Binding_Of_Pitak\\SignalR-GameServer-v1\\SignalR-GameServer-v1.csproj"
+>>>>>>> 07fb11f617480307d03aab1681f64582642a45a6
               }
             }
           }
@@ -225,11 +300,18 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+=======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+>>>>>>> 07fb11f617480307d03aab1681f64582642a45a6
         }
       }
     }

@@ -55,3 +55,11 @@ C:\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.Map
 C:\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.csproj.CoreCompileInputs.cache
 C:\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.dll
 C:\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.pdb
+C:\Users\edgar\Desktop\opp laboras\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.deps.json
+C:\Users\edgar\Desktop\opp laboras\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.dll
+C:\Users\edgar\Desktop\opp laboras\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.pdb
+C:\Users\edgar\Desktop\opp laboras\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.AssemblyInfoInputs.cache
+C:\Users\edgar\Desktop\opp laboras\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.AssemblyInfo.cs
+C:\Users\edgar\Desktop\opp laboras\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.csproj.CoreCompileInputs.cache
+C:\Users\edgar\Desktop\opp laboras\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.dll
+C:\Users\edgar\Desktop\opp laboras\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.pdb
