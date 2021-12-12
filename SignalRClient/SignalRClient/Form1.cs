@@ -67,15 +67,25 @@ namespace SignalRClient
                 PaintNewPlayerPosition(playerid, posx, posy);
             });
 
+            connection.On("SwitchState", () =>
+            {
+                SwitchButtonsState();
+            });
+
+            connection.On("ReceiveGlobalMessage", (message) =>
+            {
+                AddMessage((string)message);
+            });
+
             //connection.On<int, int>("ReceiveMapCoordinates", (x, y) =>
             //{
             //    mapWidth = x;
             //    mapHeight = y;
             //});
 
-            connection.On("GameJoined", (id, playersInGame, tiles) =>
+            connection.On("GameJoined", (id, playersInGame, tiles, items) =>
             {
-                this.OnGameJoined(id, playersInGame, tiles);
+                this.OnGameJoined(id, playersInGame, tiles, items);
             });
 
             
@@ -109,14 +119,17 @@ namespace SignalRClient
 
         #region Map and Tiles Logic
 
-        private void GenerateMap(List<KeyValuePair<Point, string>> tiles)
+        private void GenerateMap(List<KeyValuePair<Point, string>> tiles, List<KeyValuePair<Point, string>> items)
         {
             AddMessage("Generating map...");
 
+            foreach (var item in items)
+            {
+                AddItem(point: item.Key, itemType: item.Value);
+            }
             foreach (var tile in tiles)
             {
                 AddTile(point: tile.Key, tileType: tile.Value);
-
             }
             AddMessage("Done.");
         }
@@ -142,15 +155,51 @@ namespace SignalRClient
                     return Properties.Resources.grass;
                 case "Lava":
                     return Properties.Resources.lava;
+                case "Dirt":
+                    return Properties.Resources.dirt;
                 default:
                     return Properties.Resources.grass;
+            }
+        }
+
+        private void AddItem(Point point, string itemType)
+        {
+            var picture = new PictureBox
+            {
+                Name = $"item_{point.X}_{point.Y}_itemType",
+                Size = new Size(40, 40),
+                Location = new Point(point.X * 40, point.Y * 40),
+                Image = GetItemImage(itemType)
+            };
+            this.Controls.Add(picture);
+            this.picCanvas.SendToBack();
+        }
+
+        private Bitmap GetItemImage(string itemType)
+        {
+            switch (itemType)
+            {
+                case "minorheal":
+                    return Properties.Resources.minorheal;
+                case "majorheal":
+                    return Properties.Resources.majorheal;
+                case "bluegun":
+                    return Properties.Resources.bluegun;
+                case "greengun":
+                    return Properties.Resources.greengun;
+                case "blueenergy":
+                    return Properties.Resources.blueenergy;
+                case "greenenergy":
+                    return Properties.Resources.greenenergy;
+                default:
+                    return Properties.Resources.minorheal;
             }
         }
 
         #endregion
 
 
-        private void OnGameJoined(int id, Dictionary<string, int> playersInGame, List<KeyValuePair<Point, string>> tiles)
+        private void OnGameJoined(int id, Dictionary<string, int> playersInGame, List<KeyValuePair<Point, string>> tiles, List<KeyValuePair<Point, string>> items)
         {
             this.playerid = id;
             AddMessage($"My Player ID is: {this.playerid}");
@@ -158,7 +207,7 @@ namespace SignalRClient
 
             try
             {
-                this.GenerateMap(tiles);
+                this.GenerateMap(tiles, items);
                 this.GeneratePlayers(playersInGame);
             }
             catch (Exception ex)
@@ -269,12 +318,35 @@ namespace SignalRClient
         {
             try
             {
-                movePlayer(this.playerid, "UNDO");
+                _ = SendUndoPlayer(this.playerid);
             }
             catch (Exception ex)
             {
                 messagesList.Items.Add(ex.Message);
             }
+        }
+
+        private void ENDTURN_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                _ = SendEndPlayerTurn(this.playerid);
+            }
+            catch (Exception ex)
+            {
+                messagesList.Items.Add(ex.Message);
+            }
+        }
+
+        private void SwitchButtonsState()
+        {
+            UP.Enabled = !UP.Enabled;
+            DOWN.Enabled = !DOWN.Enabled;
+            LEFT.Enabled = !LEFT.Enabled;
+            RIGHT.Enabled = !RIGHT.Enabled;
+            UNDO.Enabled = !UNDO.Enabled;
+            ENDTURN.Enabled = !ENDTURN.Enabled;
+            DEATH.Enabled = !DEATH.Enabled;
         }
 
         private void movePlayer(int pid, string direction)
@@ -313,12 +385,39 @@ namespace SignalRClient
                     pid, direction);
         }
 
+        private async Task SendEndPlayerTurn(int pid)
+        {
+            await connection.InvokeAsync(localIp,"EndPlayerTurn", pid);
+        }
+
+        private async Task SendUndoPlayer(int pid)
+        {
+            await connection.InvokeAsync(localIp, "UndoPlayer", pid);
+        }
+
+        private async Task SendPlayerDeath(int pid)
+        {
+            await connection.InvokeAsync(localIp, "PlayerDeath", pid);
+        }
+
         private void PaintNewPlayerPosition(int playerid, int posx, int posy)
         {
             var player = players[playerid];
             player.BringToFront();
 
             player.Location = new Point(posx, posy);
+        }
+
+        private void DEATH_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                _ = SendPlayerDeath(this.playerid);
+            }
+            catch (Exception ex)
+            {
+                messagesList.Items.Add(ex.Message);
+            }
         }
 
         private static string GetLocalIPAddress()

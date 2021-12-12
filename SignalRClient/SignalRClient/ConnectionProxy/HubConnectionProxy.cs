@@ -48,7 +48,7 @@ namespace SignalRClient.ConnectionProxy
             return hubConnectionAdapter.On(methodName, handler);
         }
 
-        public IDisposable On(string methodName, Action<int, Dictionary<string, int>, List<KeyValuePair<Point, string>>> handler)
+        public IDisposable On(string methodName, Action<int, Dictionary<string, int>, List<KeyValuePair<Point, string>>, List<KeyValuePair<Point, string>>> handler)
         {
             return hubConnectionAdapter.On(methodName, handler);
         }
@@ -68,7 +68,15 @@ namespace SignalRClient.ConnectionProxy
             return hubConnectionAdapter.InvokeAsync("", methodName, obj1, obj2);
         }
 
-        
+        public IDisposable On(string methodName, Action handler)
+        {
+            return hubConnectionAdapter.On(methodName, handler);
+        }
+
+        public IDisposable On(string methodName, Action<string> handler)
+        {
+            return hubConnectionAdapter.On(methodName, handler);
+        }
 
     }
 }

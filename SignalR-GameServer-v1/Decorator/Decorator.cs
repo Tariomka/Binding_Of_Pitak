@@ -6,18 +6,16 @@ using System.Threading.Tasks;
 
 namespace SignalR_GameServer_v1.Decorator
 {
-    public abstract class Decorator : Creature
+    public abstract class Decorator : Hero
     {
-        protected Creature wrapee;
-
-        public Decorator ( Creature component)
+        public Decorator(Hero component) : base (component.GetId(), component.GetName(),component.GetHealth(), component.GetSpeed(),component.GetActionCount(), component.GetPosX(),component.GetPosY())
         {
-            wrapee = component;
         }
 
         public override int GetSpeed()
         {
-            return wrapee.GetSpeed();
+            return base.GetSpeed();
         }
+
     }
 }

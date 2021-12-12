@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "jS6j+qBRuFC3KIVH3qkc8WeH4tWHE6nWlSenIcX6dIKsA/eRHEFRr+EPZxpvDfOcdUan3tCLZ7kMo9DDbQb3bQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalR_Testing\\SignalR_Testing.csproj",
+=======
+  "dgSpecHash": "6AYsJmrxm8bRjmVaIL7Uav+KntNegsPgRDO4p6c8vWo+lIlM7akgH2dkMB5vRfBfWewrQNSBw9YjVq0MDa9OgQ==",
+  "success": true,
+  "projectFilePath": "C:\\GitHub\\Binding_Of_Pitak\\SignalR_Testing\\SignalR_Testing.csproj",
+>>>>>>> 07fb11f617480307d03aab1681f64582642a45a6
   "expectedPackageFiles": [
     "C:\\Users\\edgar\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\edgar\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",

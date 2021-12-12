@@ -42,7 +42,7 @@ namespace SignalRClient.ConnectionProxy
         {
             return connection.On(methodName, handler);
         }
-        public IDisposable On(string methodName, Action<int, Dictionary<string, int>, List<KeyValuePair<Point, string>>> handler)
+        public IDisposable On(string methodName, Action<int, Dictionary<string, int>, List<KeyValuePair<Point, string>>, List<KeyValuePair<Point, string>>> handler)
         {
             return connection.On(methodName, handler);
         }
@@ -60,6 +60,16 @@ namespace SignalRClient.ConnectionProxy
         public Task InvokeAsync(string ip, string methodName, object obj1, object obj2)
         {
             return connection.InvokeAsync(methodName, obj1, obj2);
+        }
+
+        public IDisposable On(string methodName, Action handler)
+        {
+            return connection.On(methodName, handler);
+        }
+
+        public IDisposable On(string methodName, Action<string> handler)
+        {
+            return connection.On(methodName, handler);
         }
     }
 }
