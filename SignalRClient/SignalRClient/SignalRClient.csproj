@@ -249,6 +249,9 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConnectionProxy\ConnectionInterface.cs" />
+    <Compile Include="ConnectionProxy\HubConnectionAdapter.cs" />
+    <Compile Include="ConnectionProxy\HubConnectionProxy.cs" />
     <Compile Include="Map\GrassFactory.cs" />
     <Compile Include="Map\GrassTile.cs" />
     <Compile Include="Map\LavaFactory.cs" />
