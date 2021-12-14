@@ -15,6 +15,7 @@ namespace SignalRClient.ConnectionProxy
         IDisposable On(string methodName, Action<int, int, int> handler);
 
         IDisposable On(string methodName, Action<int, Dictionary<string, int>, List<KeyValuePair<Point, string>>, List<KeyValuePair<Point, string>>> handler);
+        IDisposable On(string methodName, Action<int, Dictionary<string, int>, List<KeyValuePair<Point, string>>, List<KeyValuePair<Point, string>>, int, int> handler);
         IDisposable On(string methodName, Action<int> handler);
 
         IDisposable On(string methodName, Action handler);

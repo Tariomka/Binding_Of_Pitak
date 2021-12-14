@@ -71,6 +71,11 @@ namespace SignalRClient.ConnectionProxy
         {
             return connection.On(methodName, handler);
         }
+
+        public IDisposable On(string methodName, Action<int, Dictionary<string, int>, List<KeyValuePair<Point, string>>, List<KeyValuePair<Point, string>>, int, int> handler)
+        {
+            return connection.On(methodName, handler);
+        }
     }
 }
 

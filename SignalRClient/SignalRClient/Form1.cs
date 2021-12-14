@@ -83,15 +83,15 @@ namespace SignalRClient
             //    mapHeight = y;
             //});
 
-            connection.On("GameJoined", (id, playersInGame, tiles, items) =>
+            connection.On("GameJoined", (id, playersInGame, tiles, items, playerPosX, playerPosY) =>
             {
-                this.OnGameJoined(id, playersInGame, tiles, items);
+                this.OnGameJoined(id, playersInGame, tiles, items, playerPosX, playerPosY);
             });
 
             
-            connection.On("PlayerJoined", (id) =>
+            connection.On("PlayerJoined", (id, playerPosX, playerPosY) =>
             {
-                this.OnNewPlayerJoined(id);
+                this.OnNewPlayerJoined(id, playerPosX, playerPosY);
             });
 
             try
@@ -199,7 +199,7 @@ namespace SignalRClient
         #endregion
 
 
-        private void OnGameJoined(int id, Dictionary<string, int> playersInGame, List<KeyValuePair<Point, string>> tiles, List<KeyValuePair<Point, string>> items)
+        private void OnGameJoined(int id, Dictionary<string, int> playersInGame, List<KeyValuePair<Point, string>> tiles, List<KeyValuePair<Point, string>> items, int playerPosX, int playerPosY)
         {
             this.playerid = id;
             AddMessage($"My Player ID is: {this.playerid}");
@@ -208,7 +208,7 @@ namespace SignalRClient
             try
             {
                 this.GenerateMap(tiles, items);
-                this.GeneratePlayers(playersInGame);
+                this.GeneratePlayers(playersInGame, playerPosX, playerPosY);
             }
             catch (Exception ex)
             {
@@ -216,26 +216,26 @@ namespace SignalRClient
             }
         }
 
-        private void GeneratePlayers(Dictionary<string, int> playersInGame)
+        private void GeneratePlayers(Dictionary<string, int> playersInGame, int playerPosX, int playerPosY)
         {
             AddMessage("Generating players...");
             foreach(var id in playersInGame.Values)
             {
-                this.AddPlayer(id);
+                this.AddPlayer(id, playerPosX, playerPosY);
             }
             AddMessage("Done");
         }
 
-        private void OnNewPlayerJoined(int id)
+        private void OnNewPlayerJoined(int id, int playerPosX, int playerPosY)
         {
-            this.AddPlayer(id);
+            this.AddPlayer(id, playerPosX, playerPosY);
         }
 
 
-        private void AddPlayer(int id)
+        private void AddPlayer(int id, int playerPosX, int playerPosY)
         {
             if (!players.ContainsKey(id))
-                this.players.Add(id, GetNewPlayer(id));
+                this.players.Add(id, GetNewPlayer(id, playerPosX, playerPosY));
 
             messagesList.Items.Add($"!! Player ID {this.playerid} has joined the game");
         }
@@ -245,14 +245,14 @@ namespace SignalRClient
             messagesList.Items.Add(message);
         }
 
-        private PictureBox GetNewPlayer(int id)
+        private PictureBox GetNewPlayer(int id, int playerPosX, int playerPosY)
         {
             var pb = new PictureBox();
             //((System.ComponentModel.ISupportInitialize)(pb)).BeginInit();
             // 
             pb.BackColor = Color.Transparent;
             pb.Image = this.playerid == id ? Properties.Resources.player : Properties.Resources.enemy;
-            pb.Location = new Point(480, 320);
+            pb.Location = new Point(playerPosX, playerPosY);
             pb.Name = $"Player{id}";
             pb.Size = new Size(40, 40);
             pb.TabIndex = 20 + id;

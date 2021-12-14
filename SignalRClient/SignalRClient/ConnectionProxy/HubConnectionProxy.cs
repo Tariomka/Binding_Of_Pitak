@@ -78,5 +78,9 @@ namespace SignalRClient.ConnectionProxy
             return hubConnectionAdapter.On(methodName, handler);
         }
 
+        public IDisposable On(string methodName, Action<int, Dictionary<string, int>, List<KeyValuePair<Point, string>>, List<KeyValuePair<Point, string>>, int, int> handler)
+        {
+            return hubConnectionAdapter.On(methodName, handler);
+        }
     }
 }

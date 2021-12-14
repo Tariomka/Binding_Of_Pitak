@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 using SignalR_GameServer_v1.Command;
 using SignalR_GameServer_v1.Observer;
 using SignalR_GameServer_v1.States;
+using SignalR_GameServer_v1.Composite;
 
 
 namespace SignalR_GameServer_v1.Characters
 {
-    public abstract class Creature : IObserver, ICloneable
+    public abstract class Creature : IObserver, ICloneable, GroupedCreature
     {
         private int id;
         private string name;
@@ -235,5 +236,15 @@ namespace SignalR_GameServer_v1.Characters
             }
         }
 
+        public bool isCreature()
+        {
+            return true;
+        }
+
+        public List<GroupedCreature> GetCreatures()
+        {
+            Console.WriteLine("FLAG");
+            throw new NotImplementedException();
+        }
     }
 }

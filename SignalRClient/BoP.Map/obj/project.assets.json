@@ -8,23 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\edgar\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Tautvis\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\Tautvis\\Documents\\GitHub\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj",
       "projectName": "BoP.MapLibrary",
-      "projectPath": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj",
-      "packagesPath": "C:\\Users\\edgar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\edgar\\Desktop\\opp laboras\\SignalRClient\\BoP.Map\\obj\\",
+      "projectPath": "C:\\Users\\Tautvis\\Documents\\GitHub\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\BoP.MapLibrary.csproj",
+      "packagesPath": "C:\\Users\\Tautvis\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Tautvis\\Documents\\GitHub\\Binding_Of_Pitak\\SignalRClient\\BoP.Map\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\edgar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tautvis\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -36,7 +32,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -48,7 +43,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -64,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
