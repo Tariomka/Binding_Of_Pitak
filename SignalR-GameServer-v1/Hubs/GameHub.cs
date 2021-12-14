@@ -336,7 +336,6 @@ namespace SignalR_GameServer_v1.Hubs
                 string state = creature.GetState();
                 int creatureID = creature.GetId();
                 Console.WriteLine($"{creature.GetName()} {creatureID} - State - {state}");
-                Debug.WriteLine($"{creature.GetName()} {creatureID} - State - {state}");
                 switch (state)
                 {
                     case "ReadyState":
