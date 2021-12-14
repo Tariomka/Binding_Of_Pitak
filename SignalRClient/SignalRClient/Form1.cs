@@ -432,5 +432,22 @@ namespace SignalRClient
             }
             throw new Exception("No network adapters with an IPv4 address in the system!");
         }
+
+        private void ADDCREATURE_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                _ = SendAddCreature(this.playerid);
+            }
+            catch (Exception ex)
+            {
+                messagesList.Items.Add(ex.Message);
+            }
+        }
+
+        private async Task SendAddCreature(int pid)
+        {
+            await connection.InvokeAsync(localIp, "AddCreatureToPlayer", pid);
+        }
     }
 }

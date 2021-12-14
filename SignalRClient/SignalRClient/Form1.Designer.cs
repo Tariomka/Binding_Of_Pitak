@@ -38,6 +38,7 @@ namespace SignalRClient
             this.UNDO = new System.Windows.Forms.Button();
             this.ENDTURN = new System.Windows.Forms.Button();
             this.DEATH = new System.Windows.Forms.Button();
+            this.ADDCREATURE = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -136,11 +137,22 @@ namespace SignalRClient
             this.DEATH.UseVisualStyleBackColor = false;
             this.DEATH.Click += new System.EventHandler(this.DEATH_Click);
             // 
+            // ADDCREATURE
+            // 
+            this.ADDCREATURE.Location = new System.Drawing.Point(1022, 490);
+            this.ADDCREATURE.Name = "ADDCREATURE";
+            this.ADDCREATURE.Size = new System.Drawing.Size(75, 44);
+            this.ADDCREATURE.TabIndex = 19;
+            this.ADDCREATURE.Text = "Add Creature";
+            this.ADDCREATURE.UseVisualStyleBackColor = true;
+            this.ADDCREATURE.Click += new System.EventHandler(this.ADDCREATURE_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1316, 669);
+            this.Controls.Add(this.ADDCREATURE);
             this.Controls.Add(this.DEATH);
             this.Controls.Add(this.ENDTURN);
             this.Controls.Add(this.UNDO);
@@ -169,6 +181,7 @@ namespace SignalRClient
         private System.Windows.Forms.Button UNDO;
         private System.Windows.Forms.Button ENDTURN;
         private System.Windows.Forms.Button DEATH;
+        private System.Windows.Forms.Button ADDCREATURE;
     }
 }
 
