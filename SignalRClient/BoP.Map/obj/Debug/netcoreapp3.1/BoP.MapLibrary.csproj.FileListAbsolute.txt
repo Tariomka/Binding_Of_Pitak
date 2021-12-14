@@ -1,0 +1,75 @@
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.deps.json
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.pdb
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.AssemblyInfoInputs.cache
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.AssemblyInfo.cs
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.csproj.CoreCompileInputs.cache
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.dll
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.pdb
+E:\All the other good stuff\OPP\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.csprojAssemblyReference.cache
+D:\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.deps.json
+D:\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.dll
+D:\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.pdb
+D:\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.csproj.AssemblyReference.cache
+D:\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.AssemblyInfoInputs.cache
+D:\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.AssemblyInfo.cs
+D:\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.csproj.CoreCompileInputs.cache
+D:\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.dll
+D:\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.pdb
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.deps.json
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.pdb
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.csprojAssemblyReference.cache
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.AssemblyInfoInputs.cache
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.AssemblyInfo.cs
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.dll
+C:\Users\Tautvis\Documents\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.pdb
+C:\Users\Domas\Downloads\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.deps.json
+C:\Users\Domas\Downloads\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.dll
+C:\Users\Domas\Downloads\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.pdb
+C:\Users\Domas\Downloads\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.csproj.AssemblyReference.cache
+C:\Users\Domas\Downloads\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Domas\Downloads\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.AssemblyInfoInputs.cache
+C:\Users\Domas\Downloads\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.AssemblyInfo.cs
+C:\Users\Domas\Downloads\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Domas\Downloads\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.dll
+C:\Users\Domas\Downloads\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.pdb
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.deps.json
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.dll
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.pdb
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.csproj.AssemblyReference.cache
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.AssemblyInfoInputs.cache
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.AssemblyInfo.cs
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.dll
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.pdb
+C:\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.deps.json
+C:\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.dll
+C:\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.pdb
+C:\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.csprojAssemblyReference.cache
+C:\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.AssemblyInfoInputs.cache
+C:\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.AssemblyInfo.cs
+C:\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.csproj.CoreCompileInputs.cache
+C:\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.dll
+C:\GitHub\Binding_Of_Pitak\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.pdb
+C:\Users\edgar\Desktop\opp laboras\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.deps.json
+C:\Users\edgar\Desktop\opp laboras\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.dll
+C:\Users\edgar\Desktop\opp laboras\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.pdb
+C:\Users\edgar\Desktop\opp laboras\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.AssemblyInfoInputs.cache
+C:\Users\edgar\Desktop\opp laboras\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.AssemblyInfo.cs
+C:\Users\edgar\Desktop\opp laboras\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.csproj.CoreCompileInputs.cache
+C:\Users\edgar\Desktop\opp laboras\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.dll
+C:\Users\edgar\Desktop\opp laboras\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.pdb
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\12_14\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.deps.json
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\12_14\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.dll
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\12_14\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.pdb
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\12_14\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.csproj.AssemblyReference.cache
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\12_14\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\12_14\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.AssemblyInfoInputs.cache
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\12_14\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.AssemblyInfo.cs
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\12_14\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\12_14\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.dll
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\12_14\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.pdb
