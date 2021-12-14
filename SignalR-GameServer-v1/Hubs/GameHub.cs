@@ -32,7 +32,7 @@ namespace SignalR_GameServer_v1.Hubs
         private static CreatureController controller = new CreatureController();
         private static Subject server = new Server();
         public static Director director = new Director();
-        public static Division division = new Division();
+        public static List<Division> division = new List<Division>();
 
         AbstractLogger loggerChain = GetChainOfLoggers();
         private Map GetMap()
@@ -68,26 +68,24 @@ namespace SignalR_GameServer_v1.Hubs
 
         public async Task JoinGame(Guid uid)
         {
-            var id = uid.ToString();
             var playerid = Context.ConnectionId;
-            /*
+
             //===================Composite pavyzdys=============
-            var extra1 = new Hero(playerIndex, "EXTRA1", 100, 5, 0, 200, 240);
-            var extra2 = new Hero(playerIndex, "EXTRA2", 100, 5, 0, 200, 160);
-            heroes.Add(extra1); heroes.Add(extra2);
-            heroes.GetCreature(0).TransitionTo(new ReadyState());
-            heroes.GetCreature(1).TransitionTo(new ReadyState());
-            server.attach(extra1); server.attach(extra2);
-            division.Add(extra1);
-            division.Add(extra2);
-            Console.WriteLine(extra1.GetName() + " " + extra1.GetPosX() + " " + extra1.GetPosY());
-            Console.WriteLine(extra2.GetName() + " " + extra2.GetPosX() + " " + extra2.GetPosY());
-            Console.WriteLine("The division moves right");
-            division.Move("RIGHT", true);
-            Console.WriteLine(extra1.GetName() + " " + extra1.GetPosX() + " " + extra1.GetPosY());
-            Console.WriteLine(extra2.GetName() + " " + extra2.GetPosX() + " " + extra2.GetPosY());
+            //var extra1 = new Hero(playerIndex, "EXTRA1", 100, 5, 0, 200, 240);
+            //var extra2 = new Hero(playerIndex, "EXTRA2", 100, 5, 0, 200, 160);
+            //extra1.TransitionTo(new ReadyState());
+            //extra2.TransitionTo(new ReadyState());
+            //server.attach(extra1); server.attach(extra2);
+            //division.Add(extra1);
+            //division.Add(extra2);
+            //Console.WriteLine(extra1.GetName() + " " + extra1.GetPosX() + " " + extra1.GetPosY());
+            //Console.WriteLine(extra2.GetName() + " " + extra2.GetPosX() + " " + extra2.GetPosY());
+            //Console.WriteLine("The division moves right");
+            //division.Move("RIGHT", true);
+            //Console.WriteLine(extra1.GetName() + " " + extra1.GetPosX() + " " + extra1.GetPosY());
+            //Console.WriteLine(extra2.GetName() + " " + extra2.GetPosX() + " " + extra2.GetPosY());
             //==================================================
-            */
+
             Hero playerInfo = new Hero();
 
             if(!players.ContainsKey(playerid))
@@ -105,6 +103,10 @@ namespace SignalR_GameServer_v1.Hubs
                     heroes.GetCreature(0).TransitionTo(new ReadyState());
                     await SendStateToCaller();
                 }
+                //Compose pattern
+                division.Add(new Division());
+                division[playerIndex - 1].SetPlayer(playerIndex);
+
                 //else if (playerIndex % 3 == 0)
                 //{
                 //    Hero decoratedHero = new ArmorBootsDecorator(newPlayer);
@@ -241,9 +243,14 @@ namespace SignalR_GameServer_v1.Hubs
             if (movedir != null)
             {
                 controller.Run(movedir);
+                //Compose pattern
+                division.Find(x => x.GetPlayer() == id).Move(direction, true);
             }
 
             await GetPlayerCoordinates(id);
+
+            //Compose pattern
+            GetCreaturesCoordinates(id);
         }
 
         public async Task EndPlayerTurn(int id)
@@ -256,6 +263,8 @@ namespace SignalR_GameServer_v1.Hubs
             controller.Run(command);
             await SendStateToCaller();
 
+            division.Find(x => x.GetPlayer() == id).TransitionTo(new WaitingTurnState());
+
             var nextHeroID = FindNextCreature(id);
 
             if (nextHeroID > -1)
@@ -266,6 +275,9 @@ namespace SignalR_GameServer_v1.Hubs
                 await SendMessage(nextUser, "Your Turn!");
                 controller.Run(command);
                 await SendStateToSpecificClient(players.First(x => x.Value == nextHero.GetId()).Key);
+
+                //Compose pattern
+                division.Find(x => x.GetPlayer() == nextHeroID).TransitionTo(new ReadyState());
             }
             else
             {
@@ -273,6 +285,9 @@ namespace SignalR_GameServer_v1.Hubs
             }
 
             await GetPlayerCoordinates(id);
+            
+            //Compose pattern
+            GetCreaturesCoordinates(id);
         }
 
         public async Task UndoPlayer(int id)
@@ -291,6 +306,9 @@ namespace SignalR_GameServer_v1.Hubs
                     break;
             }
             await GetPlayerCoordinates(id);
+
+            //Compose pattern
+            GetCreaturesCoordinates(id);
         }
 
         public async Task PlayerDeath(int id)
@@ -324,15 +342,50 @@ namespace SignalR_GameServer_v1.Hubs
                         break;
                 }
             }
-
         }
-
 
         public Task GetPlayerCoordinates(int id)
         {
             var hero = heroes.Find(id);
 
             return Clients.All.SendAsync("PlayerNewCoordinates", id, hero.GetPosX(), hero.GetPosY());
+        }
+
+        //Compose pattern
+        public async Task AddCreatureToPlayer(int id)
+        {
+            var hero = heroes.Find(id);
+            string user = "Player " + hero.GetId();
+            var div = division.Find(x => x.GetPlayer() == id);
+            var newid = div.GetCreatureCount() + 1;
+
+            var newHero = new Hero(newid, user+" ExtraCreature", hero.GetHealth(), hero.GetRemainingSpeed(), 0, hero.GetPosX()+newid*40, hero.GetPosY()+newid*40);
+            newHero.TransitionTo(new ReadyState());
+
+            server.attach(newHero);
+            div.Add(newHero);
+
+            await SendPlayerJoinedMessage(id * 100 + newid, newHero);
+            await SendMessage(user, "Player has created new creature!");
+            
+        }
+
+        //Compose pattern
+        public void GetCreaturesCoordinates(int id)
+        {
+            var creatures = division.Find(x => x.GetPlayer() == id).GetCreatures();
+            int pos = 1;
+            foreach (var creature in creatures)
+            {
+                GetPlayerCreatureCoordinates(id*100+pos, creature.GetPosX(), creature.GetPosY());
+                pos++;
+            }
+        }
+
+        //Compose pattern
+        public Task GetPlayerCreatureCoordinates(int id, int posX, int posY)
+        {
+            return Clients.All.SendAsync("PlayerNewCoordinates", id, posX, posY);
         }
 
         private static AbstractLogger GetChainOfLoggers()
