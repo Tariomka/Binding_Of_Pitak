@@ -338,6 +338,18 @@ namespace SignalRClient
             }
         }
 
+        private void RSTTURN_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                _ = SendResetPlayerTurn(this.playerid);
+            }
+            catch (Exception ex)
+            {
+                messagesList.Items.Add(ex.Message);
+            }
+        }
+
         private void SwitchButtonsState()
         {
             UP.Enabled = !UP.Enabled;
@@ -393,6 +405,11 @@ namespace SignalRClient
         private async Task SendUndoPlayer(int pid)
         {
             await connection.InvokeAsync(localIp, "UndoPlayer", pid);
+        }
+
+        private async Task SendResetPlayerTurn(int pid)
+        {
+            await connection.InvokeAsync(localIp, "ResetPlayerTurn", pid);
         }
 
         private async Task SendPlayerDeath(int pid)
