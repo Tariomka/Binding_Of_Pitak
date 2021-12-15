@@ -63,3 +63,13 @@ C:\Users\edgar\Desktop\opp laboras\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1
 C:\Users\edgar\Desktop\opp laboras\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.csproj.CoreCompileInputs.cache
 C:\Users\edgar\Desktop\opp laboras\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.dll
 C:\Users\edgar\Desktop\opp laboras\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.pdb
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\12_14\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.deps.json
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\12_14\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.dll
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\12_14\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\bin\Debug\netcoreapp3.1\BoP.MapLibrary.pdb
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\12_14\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.csproj.AssemblyReference.cache
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\12_14\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\12_14\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.AssemblyInfoInputs.cache
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\12_14\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.AssemblyInfo.cs
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\12_14\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\12_14\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.dll
+C:\Users\Domas\Desktop\Objektinis_programu_projektavimas\12_14\Binding_Of_Pitak-main\Binding_Of_Pitak-main\SignalRClient\BoP.Map\obj\Debug\netcoreapp3.1\BoP.MapLibrary.pdb
