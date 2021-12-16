@@ -139,6 +139,7 @@ namespace SignalRClient
             // 
             // ADDCREATURE
             // 
+            this.ADDCREATURE.Enabled = false;
             this.ADDCREATURE.Location = new System.Drawing.Point(1022, 490);
             this.ADDCREATURE.Name = "ADDCREATURE";
             this.ADDCREATURE.Size = new System.Drawing.Size(75, 44);

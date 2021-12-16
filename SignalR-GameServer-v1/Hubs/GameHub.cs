@@ -406,7 +406,9 @@ namespace SignalR_GameServer_v1.Hubs
             int result = -1;
             bool resultFlag = false;
             bool valueFlag = true;
-            foreach(Creature creature in heroes)
+            Console.WriteLine($"--------------------------------------------");
+            Console.WriteLine($"Iterator checking each players state:");
+            foreach (Creature creature in heroes)
             {
                 string state = creature.GetState();
                 int creatureID = creature.GetId();
@@ -429,6 +431,7 @@ namespace SignalR_GameServer_v1.Hubs
                         break;
                 }
             }
+            Console.WriteLine($"--------------------------------------------");
 
             if (resultFlag)
             {
