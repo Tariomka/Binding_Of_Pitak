@@ -347,6 +347,7 @@ namespace SignalRClient
             UNDO.Enabled = !UNDO.Enabled;
             ENDTURN.Enabled = !ENDTURN.Enabled;
             DEATH.Enabled = !DEATH.Enabled;
+            ADDCREATURE.Enabled = !ADDCREATURE.Enabled;
         }
 
         private void movePlayer(int pid, string direction)

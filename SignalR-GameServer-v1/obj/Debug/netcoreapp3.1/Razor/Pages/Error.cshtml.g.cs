@@ -19,8 +19,8 @@ using SignalR_GameServer_v1;
 #line default
 #line hidden
 #nullable disable
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"62b46ef23735e31b625575b56bab2b6617459162", @"/Pages/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"87025f1b671ae89b5a0ac547bdf2f632b10a7c9a", @"/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4d9c5ab8774e23606979fe03d0238517f56b26dd", @"/Pages/Error.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"86225a3342e7606dd2dafa568108d7db54fb5d84", @"/Pages/_ViewImports.cshtml")]
     public class Pages_Error : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     {
         #pragma warning disable 1998
@@ -34,7 +34,7 @@ using SignalR_GameServer_v1;
 #line default
 #line hidden
 #nullable disable
-            WriteLiteral("\n<h1 class=\"text-danger\">Error.</h1>\n<h2 class=\"text-danger\">An error occurred while processing your request.</h2>\n\n");
+            WriteLiteral("\r\n<h1 class=\"text-danger\">Error.</h1>\r\n<h2 class=\"text-danger\">An error occurred while processing your request.</h2>\r\n\r\n");
 #nullable restore
 #line 10 "D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\Pages\Error.cshtml"
  if (Model.showRequestId)
@@ -43,7 +43,7 @@ using SignalR_GameServer_v1;
 #line default
 #line hidden
 #nullable disable
-            WriteLiteral("    <p>\n        <strong>Request ID:</strong> <code>");
+            WriteLiteral("    <p>\r\n        <strong>Request ID:</strong> <code>");
 #nullable restore
 #line 13 "D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\Pages\Error.cshtml"
                                       Write(Model.requestId);
@@ -51,7 +51,7 @@ using SignalR_GameServer_v1;
 #line default
 #line hidden
 #nullable disable
-            WriteLiteral("</code>\n    </p>\n");
+            WriteLiteral("</code>\r\n    </p>\r\n");
 #nullable restore
 #line 15 "D:\GitHub\Binding_Of_Pitak\SignalR-GameServer-v1\Pages\Error.cshtml"
 }
